@@ -1,0 +1,60 @@
+title: Supported Syntaxes for Zettel Content
+tags: #syntax #zettelstore
+syntax: zmk
+role: manual
+
+The zettelstore supports several syntaxes to interpret the content of
+a zettel.
+
+; ``zmk``
+: This is the default syntax, if syntax [[header|20200305184800]] is not given,
+  and if it cannot be derivied from other information (e.g. file extension). It
+  is defined [[here|20200226165400]].
+; ``css``
+: A [[Cascading Style Sheet|https://www.w3.org/Style/CSS/]], to be used when
+  rendering a zettel as HTML.
+; ``gif``; ``jpeg``; ``jpg``; ``png``
+: The formats for pixel graphics. Typically the data is stored in a separate
+  file and the syntax is only given in the ``.meta`` file.
+; ``meta``
+: Only the meta data of a zettel is ""parsed"". Useful for displaying the full
+  meta data. The [[Customization|00000000000000]] uses this syntax. The zettel
+  content is ignored.
+; ``template-html``, ``template``
+: A [[Golang HTML Template|https://golang.org/pkg/html/template/]], used when
+  rendering a zettel as HTML.
+; ``template-text``
+: A [[Golang Text Template|https://golang.org/pkg/text/template/]], used when a
+  zettel should be rendered in a text format except HTML.
+; ``text``, ``plain``
+: Just plain text that must not be interpreted further.
+
+Planned syntaxes are:
+; ``blockdiag``; ``seqdiag``; ``actdiag``; ``nwdiag``
+: To textually describe some simple diagrams with
+  [[Blockdiag|http://blockdiag.com/en/]] (and the other software documented on
+  that web page).
+  The approriate software must be installed on the zettelstore computer, if
+  such a zettel has to be rendered.
+; ``graphviz``
+: To visualize graphs with [[Graphviz|https://graphviz.org/]]. The approriate
+  software must be installed on the zettelstore computer, if such a zettel
+  has to be rendered.
+; ``markdown``
+: For those who desperately need
+  [[Markdown|https://daringfireball.net/projects/markdown/]]. When implemented,
+  [[probably Blackfriday|https://github.com/russross/blackfriday/]] or
+  [[Goldmark|https://github.com/yuin/goldmark/]] will be used.
+; ``plantuml``
+: To textually describe UML diagram with [[PlantUML|https://plantuml.com/]].
+  The approriate software must be installed on the zettelstore computer, if
+  such a zettel has to be rendered.
+; ``svg``
+: A [[Scalable Vector Graphic|https://www.w3.org/TR/SVG2/]], most often to be
+  transcluded.
+
+Additionally, the names of supported programming languages can also be
+specified as a zettel syntax. This allows to use syntax coloring when rendered
+as HTML (and other formats) or to execute the program and to render their
+output. The latter option might be a huge security hole, but in a controlled
+environment useful.

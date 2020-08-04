@@ -1,0 +1,43 @@
+title: Bullet Lists as Zettelmarkup
+tags: #zmk
+role: manual
+
+A bullet list lists a sequence of paragraphs. Bullet lists can be nested. A
+bullet list is specified by a sequence of asterisk signs (""``*``""),
+followed by at least one space character. The count of asterisk signs specifies
+the nesting level.
+
+Every list element can consist of one or more paragraphs. As usual, these are
+separated by an empty line.
+
+If a list element has to be continued on the next line, the next line must
+start with a number of spaces. The exact number of spaces is calculated by the
+nesting level plus one.
+
+For example:
+
+```zmk
+* Item 1
+** Item 1.1
+   (Continued)
+* Item 2
+
+  Second paragraph of item 2.
+** Item 2.1
+*** Item 2.1.1
+* Item 3
+```
+
+renders as:
+
+:::
+* Item 1
+** Item 1.1
+   (Continued)
+* Item 2
+
+  Second paragraph of item 2.
+** Item 2.1
+*** Item 2.1.1
+* Item 3
+:::

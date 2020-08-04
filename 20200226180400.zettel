@@ -1,0 +1,116 @@
+title: Zettelmarkup Attributes
+tags: #zmk
+role: manual
+
+Attributes allow to modify the way how material is presented or they provide
+additional information about material. To some degree,
+attributes are similar to [[HTML
+attributes|https://html.spec.whatwg.org/multipage/dom.html#global-attributes]].
+
+Typical use cases for attributes are to specify the (natural) language for a
+text range, to specify the programming language for highlighting program code,
+or to make white space visible in raw text.
+
+Attributes are specified within curly braces ``{...}``. Of course, more than
+one attribute can be specified. Attributes are separated by a sequence of space
+characters ("`` ``{-}").
+
+An attribute normally consists of an optional key and an optional value. The
+key is a sequence of letters, digits, "``-``", and "``_``". It can be empty.
+The value is sequence of any characters, except space and "``}``". If the value
+contains a space or the closing curly brace, the value can be specified within
+quotes ("``"``"). Within the quotes, the backslash character functions as an
+escape character to specify the quote character (and the backslash character
+too).
+
+Some examples:
+
+* ``{key=value}`` sets the attribute //key// to value //value//.
+* ``{key="value with space"}`` sets the attribute to the given value.
+* ``{key="value with quote \\" (and backslash \\\\)"}``
+* ``{name}`` sets the attribute //name//. It has no corresponding value. It is
+  equivalent to ``{name=}``.
+* ``{=key}`` sets the //generic attribute//{-} to the given value. It is mostly
+  used for modifying behaviour according to a programming language.
+* ``{.key}`` sets the //class attribute//{-} to the given value. It is
+  equivalent to ``{class=key}``. 
+
+In these examples, ``key`` must conform the the syntax of attribute keys, even
+if it is used as a value.
+
+If a key is given more than once in an attribute, the values are concatenated
+(and separated by a space).
+
+* ``{key=value1 key=value2}`` is the same as ``{key"value1 value2}``.
+* ``{key key}`` is the same as ``{key}``.
+* ``{.class1 .class2}`` is equivalent to ``{class="class1 class2"}``.
+
+This is not true for the generic attribute. In ``{=key1 =key2}``, the first key
+is ignored. Therefore it is equivalent to ``{=key2}``.
+
+The key "``-``" is special. It is called //default attribute//{-} and has a
+material specific meaning. For example, when used for raw text, it replaces the
+non-visible space with a visible representation:
+
+* ++``Hello, world``{-}++ produces ==Hello, world=={-}.
+* ++``Hello, world``++ produces ==Hello, world==.
+
+For some vertical material, there is a syntax variant if you only want to
+specify a generic attribute. For all blocks (
+quote blocks, verse blocks, raw blocks, and fenced Blocks) you can specify the
+generic attributes directly in the first line, after the three (or more) block
+characters.
+
+```
+:::attr
+...
+:::
+```
+is equivalent to
+```
+:::{=attr}
+...
+:::
+```.
+
+For vertical material, the closing curly brace must be on the same line as the
+material begins. However, some spaces are allowed between the material
+characters and the attributes.
+```
+== Heading {color=green}
+```
+is allowed and equivalent to
+```
+== Heading{color=green}
+```.
+But
+```
+== Heading {color=green
+background=grey}
+```
+is not allowed. Same for
+```
+== Heading {color="
+green"}
+```.
+
+For horizontal material, the attributes must immediately follow the inline
+markup. However, the attributes may be continued in the next line when a space
+character is possible.
+
+``::GREEN::{color=green}`` is allowed, but not ``::GREEN:: {color=green}``.
+
+```
+::GREEN::{color=green
+background=grey}
+```
+is allowed, but not
+```
+::GREEN::{color=
+green}
+```.
+```
+::GREEN::{color="
+green"}
+```
+is allowed, because spaces are allowed within quotes.

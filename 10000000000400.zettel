@@ -1,0 +1,14 @@
+title: Configuration of the zettelstore
+tags: #configuration #manual #zettelstore
+syntax: zmk
+role: manual
+
+There are two levels to change the behaviour and/or the appearance of the
+zettelstore. The first level is the configuration that is needed to start the
+services provides by the zettelstore. For example, this includes the URI under
+which the zettelstore is accessible. The second level configuration the running
+zettelstore. For example, you can configure the default language of your zettel
+store.
+
+# [[Zettelstore startup configuration|10000000000500]]
+# [[Configure the running zettelstore|10000000000600]]

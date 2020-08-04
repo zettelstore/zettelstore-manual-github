@@ -1,0 +1,41 @@
+title: Horizontal Material for Zettelmarkup
+tags: #zmk
+syntax: zmk
+role: manual
+
+Horizontal material structures the text within a paragraph or other
+[[vertical material|20200308194100]].
+
+In many cases, syntax elements consists of two characters at the beginning, and
+one or the same two characters at the end of the horizontal material.
+
+Horizontal material includes:
+
+* Normal text
+* Links to other zettel and external URIs,
+* Bibliographic references,
+* Images,
+* Inline tags,
+* Marks,
+* Italic text,
+* Emphasized text,
+* Bold text,
+* Strong text,
+* Underlined text,
+* Strikethrough text,
+* Superscripted text,
+* Subscripted text,
+* Typographic quotation marks,
+* Inline quotes,
+* Small text,
+* Code / raw text,
+* Text marked as (computer) input, e.g. via a keyboard,
+* Computer output,
+* Deleted and/or inserted text,
+* Text elements marked as belonging together,
+* Entities (to specify unusual characters),
+* The ""n-dash"",
+* A hard line break,
+* Escaped characters,
+* Protected space character,
+* Non-visible comments.

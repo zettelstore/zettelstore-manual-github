@@ -1,0 +1,29 @@
+title: Vertical Material in Zettelmarkup
+tags: #zmk
+role: manual
+
+Vertical material structures the text in paragraph-like sections. Of course, a
+paragraph is vertical material.
+
+Every syntax element for vertical material starts at the very first position of
+a line. In most cases, the syntax element consists of at least three
+characters. But there are exceptions of this rule.
+
+A paragraph has no syntax element that signals its beginning.
+
+Vertical material is:
+
+* [[Paragraphs|20200308195900]],
+* [[Headings|20200308192400]],
+* [[Enumerations|20200308200800]] (like this),
+* [[Bullet lists|20200308201900]],
+* Quote lists,
+* Definition lists,
+* Tables,
+* Quote blocks,
+* Verse blocks,
+* Raw blocks,
+* Fenced Blocks,
+* Horizontal rules.
+
+Enumeration lists, bullet lists, and quote lists can be combined and nested.

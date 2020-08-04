@@ -1,0 +1,25 @@
+title: Paragraphs in Zettelmarkup
+tags: #zmk
+role: manual
+
+Each line that has no syntax element for vertical material is considered to be
+part of a paragraph. In case of enumeration lists, bullet lists, and definition
+lists, two or more spaces at the start of a line can be a syntax element.
+
+This has the implication that a mistyped syntax element for vertical material
+will be part of the paragraph. For example:
+```zmk
+= Heading
+Some text follows.
+```
+
+will be rendered as
+
+:::
+= Heading
+Some text follows.
+:::
+
+This is because, there are no level 1 headings.
+
+Paragraphs are separated by empty lines.

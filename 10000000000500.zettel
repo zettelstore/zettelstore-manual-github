@@ -1,0 +1,18 @@
+title: Zettelstore startup configuration
+tags: #configuration #manual #zettelstore
+syntax: zmk
+role: manual
+
+To provide the zettelstore configutation for starting the service, you have to use command line parameters.
+
+```
+zettelstore -d DIR -p PORT
+```
+
+; ''-d DIR''
+: Specifies ''DIR'' as the directory that contains all zettel. Default is
+  ''~/zettel'' (''~\\zettel'' on Windows), where ''~'' denotes the ""current
+  directory"".
+; ''-p PORT''
+: Specifies the integer value ''PORT'' as the TCP port, where the zettelstore
+  service listens for requests. Default: 23123.

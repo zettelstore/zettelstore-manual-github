@@ -1,0 +1,38 @@
+title: Design goals for the zettelstore
+tags: #design #goal #manual #zettelstore
+syntax: zmk
+role: manual
+
+The zettelstore supports the following design goals:
+
+; Longevity of stored notes / zettel
+: Every zettel you create should be readable without the help of any tool, even
+  without the zettelstore.
+: It should be not hard to write other software that works with your zettel.
+; Single user
+: All zettel belong to you, only to you. The zettelstore provides its services
+  only to one person: you. If your device is securely configured, there should
+  be no risk that others are able to read or update your zettel.
+: If you want, you can customize the zettelstore in a way that specific or all
+  persons are able to read some of your zettel.
+; Ease of installation
+: If you want to use the zettelstore software, all you need is to copy the
+  executable to an appropriate place and start working.
+: Upgrading the software is done just by replacing the executable with a newer one.
+; Ease of operation
+: There is only one executable for the zettelstore and one directory, where
+  your zettel are placed.
+: If you decide to use multiple directories, you are free to configure the
+  zettelstore appropriately.
+; Multiple modes of operation
+: You can use the zettelstore as a standalone software on your device, but you
+  are not restricted to it.
+: You can install the software on a central server, or you can install it on
+  all your devices with no restrictions how to synchronize your zettel.
+; Multiple user interfaces
+: The zettelstore provides a default web-based user interface. Anybody can
+  provide alternative user interfaces, e.g. for special purposes.
+; Simple service
+: The purpose of the zettelstore is to safely store your zettel and to provide
+  some initial relations between them.
+: External software can be written to deeply analyze your zettel and the structures they form.

@@ -1,0 +1,42 @@
+title: Zettelmarkup Headings
+tags: #zmk
+role: manual
+
+To specify a (sub-) section of a zettel, you should use the headings syntax: at
+the start of a new line type at least two equality signs, plus at least one
+space and enter the text of the heading.
+
+```zmk
+== Level 2 Heading
+=== Level 3 Heading
+==== Level 4 Heading
+===== Level 5 Heading
+====== Level 6 Heading
+======= Level 6 Heading
+```
+
+This renders as:
+
+:::
+== Level 2 Heading
+=== Level 3 Heading
+==== Level 4 Heading
+===== Level 5 Heading
+====== Level 6 Heading
+======= Level 6 Heading
+:::
+
+Note, that there is no level 1 heading. This is the title of the zettel.
+
+== Rationale
+
+This syntax is often used in a similar way in wiki implementation. However,
+trailing equality signs are //not//{-} removed, they are part of the heading
+text.
+
+If you use command line tools, you can easily create a draft table of contents
+with the command:
+
+```sh
+grep -h '^===* ' ZETTEL_ID.txt
+```

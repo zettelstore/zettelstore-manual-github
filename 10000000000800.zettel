@@ -1,0 +1,32 @@
+title: Layout of a Zettel
+tags: #design #manual #zettelstore
+syntax: zmk
+role: manual
+
+A zettel consists of two part: the meta data and the zettel content.
+The meta data gives us some information mostly about the zettel content, how it should be interpreted, how it is sorted within the zettelstore.
+The zettel content is, well, the actual content.
+In many cases, the content is in plain text form.
+Plain text is long-lasting.
+However, content in binary format is also possible.
+
+The meta data is effectively a set of key/value pairs.
+The key is a sequence of alphanumeric characters, a dash (""''-''"") is also allowed.
+The value is any printable string value that is interpreted according to the key (more precisely: to the type of the key; since every key has only one key type, both interpretations are similar).
+
+Some keys have a special meaning.
+For example the value of the key ''title'' specifies the title of the zettel.
+If no title is given to a zettel, its identification is used as the title.
+The value of the key ''syntax'' defines how the content should be interpreted, e.g. as plain text, as SVG, as a markup language, as a ''.png'' image.
+If no syntax is given, the meta data of the [[configuration zettel|10000000000600]] is consulted: the value of its key ''default-syntax'' is used.
+
+Values of other keys define some tags, an URL, ...
+There will be a list of supported keys, their type, and their interpretation.
+You are free to define additional key/value pairs to help you with your specific workflow.
+
+The zettel content is your valuable content.
+The zettelstore contains some predefined parsers that interpret the zettel content to the syntax of the zettel.
+This includes markup languages, like Zettelmarkup and [[CommonMark|https://commonmark.org/]].
+Plain text formats are supported, like CSS and HTML templates.
+There is support for a graphical format with a text represenation: SVG.
+And the is support for some binary image format, like GIF, PNG, and JPEG.

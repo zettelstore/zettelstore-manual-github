@@ -1,0 +1,45 @@
+title: Enumeration Lists as Zettelmarkup
+tags: #zmk
+role: manual
+
+An enumeration list enumerates a sequence of paragraphs. Enumeration lists
+can be nested. An enumeraton list is specified by a sequence of number signs
+(""``#``""), followed by at least one space character[^A tag starts also
+with a ""``#``"", but contains no space.]. The count of number signs
+specifies the nesting level.
+
+Every enumeration element can consist of one or more paragraphs. As usual,
+these are separated by an empty line.
+
+If an enumeration element has to be continued on the next line, the next line
+must start with a number of spaces. The exact number of spaces is calculated by
+the nesting level plus one.
+
+For example:
+
+```zmk
+# Item 1
+## Item 1.1
+   (Continued)
+# Item 2
+
+  Second paragraph of item 2.
+
+## Item 2.1
+### Item 2.1.1
+# Item 3
+```
+
+renders as:
+
+:::
+# Item 1
+## Item 1.1
+   (Continued)
+# Item 2
+
+  Second paragraph of item 2.
+## Item 2.1
+### Item 2.1.1
+# Item 3
+:::
