@@ -1,0 +1,10 @@
+title: Zettelmarkup: General Principles
+tags: #manual #zettelmarkup #zettelstore
+syntax: zmk
+role: manual
+
+Any document can be thought as a sequence of paragraphs and other blocks-structural elements (""blocks""), such as headings, lists, quotations, and code blocks.
+Some of these blocks can contain other blocks, for example lists may contain other lists or paragraphs.
+Other blocks contain inline-structural elements (""inlines""), such as text, links, emphasized text, and images.
+
+The markup for blocks always start at the first position of a line and starts with three identical characters[^There is one exception: the topmost heading will start with the sequence ``== ``{=zmk -} (two equal signs plus a space).].
