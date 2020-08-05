@@ -61,7 +61,7 @@ One reason for this is to allow you to modify these zettel to adapt the zettelst
 
 Where are these zettel stored?
 They are stored within the zettelstore software itself, because one design goal was to have just one file to use the zettelstore.
-But data stored within an executable programm cannot be changed later[^Well, it can, but it is a very bad idea to allow this. Mostly for security reason.].
+But data stored within an executable programm cannot be changed later[^Well, it can, but it is a very bad idea to allow this. Mostly for security reasons.].
 
 To allow changing predefined zettel, both the file store and the internal zettel store are internally chained together.
 If you change a zettel, it will be always stored as a file.
