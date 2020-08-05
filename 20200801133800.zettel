@@ -1,7 +1,7 @@
 title: Glossary
-tags: #manual #zettelstore #glossary
+tags: #glossary #manual #zettelstore
 syntax: zmk
-role: zettel
+role: manual
 
 ; File store
 ; Store
