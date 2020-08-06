@@ -29,3 +29,7 @@ However, the Zettelstore support CommonMark as a zettel syntax, so you can mix b
 
 # [[General principles|10000000010100]]
 # [[Basic definitions|10000000010200]]
+# [[Block-structured elements|10000000010300]]
+# [[Inline-structured element|10000000010400]]
+# [[Attributes|10000000010500]]
+# [[Summary of formatting characters|10000000010600]]

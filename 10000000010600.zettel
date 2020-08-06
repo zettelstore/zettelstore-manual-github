@@ -1,0 +1,40 @@
+title: Zettelmarkup: Summary of Formatting Characters
+tags: #manual #zettelmarkup #zettelstore
+syntax: zmk
+role: manual
+
+The following table gives an overview about the use of all characters that start a markup element.
+
+|= Character :|= Blocks <|= Inlines <
+| ''!''  | (free) | (free)
+| ''"''  | Verse block | Typographic quotation mark
+| ''#''  | Ordered list | Tag
+| ''$''  | (reserved) | (reserved)
+| ''%''  | (future: Comment block) | Comment
+| ''&''  | (free) | Entity
+| ''\'''  | (future: Monospace-Block)  | Monospace text
+| ''(''  | (free) | Edit formatting
+| '')''  | (free) | End of edit formatting
+| ''*''  | Unordered list | strongly emphasized / bold text
+| ''+''  | (free) | Keyboard input
+| '',''  | (free) | Subscripted text
+| ''-''  | Horizonal rule | ""en-dash""
+| ''.''  | (free) | Horizontal ellipsis
+| ''/''  | (free) | Emphasized / italics text
+| '':''  | Region block / definition text | Inline region
+| '';''  | Definition term | Small text
+| ''<''  | Quotation block | Short inline quote
+| ''=''  | Headings | Computer output
+| ''>''  | Quotation lists | (free)
+| ''?''  | (free) | (free)
+| ''@''  | (free) | (reserved)
+| ''[''  | (reserved)  | Link, bibliographic key, footnote, mark
+| ''\\'' | (blocked by inline meaning) | Escape character
+| '']''  | (reserved) | End of link, bibliographic key, footnote, mark
+| ''^''  | (free) | Superscripted text
+| ''_''  | (free) | Underlined text
+| ''`''  | Verbatim block | Inline literal
+| ''{''  | (reserved) | Image, Attribute
+| ''|''  | Table row / table cell | Separator within link and image formatting
+| ''}''  | (reserved) | End of Image, End of Attribute
+| ''~''  | (free) | Strike-through text

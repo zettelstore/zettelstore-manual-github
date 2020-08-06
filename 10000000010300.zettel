@@ -1,0 +1,40 @@
+title: Zettelmarkup: Blocks-Structured Elements
+tags: #manual #zettelmarkup #zettelstore
+syntax: zmk
+role: manual
+
+Every markup for blocks-structured elements (""blocks"") starts at the very first position of a line.
+
+There are five kinds of blocks: lists, one-line blocks, line-range blocks, tables, and paragraphs.
+
+=== Lists
+
+* ordered lists
+* unordered lists
+* quotation lists
+* definition lists
+
+=== One-line blocks
+
+* headings
+* horizontal rules
+
+=== Line-range blocks
+
+* verbatim blocks / code blocks
+* quotation blocks
+* verse blocks
+* region blocks (aka divs)
+* comment blocks (future)
+* monospace blocks (future)
+
+=== Tables
+
+* table
+* table rows
+* table cells
+
+=== Paragraphs
+
+* normal paragraphs
+* indented paragraphs

@@ -7,8 +7,9 @@ Any document can be thought as a sequence of paragraphs and other blocks-structu
 Some of these blocks can contain other blocks, for example lists may contain other lists or paragraphs.
 Other blocks contain inline-structural elements (""inlines""), such as text, links, emphasized text, and images.
 
-With the exception of lists, the markup for blocks always starts at the first position of a line and starts with three or more identical characters.
+With the exception of lists and tables, the markup for blocks always starts at the first position of a line and starts with three or more identical characters.
 List blocks also starts at the first position of a line, but may need one or more character, plus a space character.
+Table blocks starts at the first position of a line with the character ""``|``"".
 Non-list blocks are either fully specified on that line or they span multiple lines and are delimited with the same three or more character.
 It depends on the block kind, whether blocks are specified on one line or on at least two lines.
 
@@ -19,10 +20,10 @@ Some blocks may also contain inline elements, e.g. a heading.
 Inline elements mostly starts with two non-space, often identical characters.
 With some exceptions, two identical non-space characters starts a formatting range that is ended with the same two characters.
 
-Exceptions are: links, images, edits, comments, and both the ""n-dash"" and the ""horizontal ellipsis"".
+Exceptions are: links, images, edits, comments, and both the ""en-dash"" and the ""horizontal ellipsis"".
 A link is given with ``[[...]]``{=zmk}, an images with ``{{...}}``{=zmk}, and an edit formatting with ``((...))``{=zmk}.
 An inline comment, starting with the sequence ``%%``{=zmk}, always ends at the end of the line where it begins.
-The ""n-dash"" is specified as ``--``{=zmk}, the ""horizontal ellipsis"" as ``...``{=zmk} if placed at the end of non-space text.
+The ""en-dash"" (""--"") is specified as ``--``{=zmk}, the ""horizontal ellipsis"" (""..."") as ``...``{=zmk}[^If placed at the end of non-space text.].
 
 Some inline elements do not follow the rule of two identical character, especially to specify footnotes, bibliographical keys, and local marks.
 These elements start with one opening square bracket (""``[``""), use a character for specifying the kind of the inline, typically allow to specify some content, and end with one closing square bracket (""``]``"").
@@ -40,7 +41,7 @@ To force the inline element formatting at the start of a line, ``**\\ Text**``{=
 
 Many block and inline elements can be refined by additional attributes.
 Attributes resemble roughly HTML attributes and are placed near the corresponding elements by using the syntax ``{...}``{=zmk}.
-One example is to make space characters visible inside a inline code element: ``1 + 2 = 3``{-} was specified by using the default attribute: ``\`\`1 + 2 = 3\`\`{-}``.
+One example is to make space characters visible inside a inline literal element: ``1 + 2 = 3``{-} was specified by using the default attribute: ``\`\`1 + 2 = 3\`\`{-}``.
 
 To summarize:
 
