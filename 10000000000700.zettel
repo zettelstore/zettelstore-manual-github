@@ -17,7 +17,7 @@ In addition, the zettelstore provides an ""application programming interface"" (
 The zettelstore becomes extensible by external software.
 For example, a more sophisticated web interface could be build, or an application for your mobile device that allows you to send content to your zettelstore as new zettel.
 
-== Where zettel are stored
+=== Where zettel are stored
 
 Your zettel are stored as files in a specific directory.
 If you have not explicitly specified the directory, a default directory will be used.
@@ -49,7 +49,7 @@ The zettelstore maintains this relationship as long as theses files exists.
 In case of some textual zettel content you do not want to store the meta data and the zettel content in two different files.
 Here the ''.zettel'' extension will signal that the meta data and the zettel content will be placed in the same file, separated by an empty line or a line with three dashes (""''-\-\-''"", also known as ""YAML separator"").
 
-== Predefined zettel
+=== Predefined zettel
 
 The zettelstore contains some predefined zettel to work properly.
 The [[configuration zettel|10000000000600]] is one example.
@@ -71,4 +71,3 @@ If such a file was not found, the internal zettel store is searched secondly.
 Therefore, the file store ""shadows"" the internal zettel store.
 If you want to read the original zettel, you either have to delete the zettel (which removes it from the file directory), or you have to rename it to another zettel identification.
 Now we have two places where zettel are stored: in the specific directory and within the zettelstore software.
-

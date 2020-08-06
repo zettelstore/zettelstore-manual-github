@@ -1,5 +1,6 @@
 title: Zettelmarkup Attributes
 tags: #zmk
+syntax: zmk
 role: manual
 
 Attributes allow to modify the way how material is presented or they provide
@@ -77,20 +78,20 @@ For vertical material, the closing curly brace must be on the same line as the
 material begins. However, some spaces are allowed between the material
 characters and the attributes.
 ```
-== Heading {color=green}
+=== Heading {color=green}
 ```
 is allowed and equivalent to
 ```
-== Heading{color=green}
+=== Heading{color=green}
 ```.
 But
 ```
-== Heading {color=green
+=== Heading {color=green
 background=grey}
 ```
 is not allowed. Same for
 ```
-== Heading {color="
+=== Heading {color="
 green"}
 ```.
 
