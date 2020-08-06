@@ -28,4 +28,4 @@ But if you want to use Markdown/CommonMark and you need support for footnotes, y
 However, the Zettelstore support CommonMark as a zettel syntax, so you can mix both Zettelmarkup zettel and CommonMark zettel in one store to get the best of both worlds.
 
 # [[General principles|10000000010100]]
-# Basic definitions
+# [[Basic definitions|10000000010200]]
