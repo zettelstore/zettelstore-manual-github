@@ -27,9 +27,9 @@ Zettelmarkup might be seen as a proprietary markup language.
 But if you want to use Markdown/CommonMark and you need support for footnotes, you'll end up with a proprietary extension.
 However, the Zettelstore support CommonMark as a zettel syntax, so you can mix both Zettelmarkup zettel and CommonMark zettel in one store to get the best of both worlds.
 
-# [[General principles|10000000010100]]
-# [[Basic definitions|10000000010200]]
-# [[Block-structured elements|10000000010300]]
-# [[Inline-structured element|10000000010400]]
-# [[Attributes|10000000010500]]
-# [[Summary of formatting characters|10000000010600]]
+# [[General principles|00001007010000]]
+# [[Basic definitions|00001007020000]]
+# [[Block-structured elements|00001007030000]]
+# [[Inline-structured element|00001007040000]]
+# [[Attributes|00001007050000]]
+# [[Summary of formatting characters|00001007060000]]

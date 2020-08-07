@@ -10,5 +10,5 @@ which the zettelstore is accessible. The second level configuration the running
 zettelstore. For example, you can configure the default language of your zettel
 store.
 
-# [[Zettelstore startup configuration|10000000000500]]
-# [[Configure the running zettelstore|10000000000600]]
+# [[Zettelstore startup configuration|00001004010000]]
+# [[Configure the running zettelstore|00001004020000]]

@@ -1,0 +1,15 @@
+title: Zettelmarkup: Inline-Structured Elements
+tags: #manual #zettelmarkup #zettelstore
+syntax: zmk
+role: manual
+
+* Comment ''\%%''
+* Escape character aka backslash
+* References: links, images, footnotes, bibliographic keys, marks
+* Tags
+* Text formatting
+* Text editing
+* Inline literals, keyboard input, computer output
+* Entities
+* ""en-dash"", horizontal ellipsis
+

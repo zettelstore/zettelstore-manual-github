@@ -18,7 +18,7 @@ Some keys have a special meaning.
 For example the value of the key ''title'' specifies the title of the zettel.
 If no title is given to a zettel, its identification is used as the title.
 The value of the key ''syntax'' defines how the content should be interpreted, e.g. as plain text, as SVG, as a markup language, as a ''.png'' image.
-If no syntax is given, the meta data of the [[configuration zettel|10000000000600]] is consulted: the value of its key ''default-syntax'' is used.
+If no syntax is given, the meta data of the [[configuration zettel|00001004020000]] is consulted: the value of its key ''default-syntax'' is used.
 
 Values of other keys define some tags, an URL, ...
 There will be a list of supported keys, their type, and their interpretation.
