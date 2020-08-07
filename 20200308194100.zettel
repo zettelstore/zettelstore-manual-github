@@ -1,5 +1,6 @@
 title: Vertical Material in Zettelmarkup
 tags: #zmk
+syntax: zmk
 role: manual
 
 Vertical material structures the text in paragraph-like sections. Of course, a
@@ -18,7 +19,7 @@ Vertical material is:
 * [[Enumerations|20200308200800]] (like this),
 * [[Bullet lists|20200308201900]],
 * Quote lists,
-* Definition lists,
+* Description lists,
 * Tables,
 * Quote blocks,
 * Verse blocks,

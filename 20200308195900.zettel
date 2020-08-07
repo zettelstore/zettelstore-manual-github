@@ -1,9 +1,10 @@
 title: Paragraphs in Zettelmarkup
 tags: #zmk
+syntax: zmk
 role: manual
 
 Each line that has no syntax element for vertical material is considered to be
-part of a paragraph. In case of enumeration lists, bullet lists, and definition
+part of a paragraph. In case of enumeration lists, bullet lists, and description
 lists, two or more spaces at the start of a line can be a syntax element.
 
 This has the implication that a mistyped syntax element for vertical material

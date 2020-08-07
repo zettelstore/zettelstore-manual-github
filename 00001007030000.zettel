@@ -9,15 +9,18 @@ There are five kinds of blocks: lists, one-line blocks, line-range blocks, table
 
 === Lists
 
-* ordered lists
-* unordered lists
-* quotation lists
-* definition lists
+In Zettelmarkup, lists themselves are not specified, but list items.
+A sequence of list items is considered as a list.
+
+[[Description lists|00001007030100]] contain two different item types: the term to be described and the description itself.
+These cannot be combined with other lists.
+
+Ordered lists, unordered lists, and quotation lists can be combined into [[nested lists|00001007030200]].
 
 === One-line blocks
 
-* headings
-* horizontal rules
+* Headings allow to structure the content of a zettel.
+* The horizontal rule signals a thematic break
 
 === Line-range blocks
 

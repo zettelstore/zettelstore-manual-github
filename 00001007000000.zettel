@@ -19,7 +19,7 @@ Additionally, it is allowed to embed other languages into HTML, such as CSS or e
 This could create problems with longevity as well as security problems.
 
 Zettelmarkup is a rich markup language, but it focusses on relatively short zettel content.
-It allows embedding other content, simple tables, quotations, definition lists, and images.
+It allows embedding other content, simple tables, quotations, description lists, and images.
 It provides a broad range of inline formatting, including //emphasized//{-}, **strong**{-}, __underlined__, ;;small;;, ((deleted)) and ((|inserted)) text.
 Footnotes[^like this] are supported, links to other zettel and to external material, as well as citation keys.
 

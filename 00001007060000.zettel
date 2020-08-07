@@ -21,8 +21,8 @@ The following table gives an overview about the use of all characters that start
 | ''-''  | Horizonal rule | ""en-dash""
 | ''.''  | (free) | Horizontal ellipsis
 | ''/''  | (free) | Emphasized / italics text
-| '':''  | Region block / definition text | Inline region
-| '';''  | Definition term | Small text
+| '':''  | Region block / description text | Inline region
+| '';''  | Description term | Small text
 | ''<''  | Quotation block | Short inline quote
 | ''=''  | Headings | Computer output
 | ''>''  | Quotation lists | (free)
