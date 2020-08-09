@@ -25,7 +25,7 @@ Footnotes[^like this] are supported, links to other zettel and to external mater
 
 Zettelmarkup might be seen as a proprietary markup language.
 But if you want to use Markdown/CommonMark and you need support for footnotes, you'll end up with a proprietary extension.
-However, the Zettelstore support CommonMark as a zettel syntax, so you can mix both Zettelmarkup zettel and CommonMark zettel in one store to get the best of both worlds.
+However, the Zettelstore supports CommonMark as a zettel syntax, so you can mix both Zettelmarkup zettel and CommonMark zettel in one store to get the best of both worlds.
 
 # [[General principles|00001007010000]]
 # [[Basic definitions|00001007020000]]
