@@ -24,12 +24,18 @@ Ordered lists, unordered lists, and quotation lists can be combined into [[neste
 
 === Line-range blocks
 
-* verbatim blocks / code blocks
-* quotation blocks
-* verse blocks
-* region blocks (aka divs)
-* comment blocks (future)
-* monospace blocks (future)
+This kind of blocks encompass at least two lines.
+To be useful, they encompass more lines.
+They start with at least three identical characters at the first position of the beginning line.
+They end at the line, that contains at least the same number of these identical characters, starting at the first position of that line.
+This allows line-range blocks to be nested.
+Additionally, all other blocks elements are allowed in line-range blocks.
+
+* [[Verbatim blocks|00001007030500]] do not interpret their content,
+* [[Quotation blocks|00001007030600]] specify a block-length quotation,
+* [[Verse blocks|00001007030700]] allow to enter lyrics and similar text, where line endings are important
+* [[Region blocks|00001007030800]] just mark a region, e.g. for common formatting
+* [[Comment blocks|00001007030900]] (future) allow to enter text that will be ignored when rendered
 
 === Tables
 
