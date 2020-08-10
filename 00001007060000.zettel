@@ -8,24 +8,24 @@ The following table gives an overview about the use of all characters that start
 |= Character :|= Blocks <|= Inlines <
 | ''!''  | (free) | (free)
 | ''"''  | Verse block | Typographic quotation mark
-| ''#''  | Ordered list | Tag
+| ''#''  | [[Ordered list|00001007030200]] | Tag
 | ''$''  | (reserved) | (reserved)
 | ''%''  | (future: Comment block) | Comment
 | ''&''  | (free) | Entity
 | ''\'''  | (future: Monospace-Block)  | Monospace text
 | ''(''  | (free) | Edit formatting
 | '')''  | (free) | End of edit formatting
-| ''*''  | Unordered list | strongly emphasized / bold text
+| ''*''  | [[Unordered list|00001007030200]] | strongly emphasized / bold text
 | ''+''  | (free) | Keyboard input
 | '',''  | (free) | Subscripted text
-| ''-''  | Horizonal rule | ""en-dash""
+| ''-''  | [[Horizonal rule|00001007030400]] | ""en-dash""
 | ''.''  | (free) | Horizontal ellipsis
 | ''/''  | (free) | Emphasized / italics text
-| '':''  | Region block / description text | Inline region
-| '';''  | Description term | Small text
+| '':''  | Region block / [[description text|00001007030100]] | Inline region
+| '';''  | [[Description term|00001007030100]] | Small text
 | ''<''  | Quotation block | Short inline quote
-| ''=''  | Headings | Computer output
-| ''>''  | Quotation lists | (free)
+| ''=''  | [[Headings|00001007030300]] | Computer output
+| ''>''  | [[Quotation lists|00001007030200]] | (free)
 | ''?''  | (free) | (free)
 | ''@''  | (free) | (reserved)
 | ''[''  | (reserved)  | Link, bibliographic key, footnote, mark
