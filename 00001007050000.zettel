@@ -69,41 +69,41 @@ is equivalent to
 For other blocks, the closing curly bracket must be on the same line where the block element begins.
 However, spaces are allowed between the blocks characters and the attributes.
 ```
-=== Heading {color=green}
+=== Heading {style=color:green}
 ```
 is allowed and equivalent to
 ```
-=== Heading{color=green}
+=== Heading{style=color:green}
 ```.
 But
 ```
-=== Heading {color=green
+=== Heading {style=color:green
 background=grey}
 ```
 is not allowed. Same for
 ```
-=== Heading {color="
+=== Heading {style=color:"
 green"}
 ```.
 
 For inlines, the attributes must immediately follow the inline markup.
 However, the attributes may be continued on the next line when a space or line ending character is possible.
 
-``::GREEN::{color=green}`` is allowed, but not ``::GREEN:: {color=green}``.
+``::GREEN::{style=color:green}`` is allowed, but not ``::GREEN:: {style=color:green}``.
 
 ```
-::GREEN::{color=green
+::GREEN::{style=color:green
 background=grey}
 ```
 is allowed, but not
 ```
-::GREEN::{color=
+::GREEN::{style=color:
 green}
 ```.
 
 However,
 ```
-::GREEN::{color="
+::GREEN::{style=color:"
 green"}
 ```
 is allowed, because line endings are allowed within quotes.
