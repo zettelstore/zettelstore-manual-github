@@ -10,13 +10,13 @@ Using a verse block might be easier.
 
 This kind of line-range block starts with at least three quotation mark characters (""''"''"", ''U+0022'') at the first position of a line.
 You can add some [[attributes|00001007050000]] on the start line of a verse block, following the initiating characters.
-The verse does not support the default attribute, nor the generic attribute.
+The verse block does not support the default attribute, nor the generic attribute.
 Attributes are interpreted on HTML rendering.
-Any other character in this line will be ignored
+Any other character in this line will be ignored.
 
 Text following the starting line will be interpreted, until a line starts with at least the same number of the same characters given at the starting line.
 This allows to enter a verse block within a verse block.
-At the ending line, you can enter some [[inline elements|00001007040000]] after the less-than characters.
+At the ending line, you can enter some [[inline elements|00001007040000]] after the quotation mark characters.
 These will interpreted as some attribution text.
 
 For example:
