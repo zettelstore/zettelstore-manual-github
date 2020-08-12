@@ -15,11 +15,18 @@ Some of these elements explicitly support [[attributes|00001007050000]].
 
 === Literal-like formatting
 Sometime you want to render the text as it is.
-This is the motivation of [[literal-like formatting|00001007040200]].
+This is the core motivation of [[literal-like formatting|00001007040200]].
+
+=== Reference-like text
+You can reference other zettel and (external) material within one zettel.
+This kind of reference may be a link, or an images that is display inline when the zettel is rendered.
+Footnotes sometimes factor out some useful text that hinders the flow of reading text.
+Internal marks allow to reference something within a zettel.
+An important aspect of all knowledge work is to reference others work, e.g. with bibliographic keys.
+All these elements can be subsumed under [[reference-like text|00001007040300]].
 
 * Comment ''\%%''
 * Escape character aka backslash
-* References: links, images, footnotes, bibliographic keys, marks
 * Tags
 * Entities
 * ""en-dash"", horizontal ellipsis

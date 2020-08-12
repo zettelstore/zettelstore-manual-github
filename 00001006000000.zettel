@@ -20,13 +20,20 @@ If no title is given to a zettel, its identification is used as the title.
 The value of the key ''syntax'' defines how the content should be interpreted, e.g. as plain text, as SVG, as a markup language, as a ''.png'' image.
 If no syntax is given, the meta data of the [[configuration zettel|00001004020000]] is consulted: the value of its key ''default-syntax'' is used.
 
+Each zettel is made unique by a zettel identification.
+To some degree, the zettel identification is part of the meta data.
+Its key is the special string ''id''.
+However, the zettel identication cannot be changed.
+Basically, it was given by the [[zettelstore|00001005000000]].
+Every zettel identification consists of 14 digits.
+
 Values of other keys define some tags, an URL, ...
 There will be a list of supported keys, their type, and their interpretation.
 You are free to define additional key/value pairs to help you with your specific workflow.
 
 The zettel content is your valuable content.
 The zettelstore contains some predefined parsers that interpret the zettel content to the syntax of the zettel.
-This includes markup languages, like [[Zettelmarkup|10000000010000]] and [[CommonMark|https://commonmark.org/]].
+This includes markup languages, like [[Zettelmarkup|00001007000000]] and [[CommonMark|https://commonmark.org/]].
 Plain text formats are supported, like CSS and HTML templates.
 There is support for a graphical format with a text represenation: SVG.
 And the is support for some binary image formats, like GIF, PNG, and JPEG.
