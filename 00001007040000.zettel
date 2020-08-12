@@ -13,12 +13,14 @@ Every [[text formatting|00001007040100]] element starts with two same characters
 It lasts until the same two characters occurred the second time.
 Some of these elements explicitly support [[attributes|00001007050000]].
 
+=== Literal-like formatting
+Sometime you want to render the text as it is.
+This is the motivation of [[literal-like formatting|00001007040200]].
 
 * Comment ''\%%''
 * Escape character aka backslash
 * References: links, images, footnotes, bibliographic keys, marks
 * Tags
-* Inline literals, keyboard input, computer output
 * Entities
 * ""en-dash"", horizontal ellipsis
 
