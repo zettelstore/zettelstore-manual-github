@@ -45,5 +45,12 @@ A table row itself is a sequence of table cells.
 
 === Paragraphs
 
-* normal paragraphs
-* indented paragraphs
+Any line that does not conform to another blocks-structured element starts a paragraph.
+A paragraph is essentially a sequence of [[inline-structured elements|00001007040000]].
+Inline-structured elements cam span more than one line.
+Paragraphs are separated by empty lines.
+
+If you want to specify a second paragraph inside a list item, or if you want to continue a paragraph on a second and more line within a list item, you must start the paragraph with a certain number of space characters.
+The number of space characters depends on the kind of a list and the relevant nesting level.
+
+A line that starts with a space character and which is outside of a list or does not contain the right number of space characters is considered to be part of a paragraph.
