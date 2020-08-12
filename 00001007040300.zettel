@@ -63,7 +63,7 @@ One prominent example is to specify an explicit title attribute that is shown on
 
 Example:
 
-``{{External link|00000000030001}}{title=External, width=30}`` is rendered as ``{{External link|00000000030001}}{title=External, width=30}``.
+``{{External link|00000000030001}}{title=External width=30}`` is rendered as ::{{External link|00000000030001}}{title=External width=30}::.
 
 === Footnotes
 
