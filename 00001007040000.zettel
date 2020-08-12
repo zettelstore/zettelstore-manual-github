@@ -18,8 +18,6 @@ Some of these elements explicitly support [[attributes|00001007050000]].
 * Escape character aka backslash
 * References: links, images, footnotes, bibliographic keys, marks
 * Tags
-* Text formatting
-* Text editing
 * Inline literals, keyboard input, computer output
 * Entities
 * ""en-dash"", horizontal ellipsis

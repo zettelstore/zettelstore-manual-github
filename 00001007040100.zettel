@@ -18,10 +18,12 @@ The following characters start a text formatting:
 * The asterisk character (""''*''"", ''U+002A'') strongly emphasized its enclosed text. The text is often rendered in bold. Again, the default attribute will force a explicit semantic meaning of strong emphasizing.
 ** Example: ``abc **def** ghi`` is rendered in HTML as: ::abc **def** ghi::.
 ** Example: ``abc **def**{-} ghi`` is rendered in HTML as: ::abc **def**{-} ghi::.
-* The low line character (""''_''"", ''U+005F'') produces underlined text.
+* The low line character (""''_''"", ''U+005F'') produces underlined text. If the default attribute was specified, it is semantically rendered as inserted text.
 ** Example: ``abc __def__ ghi`` is rendered in HTML as: ::abc __def__ ghi::.
-* Similar, the tilde character (""''~''"", ''U+007E'') produces text that is strike-through.
+** Example: ``abc __def__{-} ghi`` is rendered in HTML as: ::abc __def__{-} ghi::.
+* Similar, the tilde character (""''~''"", ''U+007E'') produces text that is strike-through. If the default attribute was specified, it is semantically rendered as deleted text.
 ** Example: ``abc ~~def~~ ghi`` is rendered in HTML as: ::abc ~~def~~ ghi::.
+** Example: ``abc ~~def~~{-} ghi`` is rendered in HTML as: ::abc ~~def~~{-} ghi::.
 * The apostrophe character (""''\'''"", ''U+0027'') renders text in mono-space / fixed font width.
 ** Example: ``abc ''def'' ghi`` is rendered in HTML as: ::abc ''def'' ghi::.
 * The circumflex accent character (""''^''"", ''U+005E'') allows to enter superscripted text.
@@ -37,12 +39,3 @@ The following characters start a text formatting:
 ** Example: ``abc ;;def;; ghi`` is rendered in HTML as: ::abc ;;def;; ghi::.
 * The colon character (""'':''"", ''U+003A'') mark some text that should belong together. It fills a similar role as [[region blocks|00001007030800]], but just for inline elements.
 ** Example: ``abc ::def::{style=color:green} ghi`` is rendered in HTML as: abc ::def::{style=color:green} ghi.
-
-There is one special form of text formatting, when you want to specify text editing.
-Text that follows two left parenthesis characters (""''(''"", ''U+0028'') is marked as ""deleted"", until either a vertical bar character (""''|''"", ''U+007C'') occurs or two right prenthesis characters (""'')''"", ''U+0029'') are found.
-Text that follows the vertical bar character is marked as "inserted"" until the two right parenthesis characters are found.
-Although deleted text is typically rendered as stroke-through, and inserted text is typically rendered as underlined, the editing mark is a semantically one.
-
-* ``((abc|def))`` is rendered as ::((abc|def))::.
-* ``((abc))`` is rendered as ::((abc))::.
-* ``((|def))`` is rendered as ::((|def))::.

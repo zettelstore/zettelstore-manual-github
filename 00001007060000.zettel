@@ -13,8 +13,8 @@ The following table gives an overview about the use of all characters that start
 | ''%''  | (future: [[Comment block|00001007030900]]) | Comment
 | ''&''  | (free) | Entity
 | ''\'''  | (free)  | [[Monospace text|00001007040100]]
-| ''(''  | (free) | [[Edit formatting|00001007040100]]
-| '')''  | (free) | [[End of edit formatting|00001007040100]]
+| ''(''  | (free) | (free)
+| '')''  | (free) | (free)
 | ''*''  | [[Unordered list|00001007030200]] | [[strongly emphasized / bold text|00001007040100]]
 | ''+''  | (free) | Keyboard input
 | '',''  | (free) | [[Subscripted text|00001007040100]]
