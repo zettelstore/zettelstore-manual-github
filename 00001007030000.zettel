@@ -39,9 +39,9 @@ Additionally, all other blocks elements are allowed in line-range blocks.
 
 === Tables
 
-* table
-* table rows
-* table cells
+Similar to lists are tables not specified explicitly.
+A sequence of table rows is considered a [[table|00001007031000]].
+A table row itself is a sequence of table cells.
 
 === Paragraphs
 
