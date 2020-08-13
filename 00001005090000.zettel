@@ -1,0 +1,21 @@
+title: List of Predefined Zettel
+tags: #manual #reference #zettelstore
+syntax: zmk
+role: manual
+
+The following table lists all predefined zettel with their purpose.
+
+|= ID :|= Title | Purpose
+| [[00000000000000]] | Configuration zettel | Allows to [[configure the zettelstore at runtime|00001004020000]]
+| [[00000000010100]] | Base HTML Template | contains the general layout of the HTML view
+| [[00000000010200]] | Login Form HTML Template | (not in use yet)
+| [[00000000010300]] | List Meta HTML Template | Used when displaying a list of zettel
+| [[00000000010401]] | Detail HTML Template | Layout for the HTML detail view of one zettel
+| [[00000000010402]] | Info HTML Templöate | Layout for the information view of a specific zettel
+| [[00000000010403]] | Form HTML Template | Form that is used to create a new or to change an existing zettel that contains text
+| [[00000000010404]] | Rename Form HTML Template | View that is displayed to change the zettel identification
+| [[00000000010405]] | Delete HTML Template | View to confirm the deletion of a zettel
+| [[00000000010500]] | List Roles HTML Template | Layout for listing all roles
+| [[00000000010600]] | List Tags HTML Template | Layout of tags lists
+| [[00000000020001]] | Base CSS | CSS file that is included by the [[Base HTML Template|00000000010100]]
+| [[00000000030001]] | Text icon for external material | Icon that is placed after a link to (external) material

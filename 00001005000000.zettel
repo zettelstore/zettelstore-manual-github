@@ -71,3 +71,5 @@ If such a file was not found, the internal zettel store is searched secondly.
 Therefore, the file store ""shadows"" the internal zettel store.
 If you want to read the original zettel, you either have to delete the zettel (which removes it from the file directory), or you have to rename it to another zettel identification.
 Now we have two places where zettel are stored: in the specific directory and within the zettelstore software.
+
+* [[List of predefined zettel|00001005090000]]
