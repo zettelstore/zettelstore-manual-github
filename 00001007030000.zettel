@@ -52,7 +52,7 @@ This has the implication that a mistyped syntax element for a block element will
 Some text follows.
 ```
 will be rendered in HTML as
-:::
+:::example
 = Heading
 Some text follows.
 :::

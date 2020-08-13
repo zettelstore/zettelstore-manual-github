@@ -3,35 +3,43 @@ tags: #zettel
 syntax: zmk
 role: manual
 
-Each zettel may contain some header keys and values. At least the ``title`` key
+Each zettel may contain some header keys and values. At least the ''title'' key
 should be given to each zettel for naming it.
 
-Most header keys conform to a [[type|20200608190700]]. If a type is not explicitly mentioned, a non-empty string is assumed (type ``s``).
+Most header keys conform to a [[type|20200608190700]]. If a type is not explicitly mentioned, a non-empty string is assumed (type ''s'').
 
-; ``id``
-: This key collides with the zettel id and will be ignored. The zettel id has type ``i``.
-; ``lang``
-: Language for the zettel. If not given, the value ``default-lang`` from the
-  [[customization zettel|00000000000000]] will be used.
-; ``title``
-: Specifies the title of the zettel. The zettel id will be used if not given.
-; ``tags``
-: Contains a space separated list of tags to describe the zettel further. Each
-  Tag must start with the character "``#``". Has type ``T``.
-; ``syntax``
-: Specifies the syntax that should be used for interpreting the zettel. See
-  [[supported zettel syntaxes|20200305185400]]. Has type ``w`` (word).
-; ``role``
-: Defines the role of the zettel. Will be used for selecting zettel. See [[supported zettel roles|20200511132300]]. If not given, the value ``default-role`` from the [[customization zettel|00000000000000]] will be used. Has type ``w``.
+; ''id''
+: This key collides with the zettel id and will be ignored.
+  The zettel id has type ''i''.
+; ''lang''
+: Language for the zettel.
+  If not given, the value ''default-lang'' from the   [[customization zettel|00000000000000]] will be used.
+; ''title''
+: Specifies the title of the zettel.
+  The zettel id will be used if not given.
+; ''tags''
+: Contains a space separated list of tags to describe the zettel further.
+  Each Tag must start with the number sign character (""''#''"", ''U+0023'').
+  Has type ''T''.
+; ''syntax''
+: Specifies the syntax that should be used for interpreting the zettel.
+  See [[supported zettel syntaxes|20200305185400]].
+  Has type ''w'' (word).
+; ''role''
+: Defines the role of the zettel.
+  Can be used for selecting zettel.
+  See [[supported zettel roles|20200511132300]].
+  If not given, the value ''default-role'' from the [[customization zettel|00000000000000]] will be used.
+  Has type ''w''.
+; ''url''
+: Defines an URL / URI for this zettel.
+  Has type ''u''.
 
 Not yet supported:
 
-; ``next``
-: ID of n zettel that should be used next, e.g. for rendering slides or for
-  redirecting to another zettel (if current zettel has no content).
-; ``see``
-: List of zettel IDs for zettel to be followed after reading this one
-  (//follow-up//{-}).
-; ``folge``
-: The ID of a zettel that acts as a
-  ""[[Folgezettel|https://zettelkasten.de/posts/tags/folgezettel/]]"".
+; ''next''
+: ID of n zettel that should be used next, e.g. for rendering slides or for redirecting to another zettel (if current zettel has no content).
+; ''see''
+: List of zettel IDs for zettel to be followed after reading this one (//follow-up//{-}).
+; ''folge''
+: The ID of a zettel that acts as a [[Folgezettel|https://zettelkasten.de/posts/tags/folgezettel/]].

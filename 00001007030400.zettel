@@ -19,8 +19,8 @@ Example:
  --- inline
 --- ignored
 ```
-is rendered as
-:::
+is rendered in HTML as
+:::example
 ---
 ----{color=green}
 -----

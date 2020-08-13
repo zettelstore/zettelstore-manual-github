@@ -22,17 +22,17 @@ If you want to specify a grave accent character in the text, either use modifier
 If you want to enter a backslash character, you need to enter two of these.
 
 Examples:
-* ``\`\`abc def\`\``` is rendered in HTML as ``abc def``.
-* ``\`\`abc def\`\`{-}`` is rendered in HTML as ``abc def``{-}.
-* ``\`\`abc\\\`def\`\``` is rendered in HTML as ``abc\`def``.
-* ``\`\`abc\\\\def\`\``` is rendered in HTML as ``abc\\def``.
+* ``\`\`abc def\`\``` is rendered in HTML as ::``abc def``::{=example}.
+* ``\`\`abc def\`\`{-}`` is rendered in HTML as ::``abc def``{-}::{=example}.
+* ``\`\`abc\\\`def\`\``` is rendered in HTML as ::``abc\`def``::{=example}.
+* ``\`\`abc\\\\def\`\``` is rendered in HTML as ::``abc\\def``::{=example}.
 
 === Keyboard input
 To mark text as input into a computer program, delimit your text with two plus sign characters (""''+''"", ''U+002B'') on each side.
 
 Example:
-* ``++STRG-C++`` renders in HTML as ::++STRG-C++::.
-* ``++STRG C++{-}`` renders in HTML as ::++STRG C++{-}::.
+* ``++STRG-C++`` renders in HTML as ::++STRG-C++::{=example}.
+* ``++STRG C++{-}`` renders in HTML as ::++STRG C++{-}::{=example}.
 
 Attributes can be specified, the default attribute has the same semantic as for literal text.
 
@@ -40,7 +40,7 @@ Attributes can be specified, the default attribute has the same semantic as for 
 To mark text as output from a computer program, delimit your text with two equal sign characters (""''=''"", ''U+003D'') on each side.
 
 Examples:
-* ``==The result is: 42==`` renders in HTML as ::==The result is: 42==::.
-* ``==The result is: 42=={-}`` renders in HTML as ::==The result is: 42=={-}::.
+* ``==The result is: 42==`` renders in HTML as ::==The result is: 42==::{=example}.
+* ``==The result is: 42=={-}`` renders in HTML as ::==The result is: 42=={-}::{=example}.
 
 Attributes can be specified, the default attribute has the same semantic as for literal text.

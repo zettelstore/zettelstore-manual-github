@@ -63,7 +63,7 @@ One prominent example is to specify an explicit title attribute that is shown on
 
 Example:
 
-``{{External link|00000000030001}}{title=External width=30}`` is rendered as ::{{External link|00000000030001}}{title=External width=30}::.
+``{{External link|00000000030001}}{title=External width=30}`` is rendered as ::{{External link|00000000030001}}{title=External width=30}::{=example}.
 
 === Footnotes
 
@@ -71,7 +71,7 @@ A footnote starts with a left square bracket, followed by a circumflex accent ("
 
 Example:
 
-``Main text[^Footnote text.].`` is rendered in HTML as: ::Main text[^Footnote text.].::
+``Main text[^Footnote text.].`` is rendered in HTML as: ::Main text[^Footnote text.].::{=example}.
 
 === Bibliographic key
 

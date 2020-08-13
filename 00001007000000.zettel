@@ -20,7 +20,7 @@ This could create problems with longevity as well as security problems.
 
 Zettelmarkup is a rich markup language, but it focusses on relatively short zettel content.
 It allows embedding other content, simple tables, quotations, description lists, and images.
-It provides a broad range of inline formatting, including //emphasized//{-}, **strong**{-}, __underlined__, ;;small;;, ((deleted)) and ((|inserted)) text.
+It provides a broad range of inline formatting, including //emphasized//{-}, **strong**{-}, __underlined__, ;;small;;, ~~deleted~~{-} and __inserted__{-} text.
 Footnotes[^like this] are supported, links to other zettel and to external material, as well as citation keys.
 
 Zettelmarkup might be seen as a proprietary markup language.

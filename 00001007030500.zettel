@@ -23,8 +23,8 @@ For example:
 ```
 ````
 `````
-will be rendered as:
-:::
+will be rendered in HTML as:
+:::example
 ````zmk
 ```
 ````
@@ -38,7 +38,7 @@ text with no
 ````
 `````
 will be rendered as:
-:::
+:::example
 ```{-}
 This is  some
 text with no 

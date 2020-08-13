@@ -47,20 +47,20 @@ If you know the Unicode code point of that character, or its name according to t
 
 Regardless which method you use, an entity always starts with an ampersand character (""''&''"", ''U+0026'') and ends with a semicolon character (""'';''"", ''U+003B'').
 If you know the HTML name of the character you want to enter, place it between these two character.
-Example: ``&amp;`` is rendered as ::&amp;::.
+Example: ``&amp;`` is rendered as ::&amp;::{=example}.
 
 If you want to enter its numeric code point, a number sign character must follow the ampersand character, followed by digits to base 10.
-Example: ``&#38;`` is rendered in HTML as ::&#38;::.
+Example: ``&#38;`` is rendered in HTML as ::&#38;::{=example}.
 
 You also can enter its numeric code point as a hex number, if you place the letter ""x"" after the numeric sign character.
-Example: ``&##26;`` is rendered in HTML as ::&#x26;::.
+Example: ``&##26;`` is rendered in HTML as ::&#x26;::{=example}.
 
 Since some Unicode character are used quite often, a special notation is introduced for them:
 
 # Two consecutive hyphen-minus characters result in an //en-dash// character.
   It is typically used in numeric ranges.
-  ``pages 4--7`` will be rendered in HTML as: ::pages 4--7::.
+  ``pages 4--7`` will be rendered in HTML as: ::pages 4--7::{=example}.
   Alternative specifications are: ``&ndash;``, ``&x8211``, and ``&#x2013``.
 # Three consecutive full stop characters (""''.''"", ''U+002E'') after a space result in an horizontal ellipsis character.
-  ``to be continued ... later`` will be rendered in HTML as: ::to be continued, ... later::.
+  ``to be continued ... later`` will be rendered in HTML as: ::to be continued, ... later::{=example}.
   Alternative specifications are: ``&hellip;``, ``&x8230``, and ``&#x2026``.

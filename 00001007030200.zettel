@@ -23,8 +23,8 @@ Some examples:
 # Two
 # Three
 ```
-is rendered as
-:::
+is rendered in HTML as
+:::example
 # One
 # Two
 # Three
@@ -35,8 +35,8 @@ Similar an unordered list:
 * B
 * C
 ```
-is rendered as
-:::
+is rendered in HTML as
+:::example
 * A
 * B
 * C
@@ -48,8 +48,8 @@ Mostly, it results by copying replies from emails:
 > more parsers to
 > the zettelstore.
 ```
-is rendered as
-:::
+is rendered in HTML as
+:::example
 > Please add some
 > more parsers to
 > the zettelstore.
@@ -71,8 +71,8 @@ And you can nest them:
 
 * C
 ```
-is rendered as:
-:::
+is rendered in HTML as:
+:::example
 * A
 *# A.1
 *# A.2
@@ -103,8 +103,8 @@ You could also use a mark element or a hard line break to separate the two lists
 # Une
 # Deux
 ```
-is rendered as
-:::
+is rendered in HTML as
+:::example
 # One
 # Two
 [!sep]
@@ -131,8 +131,8 @@ Here an example using multiple paragraphs:
    Para B.b-2
   Para B-3
 ```
-is rendered as
-:::
+is rendered in HTML as
+:::example
 * Para A-1
 
   Para A-2

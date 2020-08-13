@@ -30,7 +30,7 @@ Example:
 ```
 
 is rendered as:
-:::
+:::example
 ; Zettel
 : A zettel is the basic unit
   of a zettelstore.

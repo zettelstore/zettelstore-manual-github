@@ -28,8 +28,8 @@ Embedded
 <<< Embedded Author
 <<<<
 ```
-will be rendered as:
-:::
+will be rendered in HTML as:
+:::example
 <<<<
 A quotation with an embedded quotation
 <<<{style=color:green}

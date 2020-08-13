@@ -35,7 +35,7 @@ block
 """" Verse Author
 ```
 will be rendered as:
-:::
+:::example
 """"
 A verse block with
  an

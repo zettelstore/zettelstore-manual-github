@@ -15,8 +15,8 @@ space and enter the text of the heading as inline elements.
 ======= Level 5 Heading
 ======== Level 5 Heading
 ```
-This renders as:
-:::
+This renders in HTML as:
+:::example
 === Level 1 Heading
 ==== Level 2 Heading
 ===== Level 3 Heading
@@ -27,8 +27,8 @@ This renders as:
 
 === Notes
 
-The heading level is translated to a HTML heading by adding 1 to the level, e.g. ``=== Level 1 Heading``{=zmk} translates to ``<h2>Level 1 Heading</h2>``{=html}.
-The ``<h1>``{=html} tag is rendered for the zettel title.
+The heading level is translated to a HTML heading by adding 1 to the level, e.g. ``=== Level 1 Heading``{=zmk} translates to ==<h2>Level 1 Heading</h2>=={=html}.
+The ==<h1>=={=html} tag is rendered for the zettel title.
 
 This syntax is often used in a similar way in wiki implementation.
 However, trailing equal signs are //not//{-} removed, they are part of the heading text.
