@@ -35,7 +35,7 @@ Additionally, all other blocks elements are allowed in line-range blocks.
 * [[Quotation blocks|00001007030600]] specify a block-length quotation,
 * [[Verse blocks|00001007030700]] allow to enter poetry, lyrics and similar text, where line endings are important
 * [[Region blocks|00001007030800]] just mark a region, e.g. for common formatting
-* [[Comment blocks|00001007030900]] (future) allow to enter text that will be ignored when rendered
+* [[Comment blocks|00001007030900]] allow to enter text that will be ignored when rendered
 
 === Tables
 
