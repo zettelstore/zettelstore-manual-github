@@ -6,13 +6,17 @@ role: manual
 To provide the zettelstore configutation for starting the service, you have to use command line parameters.
 
 ```
-zettelstore -d DIR -p PORT
+zettelstore [-d DIR] [-p PORT] [-r]
 ```
 
 ; ''-d DIR''
-: Specifies ''DIR'' as the directory that contains all zettel. Default is
-  ''~/zettel'' (''~\\zettel'' on Windows), where ''~'' denotes the ""current
-  directory"".
+: Specifies ''DIR'' as the directory that contains all zettel.
+  Default is ''~/zettel'' (''~\\zettel'' on Windows), where ''~'' denotes the ""current directory"".
 ; ''-p PORT''
-: Specifies the integer value ''PORT'' as the TCP port, where the zettelstore
-  service listens for requests. Default: 23123.
+: Specifies the integer value ''PORT'' as the TCP port, where the zettelstore service listens for requests.
+  Default: 23123.
+; ''-r''
+: Puts the zettelstore in read-only mode.
+  No changes are possible via the web interface / via the API.
+
+  This allows to publish your content without any risks of unauthorized changes.
