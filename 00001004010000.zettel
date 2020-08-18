@@ -41,14 +41,25 @@ The following keys are supported:
 ; ''listen-addr''
 : Configures the network address, where is zettel web service is listening for requests.
   Syntax is: ''[NETWORKIP]:PORT'', where ''NETWORKIP'' is the IP-address of the networking interface (or something like ''0.0.0.0'' if you want to listen on all network interfaces, and ''PORT'' is the TCP port (default: 23123).
+
+  Default value: ''":23123"''
 ; ''store-//X//-dir'', where //X// is a number greater or equal to one
 : Specifies the directory, where zettel are stored.
   During startup //X// is counted, starting with one, until no key is found.
   This allows to configure more than one directory.
+
+  Default value for ''store-1-dir'' is ''"./zettel"''.
+
 ; ''readonly''
 : Puts the zettelstore web service into a read-only mode.
   No changes are possible.
   Default: false.
+; ''url-prefix''
+: Add the given string as a prefix to the local part of a zettelstore local URL/URI when rendering zettel representations.
+  Must start and end with a slash character (""''/''"", ''U+002F'').
+  Default: ''"/"''.
+
+  This allows to use a forward proxy web server in front of the zettelstore.
 ; ''verbose''
 : Be more verbose inf logging data.
   Default: false
