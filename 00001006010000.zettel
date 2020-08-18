@@ -7,7 +7,7 @@ The meta data of a zettel is a collection og key-value pairs.
 The syntax roughly resembles the internal header of an email ([[RFC5322|https://tools.ietf.org/html/rfc5322]]).
 
 The key is a sequence of alphanumeric characters, a hyphen-minus character (""''-''"") is also allowed.
-Optionally prefixed with a sequence of space characters, it starts at a new line.
+It starts at a new line.
 
 A key is separated from its value either by
 * a colon character (""'':''""), 
@@ -15,6 +15,12 @@ A key is separated from its value either by
 * a sequence of space characters, followed by a colon, followed by a sequence of space characters.
 
 A Value is a sequence of printable characters.
+If the value should be continued in the following line, that following line (//continuation line//) must start with a non-empty sequence of space characters.
+The rest of the following line will be interpreted as the next part of the value.
+There can be more than one continuation line for a value.
+
+A non-continuation line that contains a possibly empty sequence of characters, followed by the percent sign character (""''%''"") is treated as a comment line.
+It will be ignored.
 
 Parsing meta data ends, if an empty line is found or if a line with at least three hyphen-minus characters is found.
 
@@ -25,8 +31,17 @@ title1:The Title
  title-2 : Another title
 title-3: A wrapped
  title
+title-4: A
+ wrapped
+ title
+ with
+ more
+ than
+ one
+  continuation
+ line
+% A comment line
+ % Another comment line.
 
 No meta data anymore, because of the empty line.
 ```
-
-The value is any printable string value that is interpreted according to the key (more precisely: to the type of the key; since every key has only one key type, both interpretations are similar).
