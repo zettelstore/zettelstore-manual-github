@@ -1,0 +1,60 @@
+title: Supported Meta Data Keys
+tags: #manual #meta #reference #zettel #zettelstore
+syntax: zmk
+role: manual
+
+Although you are free to define your own meta data, by using any key (according to the [[syntax|00001006010000]]), some keys have a special meaning that is enforced by the zettelstore.
+
+Most keys conform to a [[type|00001006030000]].
+If a type is not explicitly mentioned, a possibly empty string is assumed (type ''e'').
+
+; ''id''
+: Contains the zettel identification (14 digits), as given by the zettel store.
+  It cannot be set manually.
+  It has type ''i''.
+; ''lang''
+: Language for the zettel.
+  Mostly used for HTML rendering of the zettel.
+  If not given, the value ''default-lang'' from the  [[configuration zettel|00001004020000]] will be used.
+  Use values according to the language definition of [[RFC-5646|https://tools.ietf.org/html/rfc5646]]. Its type is ''w''.
+; ''role''
+: Defines the role of the zettel.
+  Can be used for selecting zettel.
+  See [[supported zettel roles|00001006020100]].
+  If not given, the value ''default-role'' from the [[configuration zettel|00001004020000]] will be used.
+  Has type ''w''.
+; ''syntax''
+: Specifies the syntax that should be used for interpreting the zettel.
+  See [[supported zettel syntaxes|20200305185400]].
+  If not given, the value ''default-syntax'' from the [[configuration zettel|00001004020000]] will be used.
+  Has type ''w'' (word).
+; ''tags''
+: Contains a space separated list of tags to describe the zettel further.
+  Each Tag must start with the number sign character (""''#''"", ''U+0023'').
+  Has type ''T''.
+; ''title''
+: Specifies the title of the zettel.
+  The zettel identification will be used if not given.
+  Its type is ''s''.
+; ''url''
+: Defines an URL / URI for this zettel that possibly references external material.
+  One use case is to specify the document that the current zettel comments on.
+  Another example: source of an image, as for the [[Text icon for external material|00000000030001]].
+  The URL will be rendered if you use the default template.
+  Has type ''u''.
+
+Not yet supported, but planned:
+
+; ''cred''
+: Authentication data, somehow encrypted.
+  Will be used in a zettel with an ''ident'' key.
+; ''folge''
+: The ID of a zettel that acts as a [[Folgezettel|https://zettelkasten.de/posts/tags/folgezettel/]].
+; ''ident''
+: Any kind of identification, for example an user id.
+  Will only be used for specific zettel.
+  Type is ''w''.
+; ''next''
+: ID of a zettel that should be used next, e.g. for rendering slides or for redirecting to another zettel (if current zettel has no content).
+; ''see''
+: List of zettel IDs for zettel to be followed after reading this one (//follow-up//{-}).
