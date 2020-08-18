@@ -26,6 +26,9 @@ zettelstore [-c CONFIGFILE] [-d DIR] [-p PORT] [-r]
   No changes are possible via the web interface / via the API.
 
   This allows to publish your content without any risks of unauthorized changes.
+; ''v''
+: Be more verbose in writing logs.
+  Writes the startup configuration to stderr.
 
 Command line options take precedence over configuration file options. 
 
@@ -46,5 +49,8 @@ The following keys are supported:
 : Puts the zettelstore web service into a read-only mode.
   No changes are possible.
   Default: false.
+; ''verbose''
+: Be more verbose inf logging data.
+  Default: false
 
 Other keys will be ignored.
