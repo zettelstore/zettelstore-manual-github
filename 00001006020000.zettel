@@ -8,6 +8,10 @@ Although you are free to define your own meta data, by using any key (according 
 Most keys conform to a [[type|00001006030000]].
 If a type is not explicitly mentioned, a possibly empty string is assumed (type ''e'').
 
+; ''copyright''
+: Defines a copyright string that will be rendered.
+  If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000]] will be used.
+  The type is ''s''.
 ; ''id''
 : Contains the zettel identification (14 digits), as given by the zettel store.
   It cannot be set manually.
@@ -17,6 +21,10 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   Mostly used for HTML rendering of the zettel.
   If not given, the value ''default-lang'' from the  [[configuration zettel|00001004020000]] will be used.
   Use values according to the language definition of [[RFC-5646|https://tools.ietf.org/html/rfc5646]]. Its type is ''w''.
+; ''license''
+: Defines a license string that will be rendered.
+  If not given, the value ''default-license'' from the  [[configuration zettel|00001004020000]] will be used.
+  The type is ''e''.
 ; ''role''
 : Defines the role of the zettel.
   Can be used for selecting zettel.
@@ -43,6 +51,7 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   The URL will be rendered if you use the default template.
   Has type ''u''.
 
+---
 Not yet supported, but planned:
 
 ; ''cred''
