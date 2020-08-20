@@ -1,0 +1,33 @@
+title: Limitations and Planned Improvements
+tags: #manual #zettelstore
+syntax: zmk
+role: manual
+
+Here is a list of some shortcomings of the zettelstore.
+They are planned to be solved.
+
+=== Serious limitations
+
+* Content in binary format (e.g. a GIF, PNG, or JPG file) cannot be safetly edited.
+  In fact, the content is presented as if it is some plain text format.
+* Content in binary format cannot be created with the standard web interface.
+  As a workaround, you should place your file into the directory where your zettel are stored.
+  Make sure that the file name starts with unique 14 digits that make up the zettel identification.
+* Automatic lists and transclusions are not supported in Zettelmarkup.
+* The search function uses only the meta data, not the whole content.
+* The is no way to list all zettel that point to the current zettel (aka ""backlinks"").
+* ...
+
+=== Smaller limitations
+* Quoted attribute values are not supported in Zettelmarkup: ``{key="value with space"}``.
+* The horizontal tab character (''U+0009'') is not supported.
+* ...
+
+=== Planned improvements
+* Authorization / Authentication
+* Support for mathematical content is missing, e.g. ``$$F(x) &= \\int^a_b \\frac{1}{3}x^3$$``.
+* Support for [[OpenAPI|https://www.openapis.org/]] (fka ""Swagger"").
+* Make zettel ""read-only"" so they cannot be changed accidentally.
+* Store modification timestamp inside a zettel.
+* Render zettel in [[pandoc's|https://pandoc.org]] JSON version of their native AST to make pandoc a renderer for zettel.
+* ...
