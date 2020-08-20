@@ -33,7 +33,7 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   Has type ''w''.
 ; ''syntax''
 : Specifies the syntax that should be used for interpreting the zettel.
-  See [[supported zettel syntaxes|20200305185400]].
+  The zettel about [[other markup languages|00001008000000]] defines supported values.
   If not given, the value ''default-syntax'' from the [[configuration zettel|00001004020000]] will be used.
   Has type ''w'' (word).
 ; ''tags''

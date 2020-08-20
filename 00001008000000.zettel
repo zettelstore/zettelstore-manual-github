@@ -1,0 +1,45 @@
+title: Other Markup Languages
+tags: #manual #zettelstore
+syntax: zmk
+role: manual
+
+[[Zettelmarkup|00001007000000]] is not the only markup language you can use to define your content.
+The zettelstore is quite agnostic with respect to markup languages.
+Of course, Zettelmarkup play an important role.
+However, with the exception of zettel titles, you can use any (markup) language that is supported:
+
+* Markdown
+* Images: GIF, PNG, JPEG, SVG
+* CSS
+* HTML template data, as defined [[here|https://golang.org/pkg/html/template/]]
+* Plain text, not further interpreted
+
+The [[meta data key|00001006020000]] ""''syntax''"" specifies which language should be used.
+If it is not given, the key ""''default-syntax''"" will be used (specified in the [[configuration zettel|00001004020000]].
+The following syntax values are supported:
+
+; ''zmk''
+: [[Zettelmarkup|00001007000000]].
+; ''css''
+: A [[Cascading Style Sheet|https://www.w3.org/Style/CSS/]], to be used when rendering a zettel as HTML.
+; ''gif''; ''jpeg''; ''jpg''; ''png''
+: The formats for pixel graphics.
+  Typically the data is stored in a separate file and the syntax is given in the ''.meta'' file.
+; ''markdown'', ''md''
+: For those who desperately need [[Markdown|https://daringfireball.net/projects/markdown/]].
+  Since the world of Markdown is so diverse, a [[CommonMark|https://commonmark.org]] parser is used.
+  See [[Use Markdown as the main markup language of the zettelstore|00001008010000]].
+; ''meta''
+: Only the meta data of a zettel is ""parsed"".
+  Useful for displaying the full meta data.
+  The [[runtime configuration zettel|00000000000000]] uses this syntax.
+  The zettel content is ignored.
+; ''svg''
+: A [[Scalable Vector Graphics|https://www.w3.org/TR/SVG2/]].
+  The icon for external material is an example.
+; ''go-template-html''
+: A [[Golang HTML Template|https://golang.org/pkg/html/template/]], used when rendering a zettel as HTML.
+; ''text'', ''plain''
+: Just plain text that must not be interpreted further.
+
+If you specify something else, your content will be interpreted as plain text.
