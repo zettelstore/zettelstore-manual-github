@@ -22,6 +22,8 @@ Every zettel identification consists of 14 digits.
 The zettel content is your valuable content.
 The zettelstore contains some predefined parsers that interpret the zettel content to the syntax of the zettel.
 This includes markup languages, like [[Zettelmarkup|00001007000000]] and [[CommonMark|https://commonmark.org/]].
-Plain text formats are supported, like CSS and HTML templates.
+Other text formats are also supported, like CSS and HTML templates.
+Plain text content is always Unicode, encoded as UTF-8.
+Other character encodings are not supported and will never be[^This is not a real problem, since every modern software should support UTF-8 as an encoding.].
 There is support for a graphical format with a text represenation: SVG.
 And the is support for some binary image formats, like GIF, PNG, and JPEG.
