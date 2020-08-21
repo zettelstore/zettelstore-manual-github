@@ -21,6 +21,9 @@ zettelstore [-c CONFIGFILE] [-d DIR] [-p PORT] [-r]
 ; ''-p PORT''
 : Specifies the integer value ''PORT'' as the TCP port, where the zettelstore service listens for requests.
   Default: 23123.
+
+  The zettelstore listens only on ''127.0.0.1'', e.g. only requests from the current computer will be processed.
+  If you want to listen on network card to process requests from other computer, please use ''listen-addr'' of the configuration file as described below.
 ; ''-r''
 : Puts the zettelstore in read-only mode.
   No changes are possible via the web interface / via the API.
@@ -40,9 +43,9 @@ The following keys are supported:
 
 ; ''listen-addr''
 : Configures the network address, where is zettel web service is listening for requests.
-  Syntax is: ''[NETWORKIP]:PORT'', where ''NETWORKIP'' is the IP-address of the networking interface (or something like ''0.0.0.0'' if you want to listen on all network interfaces, and ''PORT'' is the TCP port (default: 23123).
+  Syntax is: ''[NETWORKIP]:PORT'', where ''NETWORKIP'' is the IP-address of the networking interface (or something like ''0.0.0.0'' if you want to listen on all network interfaces, and ''PORT'' is the TCP port.
 
-  Default value: ''":23123"''
+  Default value: ''"127.0.0.1:23123"''
 ; ''store-//X//-dir'', where //X// is a number greater or equal to one
 : Specifies the directory, where zettel are stored.
   During startup //X// is counted, starting with one, until no key is found.
