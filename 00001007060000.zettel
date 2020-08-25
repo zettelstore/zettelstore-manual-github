@@ -28,9 +28,9 @@ The following table gives an overview about the use of all characters that start
 | ''>''  | [[Quotation lists|00001007030200]] | (blocked: to remove anyambiguity with quotation lists)
 | ''?''  | (free) | (free)
 | ''@''  | (free) | (reserved)
-| ''[''  | (reserved)  | [[Link|00001007040300]], [[bibliographic key|00001007040300]], [[footnote|00001007040300]], [[mark|00001007040300]]
+| ''[''  | (reserved)  | [[Link|00001007040300]], [[citation key|00001007040300]], [[footnote|00001007040300]], [[mark|00001007040300]]
 | ''\\'' | (blocked by inline meaning) | [[Escape character|00001007040000]]
-| '']''  | (reserved) | End of link, bibliographic key, footnote, mark
+| '']''  | (reserved) | End of link, citation key, footnote, mark
 | ''^''  | (free) | [[Superscripted text|00001007040100]]
 | ''_''  | (free) | [[Underlined text|00001007040100]]
 | ''`''  | [[Verbatim block|00001007030500]] | [[Literal text|00001007040200]]

@@ -22,7 +22,7 @@ You can reference other zettel and (external) material within one zettel.
 This kind of reference may be a link, or an images that is display inline when the zettel is rendered.
 Footnotes sometimes factor out some useful text that hinders the flow of reading text.
 Internal marks allow to reference something within a zettel.
-An important aspect of all knowledge work is to reference others work, e.g. with bibliographic keys.
+An important aspect of all knowledge work is to reference others work, e.g. with citation keys.
 All these elements can be subsumed under [[reference-like text|00001007040300]].
 
 === Other inline elements

@@ -12,7 +12,7 @@ There are several kinds of references that are allowed in Zettelmarkup:
 * Embed images that are stored within your Zettelstore.
 * Embed external images.
 * Reference via a footnote.
-* Reference via a bibliographic key.
+* Reference via a citation key.
 * Put a mark within your zettel that you can reference later with a link.
 
 === Links
@@ -73,16 +73,16 @@ Example:
 
 ``Main text[^Footnote text.].`` is rendered in HTML as: ::Main text[^Footnote text.].::{=example}.
 
-=== Bibliographic key
+=== Citation key
 
-A bibliographic key references some external material that is part of a bibliografical collection.
+A citation key references some external material that is part of a bibliografical collection.
 
 Currently, the zettelstore implements this only partially, it is ""work in progress"".
 
-However, the syntax is: starting with a left square bracket and followed by an at sign character (""''@''"", ''U+0040''), a the bibliographic key is given.
+However, the syntax is: starting with a left square bracket and followed by an at sign character (""''@''"", ''U+0040''), a the citation key is given.
 The key is typically a sequence of letters and digits.
 If a comma character (""'',''"", ''U+002C'') or a vertical bar character is given, the following is interpreted as inline elements.
-A right square bracket ends the text and the bibliographic key element.
+A right square bracket ends the text and the citation key element.
 
 === Mark
 A mark allows to name a point within a zettel.
