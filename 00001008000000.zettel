@@ -32,7 +32,7 @@ The following syntax values are supported:
 ; ''meta''
 : Only the meta data of a zettel is ""parsed"".
   Useful for displaying the full meta data.
-  The [[runtime configuration zettel|00000000000000]] uses this syntax.
+  The [[runtime configuration zettel|00000000000001]] uses this syntax.
   The zettel content is ignored.
 ; ''svg''
 : A [[Scalable Vector Graphics|https://www.w3.org/TR/SVG2/]].

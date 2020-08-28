@@ -6,7 +6,7 @@ role: manual
 The following table lists all predefined zettel with their purpose.
 
 |= ID :|= Title | Purpose
-| [[00000000000000]] | Configuration zettel | Allows to [[configure the zettelstore at runtime|00001004020000]]
+| [[00000000000001]] | Configuration zettel | Allows to [[configure the zettelstore at runtime|00001004020000]]
 | [[00000000010100]] | Base HTML Template | contains the general layout of the HTML view
 | [[00000000010200]] | Login Form HTML Template | (not in use yet)
 | [[00000000010300]] | List Meta HTML Template | Used when displaying a list of zettel

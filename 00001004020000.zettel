@@ -4,7 +4,7 @@ syntax: zmk
 role: manual
 
 You can configure a running zettelstore by modifying the special zettel with
-the ID [[00000000000000]]. This zettel is called ""configuration zettel"". The
+the ID [[00000000000001]]. This zettel is called ""configuration zettel"". The
 following meta keys change the appearance / behaviour of the zettelstore:
 
 ; ''default-copyright''
