@@ -8,7 +8,7 @@ role: manual
 To provide the zettelstore configutation for starting the service, you have to use command line parameters.
 
 ```
-zettelstore [-c CONFIGFILE] [-d DIR] [-p PORT] [-r]
+zettelstore run [-c CONFIGFILE] [-d DIR] [-p PORT] [-r] [-v]
 ```
 
 ; ''-c CONFIGFILE''

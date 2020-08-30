@@ -50,7 +50,7 @@ After=network.target
 Type=simple
 User=zettelstore
 Group=zettelstore
-ExecStart=/usr/local/bin/zettelstore -d /var/lib/zettelstore
+ExecStart=/usr/local/bin/zettelstore run -d /var/lib/zettelstore
 WorkingDirectory=/var/lib/zettelstore
 
 [Install]

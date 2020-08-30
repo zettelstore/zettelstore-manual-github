@@ -1,0 +1,41 @@
+title: Command line parameters
+tags: #configuration #manual #zettelstore
+syntax: zmk
+role: manual
+
+The zettelstore is not just a web service that provides services of a zettelkasten.
+It allows to some tasks to be executed at the command line.
+Typically, the task (""subcommand"") will be given at the command line as the first parameter.
+
+=== ``zettelstore``
+If no paramer is given, the zettelstore is called as
+
+```
+zettelstore
+```
+
+This is equivalent to call it this way:
+
+```
+zettelstore run -d ./zettel
+```
+
+Typically this is done by starting the zettelstore via a graphical user interface by double-clicking to its file icon.
+
+=== ``zettelstore help``
+Lists all possible sub-commands.
+
+=== ``zettelstore version``
+Emits some versioning information.
+Currently, only the name of the software (""Zettelstore"") and the build version information is given.
+
+The build version information is a string like ''v1.0.2-34-gf567a3''.
+The part ""v.1.0.2"" is the release version.
+The string ""34"" specifies the number of internal patches, after the release was published.
+""gf567a3"" is a code uniquely identify the version to the developer.
+
+Everything after the release version is optional, eg. ""v1.4.3"" is a valid build version information too.
+
+=== ``zettelstore run``
+This start the web service.
+It is described more detail on page [[startup configuration|00001004010000]].
