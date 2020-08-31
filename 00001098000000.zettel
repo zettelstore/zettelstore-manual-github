@@ -3,6 +3,12 @@ tags: #manual #zettelstore
 syntax: zmk
 role: manual
 
+; v0.0.3 (2020-08-31)
+: Starting Zettelstore has been changed by introducing sub-commands.
+  See [[Command line parameters|00001004050000]] for details.
+  This change is also reflected on the [[server installation procedures|00001003000000]]
+
+  Limitations on ranming zettel has be relaxed.
 ; v0.0.2 (2020-08-28)
 : Configuration zettel now has ID ''00000000000001'' (previously: ''00000000000000'').
   A zettel with ID ''00000000000000'' is no longer shown in any zettel list.
