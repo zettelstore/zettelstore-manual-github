@@ -37,5 +37,23 @@ The string ""34"" specifies the number of internal patches, after the release wa
 Everything after the release version is optional, eg. ""v1.4.3"" is a valid build version information too.
 
 === ``zettelstore run``
-This start the web service.
+This starts the web service.
 It is described more detail on page [[startup configuration|00001004010000]].
+
+=== ``zettelstore file``
+Reads zettel data from file (or from standard input / stdin) and renders it to standard output / stdout.
+
+```
+zettelstore file [-t FORMAT] [file-1 [file-2]]
+```
+
+; ''-t FORMAT''
+: Specifies the output format.
+  Supported values are: ''html'' (default), ''json'', ''native'', ''text'', ''zmk''.
+; ''file-1''
+: Specifies the file name, where at least the meta data are read.
+  If ''file-2'' is not given, the zettel content is also read from here.
+; ''file-2''
+: File name where the zettel content is stored.
+
+If neither ''file-1'' nor ''file-2'' are given, meta data and zettel content are read from standard input / stdin.
