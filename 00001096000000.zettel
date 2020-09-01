@@ -20,6 +20,7 @@ They are planned to be solved.
 
 === Smaller limitations
 * Quoted attribute values are not supported in Zettelmarkup: ``{key="value with space"}``.
+* References to content inside a zettel is not correctly detected.
 * The horizontal tab character (''U+0009'') is not supported.
 * Missing support for [[citation keys|00001007040300]].
 * ...

@@ -3,6 +3,7 @@ syntax: meta
 role: configuration
 default-copyright: (c) 2020 by Detlef Stern <ds@zettelstore.de>
 default-license: CC BY-SA 4.0
+site-name: Zettelstore Manual
 start: 00001000000000
 
 # Zettelstore Configuration
