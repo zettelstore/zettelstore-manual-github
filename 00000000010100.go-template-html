@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html{{if .Lang}} lang="{{.Lang}}"{{end}}>
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="same-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Zettelstore, build {{config.GetVersion.Build}}">
+{{- block "meta-header" .}}{{end}}
+<link rel="stylesheet" href="{{urlZettel 'c' 20001}}">
+{{- block "header" .}}{{end}}
+<title>{{.Title}}</title>
+</head>
+<body>
+<nav class="zs-menu">
+<a href="{{urlList '/'}}">Home</a>
+<div class="zs-dropdown">
+<button>Lists</button>
+<nav class="zs-dropdown-content">
+<a href="{{urlList 'h'}}">List Zettel</a>
+<a href="{{urlList 'r'}}">List Roles</a>
+<a href="{{urlList 't'}}">List Tags</a>
+<a href="{{urlList 'c'}}">Reload</a>
+</nav>
+</div>
+{{if not config.IsReadOnly}}<a href="{{urlZettel 'n' 40001}}">New</a>{{end}}
+{{- block "menu" .}}{{end -}}
+<form action="{{urlList 's'}}">
+<input type="text" placeholder="Search.." name="s">
+</form>
+</nav>
+<main class="content">
+{{- block "content" .}}TODO{{end -}}
+<hr>
+<p><a href="/imprint/">Imprint</a>/<a href="/privacy/">Privacy</a></p>
+</main>
+</body>
+</html>
