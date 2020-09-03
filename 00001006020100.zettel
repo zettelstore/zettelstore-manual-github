@@ -17,6 +17,8 @@ Some roles are defined for technical reasons:
 ; ''manual''
 : All zettel that document the inner workings of the zettelstore software.
   This role is used in this specific zettelstore.
+; ''user''
+: If you want to use [[authentication|00001010000000]], all zettel that identify users of the zettel store must have this role.
 
 If you adhere to the process outlined by Niklas Luhmann, a zettel could have one of the following three roles:
 

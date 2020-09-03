@@ -11,6 +11,7 @@ role: manual
 # [[Layout of a zettel|00001006000000]]
 # [[Zettelmarkup|00001007000000]]
 # [[Other markup languages|00001008000000]]
+# [[Authentication|00001010000000]]
 # Web interface
 # API
 # Troubleshooting
