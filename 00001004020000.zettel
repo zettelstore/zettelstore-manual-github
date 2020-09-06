@@ -35,12 +35,6 @@ following meta keys change the appearance / behaviour of the zettelstore:
 ; ''icon-material''
 : Some HTML code that is displayed after a link to (external) material.
   Default: ''<img class="zs-text-icon" src="$P/c/[[00000000030001]]">'', where ""$P/"" is some configurable [[URL prefix|00001004010000]].
-; ''owner''
-: Identification of a zettel that contains data about the owner of the zettelstore.
-  Will be used for authorization.
-  Key type is ''i''.
-
-  Only if owner is set, user [[authentication|00001010000000]] is possible.
 ; ''site-name''
 : Name of the zettelstore instance.
   Will be used when displaying some lists.

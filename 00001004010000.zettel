@@ -46,6 +46,10 @@ The following keys are supported:
   Syntax is: ''[NETWORKIP]:PORT'', where ''NETWORKIP'' is the IP-address of the networking interface (or something like ''0.0.0.0'' if you want to listen on all network interfaces, and ''PORT'' is the TCP port.
 
   Default value: ''"127.0.0.1:23123"''
+; ''owner''
+: Identification of a zettel that contains data about the owner of the zettelstore.
+  The owner has full authorization for thr zettel store.
+  Only if owner is set, user [[authentication|00001010000000]] is possible.
 ; ''store-//X//-dir'', where //X// is a number greater or equal to one
 : Specifies the directory, where zettel are stored.
   During startup //X// is counted, starting with one, until no key is found.
