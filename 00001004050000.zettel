@@ -3,7 +3,7 @@ tags: #configuration #manual #zettelstore
 syntax: zmk
 role: manual
 
-The zettelstore is not just a web service that provides services of a zettelkasten.
+Zettelstore is not just a web service that provides services of a zettelkasten.
 It allows to some tasks to be executed at the command line.
 Typically, the task (""subcommand"") will be given at the command line as the first parameter.
 
@@ -20,7 +20,7 @@ This is equivalent to call it this way:
 zettelstore run -d ./zettel
 ```
 
-Typically this is done by starting the zettelstore via a graphical user interface by double-clicking to its file icon.
+Typically this is done by starting Zettelstore via a graphical user interface by double-clicking to its file icon.
 
 === ``zettelstore help``
 Lists all possible sub-commands.
@@ -39,6 +39,10 @@ Everything after the release version is optional, eg. ""v1.4.3"" is a valid buil
 === ``zettelstore run``
 This starts the web service.
 It is described more detail on page [[startup configuration|00001004010000]].
+
+=== ``zettelstore config``
+Shows the Zettelstore configuration.
+This sub-command has the same command line parameters as ``zettelstore run``
 
 === ``zettelstore file``
 Reads zettel data from file (or from standard input / stdin) and renders it to standard output / stdout.

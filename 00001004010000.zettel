@@ -41,6 +41,11 @@ The configuration file, as specified by the ''-c CONFIGFILE'' command line optio
 The syntax of the configuration file is the same as for meta data.
 The following keys are supported:
 
+; ''insecure-cookie''
+: Must be set to ''true'', if authentication is enabled and Zettelstore will be accessed not via HTTPS (but via HTTP).
+  Otherwise web browser are free to ignore the authentication cookie.
+
+  Default: ''false''
 ; ''listen-addr''
 : Configures the network address, where is zettel web service is listening for requests.
   Syntax is: ''[NETWORKIP]:PORT'', where ''NETWORKIP'' is the IP-address of the networking interface (or something like ''0.0.0.0'' if you want to listen on all network interfaces, and ''PORT'' is the TCP port.
@@ -61,8 +66,18 @@ The following keys are supported:
 : Puts the zettelstore web service into a read-only mode.
   No changes are possible.
   Default: false.
+; ''token-timeout-api'', ''token-timeout-html''
+: Define timeout / lifetime of authentication tokens in minutes.
+  Values are only valid if authentication is enabled, i.e. key ''owner'' is set.
+
+  ''token-timeout-api'' is for accessing Zettelstore via its API.
+  Default: 10 minutes.
+
+  ''token-timeout-html'' specifies the timeout for the HTML views.
+  Default: 1 hour.
+  This timeout is extended, when a new HTML view is rendered.
 ; ''url-prefix''
-: Add the given string as a prefix to the local part of a zettelstore local URL/URI when rendering zettel representations.
+: Add the given string as a prefix to the local part of a Zettelstore local URL/URI when rendering zettel representations.
   Must start and end with a slash character (""''/''"", ''U+002F'').
   Default: ''"/"''.
 
