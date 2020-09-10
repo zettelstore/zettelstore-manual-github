@@ -42,7 +42,7 @@ The syntax of the configuration file is the same as for meta data.
 The following keys are supported:
 
 ; ''insecure-cookie''
-: Must be set to ''true'', if authentication is enabled and Zettelstore will be accessed not via HTTPS (but via HTTP).
+: Must be set to ''true'', if authentication is enabled and Zettelstore is not accessible not via HTTPS (but via HTTP).
   Otherwise web browser are free to ignore the authentication cookie.
 
   Default: ''false''
@@ -60,22 +60,31 @@ The following keys are supported:
   During startup //X// is counted, starting with one, until no key is found.
   This allows to configure more than one directory.
 
-  Default value for ''store-1-dir'' is ''"./zettel"''.
+  Default value for ''store-1-dir'' is ''"./zettel"''
+; ''persistent-cookie''
+: A boolean value to make the authentication cookie persistent.
+  This is helpful if you access the Zettelstore via a mobile device.
+  On these devices, the operating system is free to stop the web browser and to remove temporary cookies.
+  Therefore, an authenticated user will be logged off.
 
+  If ''true'', a persistent cookie is used.
+  Its lifetime exceeds the lifetime of the authentication token (see option ''token-lifetime-html'') by 30 seconds.
+
+  Default: ''false''
 ; ''readonly''
 : Puts the zettelstore web service into a read-only mode.
   No changes are possible.
   Default: false.
-; ''token-timeout-api'', ''token-timeout-html''
-: Define timeout / lifetime of authentication tokens in minutes.
+; ''token-lifetime-api'', ''token-lifetime-html''
+: Define lifetime of authentication tokens in minutes.
   Values are only valid if authentication is enabled, i.e. key ''owner'' is set.
 
-  ''token-timeout-api'' is for accessing Zettelstore via its API.
+  ''token-lifetime-api'' is for accessing Zettelstore via its API.
   Default: 10 minutes.
 
-  ''token-timeout-html'' specifies the timeout for the HTML views.
+  ''token-lifetime-html'' specifies the lifetime for the HTML views.
   Default: 1 hour.
-  This timeout is extended, when a new HTML view is rendered.
+  This lifetime is extended, when a new HTML view is rendered.
 ; ''url-prefix''
 : Add the given string as a prefix to the local part of a Zettelstore local URL/URI when rendering zettel representations.
   Must start and end with a slash character (""''/''"", ''U+002F'').

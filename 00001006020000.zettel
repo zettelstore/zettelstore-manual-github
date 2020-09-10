@@ -12,10 +12,22 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 : Defines a copyright string that will be rendered.
   If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000]] will be used.
   The type is ''s''.
+; ''cred''
+: Contains the hashed password, as it was emitted by [[``zettelstore password``|00001004050000]].
+  It is internally created by hashing the password, the zettel identification, and the value of ''ident''.
+  Type is ''e''.
+
+  It is only used for zettel with a ''role'' value of ""user"".
 ; ''id''
 : Contains the zettel identification (14 digits), as given by the zettel store.
   It cannot be set manually.
   It has type ''i''.
+; ''ident''
+: Provides some unique identification for a user zettel.
+  It is used as a user name for authentication.
+  Its type is ''w''.
+
+  It is only used for zettel with a ''role'' value of ""user"".
 ; ''lang''
 : Language for the zettel.
   Mostly used for HTML rendering of the zettel.
@@ -50,19 +62,22 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   Another example: source of an image, as for the [[Text icon for external material|00000000030001]].
   The URL will be rendered if you use the default template.
   Has type ''u''.
+; ''visibility''
+: When you work with authentication, you can give every zettel a value to decide, who can see the zettel.
+  Has type ''w''.
+
+  The following values are supported: ""public"" states that everyone can see the zettel, even if not authenticated; ""login"" (the default value) requires authentication; ""owner"" allows only the owner of the Zettelstore to see this zettel.
+; ''writer''
+: Is only used for zettel with a ''role'' value ""user"": if true, the user is allowed to create new zettel and to change existing zettel.
+  Its type is ''b''.
+
+  Default: false.
 
 ---
 Not yet supported, but planned:
 
-; ''cred''
-: Authentication data, somehow encrypted.
-  Will be used in a zettel with an ''ident'' key.
 ; ''folge''
 : The ID of a zettel that acts as a [[Folgezettel|https://zettelkasten.de/posts/tags/folgezettel/]].
-; ''ident''
-: Any kind of identification, for example an user id.
-  Will only be used for specific zettel.
-  Type is ''w''.
 ; ''next''
 : ID of a zettel that should be used next, e.g. for rendering slides or for redirecting to another zettel (if current zettel has no content).
 ; ''see''
