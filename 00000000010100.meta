@@ -1,3 +1,4 @@
 title: Base HTML Template
 syntax: go-template-html
 role: configuration
+visibility: owner
