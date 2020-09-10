@@ -19,10 +19,27 @@
 <a href="{{urlList 'h'}}">List Zettel</a>
 <a href="{{urlList 'r'}}">List Roles</a>
 <a href="{{urlList 't'}}">List Tags</a>
-<a href="{{urlList 'c'}}">Reload</a>
 </nav>
 </div>
-{{if not config.IsReadOnly}}<a href="{{urlZettel 'n' 40001}}">New</a>{{end}}
+{{- if CanCreate .User }}
+<a href="{{urlZettel 'n' 40001}}">New</a>
+{{- end}}
+{{- if config.WithAuth}}
+<div class="zs-dropdown">
+<button>User</button>
+<nav class="zs-dropdown-content">
+{{- if .User.IsValid}}
+<a href="{{urlZettel 'h' .User.Zid}}">{{.User.Ident}}</a>
+<a href="{{urlZettel 'a' .User.Zid}}">Logout</a>
+{{- else}}
+<a href="{{urlList 'a'}}">Login</a>
+{{- end}}
+{{- if CanReload .User}}
+<a href="{{urlList 'c'}}">Reload</a>
+{{- end}}
+</nav>
+</div>
+{{- end}}
 {{- block "menu" .}}{{end -}}
 <form action="{{urlList 's'}}">
 <input type="text" placeholder="Search.." name="s">
