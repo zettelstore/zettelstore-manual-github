@@ -22,9 +22,14 @@ An example:
 # zettelstore password bob 20200911115600
 Password:
    Again:
-$2a$10$1q92v1Ya8Too5HD/4rKpPuCP8fZTYPochsC6DcY1T4JKwhSx8uLu6
+ident: bob
+cred: $2a$10$1q92v1Ya8Too5HD/4rKpPuCP8fZTYPochsC6DcY1T4JKwhSx8uLu6
 ```
 
-This will produce a hashed password for the new user ""bob"" and it will stored in zettel ""20200911115600"".
+This will produce a hashed password for the new user ""bob"" to be stored in zettel ""20200911115600"".
 
-You should copy the relevant output to the zettel of the user to be secured, especially by setting the meta key ''cred'' to the copied value.
+You should copy the relevant output to the zettel of the user to be secured, especially by setting the meta keys ''ident'' and ''cred'' to the copied values.
+
+Please note that the generated hashed password is tied to the given user identifier (''ident'') and zettel identification.
+Changing at least one of those will stop authenticating the user.
+In this case you have to re-run this sub-command.
