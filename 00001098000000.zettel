@@ -3,6 +3,9 @@ tags: #manual #zettelstore
 syntax: zmk
 role: manual
 
+; v0.0.4 (2020-09-11)
+: Optional user authentication/authorization.
+  See [[Security|00001010000000]] for details.
 ; v0.0.3 (2020-08-31)
 : Starting Zettelstore has been changed by introducing sub-commands.
   See [[Command line parameters|00001004050000]] for details.

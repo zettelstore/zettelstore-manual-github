@@ -3,7 +3,7 @@ tags: #manual #zettelstore
 syntax: zmk
 role: manual
 
-Here is a list of some shortcomings of the zettelstore.
+Here is a list of some shortcomings of Zettelstore.
 They are planned to be solved.
 
 === Serious limitations
@@ -26,7 +26,6 @@ They are planned to be solved.
 * ...
 
 === Planned improvements
-* Authorization / Authentication
 * Support for mathematical content is missing, e.g. ``$$F(x) &= \\int^a_b \\frac{1}{3}x^3$$``.
 * Support for [[OpenAPI|https://www.openapis.org/]] (fka ""Swagger"").
 * Make zettel ""read-only"" so they cannot be changed accidentally.

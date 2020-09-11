@@ -63,15 +63,17 @@ zettelstore file [-t FORMAT] [file-1 [file-2]]
 If neither ''file-1'' nor ''file-2'' are given, meta data and zettel content are read from standard input / stdin.
 
 === ``zettelstore password``
-Reads a password from standard input (two times, both must be equal) and writes a has to standard output.
+Reads a password from standard input (two times, both must be equal) and writes a hashed password to standard output.
 Example:
 
 ```
-# zettelstore password
+# zettelstore password username 20200911115600
 Password:
    Again:
 $2a$10$1q92v1Ya8Too5HD/4rKpPuCP8fZTYPochsC6DcY1T4JKwhSx8uLu6
 ```
+
+""username"" is the identifier for the user that wants to be authenticated, ""20200911115600"" is an example zettel identification that stores the hashed password (and a little more).
 
 This will be useful, if authentication is implemented.
 You should copy the output to the zettel of the user to be secured by setting the meta key ''cred'' to the copied value.

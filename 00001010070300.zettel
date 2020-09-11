@@ -1,0 +1,13 @@
+title: User roles
+tags: #configuration #manual #zettelstore
+syntax: zmk
+role: manual
+
+Every user is associated with some basic privileges.
+These are specified in the user zettel with the key ''user-role''.
+The following values are supported:
+
+; ""reader""
+: The user is allowed to read zettel.
+; ""writer""
+: The user is allowed to create new zettel and to change existing zettel.

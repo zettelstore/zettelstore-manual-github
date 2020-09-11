@@ -62,16 +62,17 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   Another example: source of an image, as for the [[Text icon for external material|00000000030001]].
   The URL will be rendered if you use the default template.
   Has type ''u''.
+; ''user-role''
+: Defines the basic privileges of an authenticated user, e.g. reading / changing zettel.
+  Is only valid in a user zettel.
+  Its type is ''w''.
+
+  See [User roles|00001010070300]] for more details.
 ; ''visibility''
 : When you work with authentication, you can give every zettel a value to decide, who can see the zettel.
   Has type ''w''.
 
-  The following values are supported: ""public"" states that everyone can see the zettel, even if not authenticated; ""login"" (the default value) requires authentication; ""owner"" allows only the owner of the Zettelstore to see this zettel.
-; ''writer''
-: Is only used for zettel with a ''role'' value ""user"": if true, the user is allowed to create new zettel and to change existing zettel.
-  Its type is ''b''.
-
-  Default: false.
+  See [[visibility rules for zettel|00001010070200]] for more details.
 
 ---
 Not yet supported, but planned:
