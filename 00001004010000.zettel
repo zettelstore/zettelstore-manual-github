@@ -3,42 +3,8 @@ tags: #configuration #manual #zettelstore
 syntax: zmk
 role: manual
 
-=== Command line
-
-To provide Zettelstore configuration for starting the service, you have to use command line parameters.
-
-```
-zettelstore run [-c CONFIGFILE] [-d DIR] [-p PORT] [-r] [-v]
-```
-
-; ''-c CONFIGFILE''
-: Specifies ''CONFIGFILE'' as a file, where startup configuration data is read.
-  It is ignored, when the given file is not available, nor readable.
-  Default: ''.zscfg''.
-; ''-d DIR''
-: Specifies ''DIR'' as the directory that contains all zettel.
-  Default is ''./zettel'' (''.\\zettel'' on Windows), where ''.'' denotes the ""current directory"".
-; ''-p PORT''
-: Specifies the integer value ''PORT'' as the TCP port, where the Zettelstore service listens for requests.
-  Default: 23123.
-
-  Zettelstore listens only on ''127.0.0.1'', e.g. only requests from the current computer will be processed.
-  If you want to listen on network card to process requests from other computer, please use ''listen-addr'' of the configuration file as described below.
-; ''-r''
-: Puts the Zettelstore in read-only mode.
-  No changes are possible via the web interface / via the API.
-
-  This allows to publish your content without any risks of unauthorized changes.
-; ''v''
-: Be more verbose in writing logs.
-  Writes the startup configuration to stderr.
-
-Command line options take precedence over configuration file options. 
-
-=== Configuration file
-
-The configuration file, as specified by the ''-c CONFIGFILE'' command line option, allow to store startup options in a file.
-The syntax of the configuration file is the same as for meta data.
+The configuration file, as specified by the ''-c CONFIGFILE'' [[command line option|00001004051000]], allows to store start-up options in a file.
+The syntax of the configuration file is the same as for any zettel meta data.
 The following keys are supported:
 
 ; ''insecure-cookie''

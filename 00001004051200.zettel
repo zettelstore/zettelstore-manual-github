@@ -1,0 +1,21 @@
+title: The ''file'' sub-command
+tags: #configuration #manual #zettelstore
+syntax: zmk
+role: manual
+
+Reads zettel data from a file (or from standard input / stdin) and renders it to standard output / stdout.
+This allows Zettelstore to render files manually.
+```
+zettelstore file [-t FORMAT] [file-1 [file-2]]
+```
+
+; ''-t FORMAT''
+: Specifies the output format.
+  Supported values are: ''html'' (default), ''json'', ''native'', ''text'', ''zmk''.
+; ''file-1''
+: Specifies the file name, where at least the meta data are read.
+  If ''file-2'' is not given, the zettel content is also read from here.
+; ''file-2''
+: File name where the zettel content is stored.
+
+If neither ''file-1'' nor ''file-2'' are given, meta data and zettel content are read from standard input / stdin.

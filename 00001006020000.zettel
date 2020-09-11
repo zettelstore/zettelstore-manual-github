@@ -13,7 +13,7 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000]] will be used.
   The type is ''s''.
 ; ''cred''
-: Contains the hashed password, as it was emitted by [[``zettelstore password``|00001004050000]].
+: Contains the hashed password, as it was emitted by [[``zettelstore password``|00001004051400]].
   It is internally created by hashing the password, the zettel identification, and the value of ''ident''.
   Type is ''e''.
 

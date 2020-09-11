@@ -6,6 +6,8 @@ role: manual
 ; v0.0.4 (2020-09-11)
 : Optional user authentication/authorization.
   See [[Security|00001010000000]] for details.
+
+  New sub-commands [[``file``|00001004051200]] (use Zettelstore as a command line filter), [[``password``|00001004051400]] (for authentication), and [[``config``|00001004050600]].
 ; v0.0.3 (2020-08-31)
 : Starting Zettelstore has been changed by introducing sub-commands.
   See [[Command line parameters|00001004050000]] for details.

@@ -5,75 +5,21 @@ role: manual
 
 Zettelstore is not just a web service that provides services of a zettelkasten.
 It allows to some tasks to be executed at the command line.
-Typically, the task (""subcommand"") will be given at the command line as the first parameter.
+Typically, the task (""sub-command"") will be given at the command line as the first parameter.
 
-=== ``zettelstore``
 If no paramer is given, the zettelstore is called as
-
 ```
 zettelstore
 ```
-
 This is equivalent to call it this way:
-
 ```
-zettelstore run -d ./zettel
+zettelstore run -d ./zettel -c ./.zscfg
 ```
-
 Typically this is done by starting Zettelstore via a graphical user interface by double-clicking to its file icon.
-
-=== ``zettelstore help``
-Lists all possible sub-commands.
-
-=== ``zettelstore version``
-Emits some versioning information.
-Currently, only the name of the software (""Zettelstore"") and the build version information is given.
-
-The build version information is a string like ''v1.0.2-34-gf567a3''.
-The part ""v.1.0.2"" is the release version.
-The string ""34"" specifies the number of internal patches, after the release was published.
-""gf567a3"" is a code uniquely identify the version to the developer.
-
-Everything after the release version is optional, eg. ""v1.4.3"" is a valid build version information too.
-
-=== ``zettelstore run``
-This starts the web service.
-It is described more detail on page [[startup configuration|00001004010000]].
-
-=== ``zettelstore config``
-Shows the Zettelstore configuration.
-This sub-command has the same command line parameters as ``zettelstore run``
-
-=== ``zettelstore file``
-Reads zettel data from file (or from standard input / stdin) and renders it to standard output / stdout.
-
-```
-zettelstore file [-t FORMAT] [file-1 [file-2]]
-```
-
-; ''-t FORMAT''
-: Specifies the output format.
-  Supported values are: ''html'' (default), ''json'', ''native'', ''text'', ''zmk''.
-; ''file-1''
-: Specifies the file name, where at least the meta data are read.
-  If ''file-2'' is not given, the zettel content is also read from here.
-; ''file-2''
-: File name where the zettel content is stored.
-
-If neither ''file-1'' nor ''file-2'' are given, meta data and zettel content are read from standard input / stdin.
-
-=== ``zettelstore password``
-Reads a password from standard input (two times, both must be equal) and writes a hashed password to standard output.
-Example:
-
-```
-# zettelstore password username 20200911115600
-Password:
-   Again:
-$2a$10$1q92v1Ya8Too5HD/4rKpPuCP8fZTYPochsC6DcY1T4JKwhSx8uLu6
-```
-
-""username"" is the identifier for the user that wants to be authenticated, ""20200911115600"" is an example zettel identification that stores the hashed password (and a little more).
-
-This will be useful, if authentication is implemented.
-You should copy the output to the zettel of the user to be secured by setting the meta key ''cred'' to the copied value.
+=== Sub-commands
+* [[``zettelstore help``|00001004050200]] lists all available sub-commands.
+* [[``zettelstore version``|00001004050400]] to display version information of Zettelstore.
+* [[``zettelstore config``|00001004050600]] to show the currently active [[configuration|00001004000000]].
+* [[``zettelstore run``|00001004051000]] to start the web-based Zettelstore service.
+* [[``zettelstore file``|00001004051200]] to render files manually without activated/running Zettelstore services.
+* [[``zettelstore password``|00001004051400]] to calculate data for user authentication.

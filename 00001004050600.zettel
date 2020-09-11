@@ -1,0 +1,19 @@
+title: The ''config'' sub-command
+tags: #configuration #manual #zettelstore
+syntax: zmk
+role: manual
+
+Shows the Zettelstore configuration, for debugging purposes.
+Currently, only the [[start-up configuration|00001004010000]] is shown.
+
+This sub-command uses the same command line parameters as [[``zettelstore run``|00001004051000]].
+
+An example for an unconfigured Zettelstore:
+```
+# zettelstore config
+Stores
+  Read only         = false
+Web
+  Listen Addr       = "127.0.0.1:23123"
+  URL prefix        = "/"
+```

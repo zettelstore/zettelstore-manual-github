@@ -1,0 +1,18 @@
+title: The ''help'' sub-command
+tags: #configuration #manual #zettelstore
+syntax: zmk
+role: manual
+
+Lists all implemented sub-commands.
+
+Example:
+```
+# zettelstore help
+Available commands:
+- "config"
+- "file"
+- "help"
+- "password"
+- "run"
+- "version"
+```
