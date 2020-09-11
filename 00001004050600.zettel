@@ -11,9 +11,11 @@ This sub-command uses the same command line parameters as [[``zettelstore run``|
 An example for an unconfigured Zettelstore:
 ```
 # zettelstore config
+Zettelstore (v0.0.4/go1.15) running on mycomputer (linux/amd64)
 Stores
   Read only         = false
 Web
   Listen Addr       = "127.0.0.1:23123"
   URL prefix        = "/"
 ```
+The first line is identical to the output of the [[``zettelkasten version``|00001004050400]] sub-command.
