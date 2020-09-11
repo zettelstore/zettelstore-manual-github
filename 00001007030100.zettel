@@ -21,7 +21,7 @@ Example:
 ```zmk
 ; Zettel
 : A zettel is the basic unit
-  of a zettelstore.
+  of Zettelstore.
 
   Zettel can be linked together.
 ; Zettelstore
@@ -33,7 +33,7 @@ is rendered as:
 :::example
 ; Zettel
 : A zettel is the basic unit
-  of a zettelstore.
+  of Zettelstore.
 
   Zettel can be linked together.
 ; Zettelstore

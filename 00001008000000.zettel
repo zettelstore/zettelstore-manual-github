@@ -4,7 +4,7 @@ syntax: zmk
 role: manual
 
 [[Zettelmarkup|00001007000000]] is not the only markup language you can use to define your content.
-The zettelstore is quite agnostic with respect to markup languages.
+Zettelstore is quite agnostic with respect to markup languages.
 Of course, Zettelmarkup play an important role.
 However, with the exception of zettel titles, you can use any (markup) language that is supported:
 
@@ -28,7 +28,7 @@ The following syntax values are supported:
 ; ''markdown'', ''md''
 : For those who desperately need [[Markdown|https://daringfireball.net/projects/markdown/]].
   Since the world of Markdown is so diverse, a [[CommonMark|https://commonmark.org]] parser is used.
-  See [[Use Markdown as the main markup language of the zettelstore|00001008010000]].
+  See [[Use Markdown as the main markup language of Zettelstore|00001008010000]].
 ; ''meta''
 : Only the meta data of a zettel is ""parsed"".
   Useful for displaying the full meta data.

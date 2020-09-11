@@ -1,28 +1,28 @@
-title: Installation of the zettelstore software
+title: Installation of the Zettelstore software
 tags: #installation #manual #zettelstore
 syntax: zmk
 role: manual
 
 === The curious user
-You just want to check out the zettelstore software
+You just want to check out the Zettelstore software
 
 # Grab the appropriate executable and copy it into any directory
-# Start the zettelstore software, e.g. with a double click
+# Start the Zettelstore software, e.g. with a double click
 # A sub-directory ""zettel"" will be created in the directory where you placed
   the executable. It will contain your future zettel.
-# Open the URI [[http://127.0.0.1:23123]] with your web browser. It will present you an empty zettelstore.
+# Open the URI [[http://127.0.0.1:23123]] with your web browser. It will present you an empty Zettelstore.
 # Please read the instructions for the web-based user interface and learn about the various ways to write zettel.
-# If you restart your device, please make sure to start the zettelstore.
+# If you restart your device, please make sure to start your Zettelstore.
 
 === The intermediate user
-You already tried the zettelstore software and now you want to use it permanently.
+You already tried the Zettelstore software and now you want to use it permanently.
 
 # Grab the appropriate executable and copy it into the appropriate directory
 # ...
 
 === The server administrator
-You want to provide a shared zettelstore that can be used from your various devices.
-Installing the zettelstore as a Linux service is not that hard.
+You want to provide a shared Zettelstore that can be used from your various devices.
+Installing Zettelstore as a Linux service is not that hard.
 
 Grab the appropriate executable and copy it into the appropriate directory:
 ```sh

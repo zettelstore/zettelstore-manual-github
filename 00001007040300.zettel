@@ -28,10 +28,10 @@ The second form provide some text plus the link specification, delimited by a ve
 
 If the first form is given, the text is derived from the link specification, e.g. by interpreting the link specification as text.
 
-The link specification for another zettel within the same zettelstore is just the [[zettel identification|00001006000000]].
+The link specification for another zettel within the same Zettelstore is just the [[zettel identification|00001006000000]].
 To reference some content within a zettel, you can append a number sign character (""''#''"", ''U+0023'') and the name of the mark to the zettel identification.
 
-To specify some (external) material outside the zettelstore, just use an normal Uniform Resource Identifier (URI) as defined by [[RFC\ 3986|https://tools.ietf.org/html/rfc3986]].
+To specify some (external) material outside the Zettelstore, just use an normal Uniform Resource Identifier (URI) as defined by [[RFC\ 3986|https://tools.ietf.org/html/rfc3986]].
 
 The text in the second form is just a sequence of inline elements.
 
@@ -77,7 +77,7 @@ Example:
 
 A citation key references some external material that is part of a bibliografical collection.
 
-Currently, the zettelstore implements this only partially, it is ""work in progress"".
+Currently, Zettelstore implements this only partially, it is ""work in progress"".
 
 However, the syntax is: starting with a left square bracket and followed by an at sign character (""''@''"", ''U+0040''), a the citation key is given.
 The key is typically a sequence of letters and digits.

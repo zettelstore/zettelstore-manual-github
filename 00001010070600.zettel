@@ -15,7 +15,7 @@ In the second step, everything depends on the requested operation.
 
 * Read a zettel:
 ** If the visibility is ""public"", the access is granted.
-** If the visibility is ""owner", the access is rejected[^To check for the owner of the zettelstore was done in the first step.].
+** If the visibility is ""owner", the access is rejected[^Checking for the owner of the Zettelstore was done in the first step.].
 ** If the user is not authenticated, reject the access.
 ** If the zettel requested is an user zettel, reject the access if the users identification is not the same as of the ''ident'' meta key in the zettel.
 

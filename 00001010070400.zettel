@@ -15,4 +15,4 @@ This gives four use cases:
 ; With read-only, no authorization
 : Zettelstore present publicly its full content to everybody.
 ; With read-only, with autorization
-: Nobody is allowed to change the content of the zettelstore, but only specific zettel should be presented to the public.
+: Nobody is allowed to change the content of the Zettelstore, but only specific zettel should be presented to the public.

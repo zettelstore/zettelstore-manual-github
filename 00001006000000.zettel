@@ -4,7 +4,7 @@ syntax: zmk
 role: manual
 
 A zettel consists of two part: the meta data and the zettel content.
-The meta data gives us some information mostly about the zettel content, how it should be interpreted, how it is sorted within the zettelstore.
+The meta data gives us some information mostly about the zettel content, how it should be interpreted, how it is sorted within Zettelstore.
 The zettel content is, well, the actual content.
 In many cases, the content is in plain text form.
 Plain text is long-lasting.
@@ -16,11 +16,11 @@ Some keys have a [[special meaning|00001006020000]] and most of the predefined k
 
 Each zettel is given a unique identification.
 To some degree, the zettel identification is part of the meta data.
-Basically, it was given by the [[zettelstore|00001005000000]].
+Basically, it was given by the [[Zettelstore|00001005000000]] software.
 Every zettel identification consists of 14 digits.
 
 The zettel content is your valuable content.
-The zettelstore contains some predefined parsers that interpret the zettel content to the syntax of the zettel.
+Zettelstore contains some predefined parsers that interpret the zettel content to the syntax of the zettel.
 This includes markup languages, like [[Zettelmarkup|00001007000000]] and [[CommonMark|https://commonmark.org/]].
 Other text formats are also supported, like CSS and HTML templates.
 Plain text content is always Unicode, encoded as UTF-8.

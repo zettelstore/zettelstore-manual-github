@@ -18,7 +18,7 @@ Since zettel are stored as ordinary files, this task could be done in various wa
 
 === Read-only
 You can start the Zettelstore in an read-only mode.
-Nobody, not even you as the owner of the zettelstore, can change something via its interfaces[^However, as an owner, you have access to these files that store the zettel. If you modify the files, these changes will be reflected via its interfaces.].
+Nobody, not even you as the owner of the Zettelstore, can change something via its interfaces[^However, as an owner, you have access to these files that store the zettel. If you modify the files, these changes will be reflected via its interfaces.].
 
 You enable read-only mode through the key ''readonly'' in the [[start-up configutation zettel|00001004010000]] or with the ''-r'' option of the ``zettelstore run`` sub-command.
 

@@ -1,9 +1,9 @@
-title: Use Markdown as the main markup language of the zettelstore
+title: Use Markdown as the main markup language of Zettelstore
 tags: #manual #markdown #zettelstore
 syntax: zmk
 role: manual
 
-If you are customized to use Markdown as your markup language, you can configure the zettelstore to support your decision.
+If you are customized to use Markdown as your markup language, you can configure Zettelstore to support your decision.
 
 Just add the key ''default-syntax'' with a value of ''md'' or ''markdown'' to the [[configuration zettel|00000000000001]].
 Whether to use ''md'' or ''markdown'' is not just a matter to taste, but also depends on the value of ''zettel-file-syntax'' and, to some degree, on the value of ''yaml-header''.

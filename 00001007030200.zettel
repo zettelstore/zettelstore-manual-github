@@ -46,13 +46,13 @@ Mostly, it results by copying replies from emails:
 ```zmk
 > Please add some
 > more parsers to
-> the zettelstore.
+> the Zettelstore software.
 ```
 is rendered in HTML as
 :::example
 > Please add some
 > more parsers to
-> the zettelstore.
+> the Zettelstore software.
 :::
 
 You can freely mix these three types of nested lists.

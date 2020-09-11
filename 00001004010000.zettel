@@ -5,7 +5,7 @@ role: manual
 
 === Command line
 
-To provide the zettelstore configutation for starting the service, you have to use command line parameters.
+To provide Zettelstore configuration for starting the service, you have to use command line parameters.
 
 ```
 zettelstore run [-c CONFIGFILE] [-d DIR] [-p PORT] [-r] [-v]
@@ -19,13 +19,13 @@ zettelstore run [-c CONFIGFILE] [-d DIR] [-p PORT] [-r] [-v]
 : Specifies ''DIR'' as the directory that contains all zettel.
   Default is ''./zettel'' (''.\\zettel'' on Windows), where ''.'' denotes the ""current directory"".
 ; ''-p PORT''
-: Specifies the integer value ''PORT'' as the TCP port, where the zettelstore service listens for requests.
+: Specifies the integer value ''PORT'' as the TCP port, where the Zettelstore service listens for requests.
   Default: 23123.
 
-  The zettelstore listens only on ''127.0.0.1'', e.g. only requests from the current computer will be processed.
+  Zettelstore listens only on ''127.0.0.1'', e.g. only requests from the current computer will be processed.
   If you want to listen on network card to process requests from other computer, please use ''listen-addr'' of the configuration file as described below.
 ; ''-r''
-: Puts the zettelstore in read-only mode.
+: Puts the Zettelstore in read-only mode.
   No changes are possible via the web interface / via the API.
 
   This allows to publish your content without any risks of unauthorized changes.
@@ -52,7 +52,7 @@ The following keys are supported:
 
   Default value: ''"127.0.0.1:23123"''
 ; ''owner''
-: Identification of a zettel that contains data about the owner of the zettelstore.
+: Identification of a zettel that contains data about the owner of the Zettelstore.
   The owner has full authorization for thr zettel store.
   Only if owner is set, user [[authentication|00001010000000]] is possible.
 ; ''store-//X//-dir'', where //X// is a number greater or equal to one
@@ -72,7 +72,7 @@ The following keys are supported:
 
   Default: ''false''
 ; ''readonly''
-: Puts the zettelstore web service into a read-only mode.
+: Puts the Zettelstore web service into a read-only mode.
   No changes are possible.
   Default: false.
 ; ''token-lifetime-api'', ''token-lifetime-html''
@@ -90,7 +90,7 @@ The following keys are supported:
   Must start and end with a slash character (""''/''"", ''U+002F'').
   Default: ''"/"''.
 
-  This allows to use a forward proxy web server in front of the zettelstore.
+  This allows to use a forward proxy [[server|00001010090100]] in front of the Zettelstore.
 ; ''verbose''
 : Be more verbose inf logging data.
   Default: false

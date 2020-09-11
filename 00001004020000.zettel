@@ -1,15 +1,16 @@
-title: Configure the running zettelstore
+title: Configure the running Zettelstore
 tags: #configuration #manual #zettelstore
 syntax: zmk
 role: manual
 
-You can configure a running zettelstore by modifying the special zettel with
-the ID [[00000000000001]]. This zettel is called ""configuration zettel"". The
-following meta keys change the appearance / behaviour of the zettelstore:
+You can configure a running Zettelstore by modifying the special zettel with the ID [[00000000000001]].
+This zettel is called ""configuration zettel"".
+The following meta keys change the appearance / behaviour of Zettelstore:
 
 ; ''default-copyright''
 : Copyright value to be used when rendering content.
   Can be overwritten in a zettel with [[meta key|00001006020000]] ''copyright''.
+
   Default: (the empty string).
 ; ''default-lang''
 : Default language to be used when displaying content.
@@ -36,7 +37,7 @@ following meta keys change the appearance / behaviour of the zettelstore:
 : Some HTML code that is displayed after a link to (external) material.
   Default: ''<img class="zs-text-icon" src="$P/c/[[00000000030001]]">'', where ""$P/"" is some configurable [[URL prefix|00001004010000]].
 ; ''site-name''
-: Name of the zettelstore instance.
+: Name of the Zettelstore instance.
   Will be used when displaying some lists.
   Default: ''Zettelstore''.
 ; ''start''
@@ -51,7 +52,7 @@ following meta keys change the appearance / behaviour of the zettelstore:
   uses a subset of [[YAML|https://yaml.org/]] to specify meta data.
 ; ''zettel-file-syntax''
 : If you create a new zettel with a syntax different to ""meta"" and ""zmk"",
-  the zettelstore will store the zettel as two files: one for the meta data
+  Zettelstore will store the zettel as two files: one for the meta data
   (file extension ''.meta'') and one for the content (file extension based on
   the syntax value).
   If you want to specify alternative syntax values, for which you want new zettel to be stored in one file (file extension ''.zettel''), you can use this key.
