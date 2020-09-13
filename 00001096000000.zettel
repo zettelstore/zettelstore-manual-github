@@ -8,9 +8,9 @@ They are planned to be solved.
 
 === Serious limitations
 
-* Content in binary format (e.g. a GIF, PNG, or JPG file) cannot be safely edited.
+* Content with binary data (e.g. a GIF, PNG, or JPG file) cannot be safely edited.
   In fact, the content is presented as if it is some plain text format.
-* Content in binary format cannot be created with the standard web interface.
+* Binary format content cannot be created with the standard web interface.
   As a workaround, you should place your file into the directory where your zettel are stored.
   Make sure that the file name starts with unique 14 digits that make up the zettel identification.
 * Automatic lists and transclusions are not supported in Zettelmarkup.
@@ -20,7 +20,7 @@ They are planned to be solved.
 
 === Smaller limitations
 * Quoted attribute values are not supported in Zettelmarkup: ``{key="value with space"}``.
-* References to content inside a zettel is not correctly detected.
+* References to content inside a zettel are not correctly detected.
 * The horizontal tab character (''U+0009'') is not supported.
 * Missing support for [[citation keys|00001007040300]].
 * ...
