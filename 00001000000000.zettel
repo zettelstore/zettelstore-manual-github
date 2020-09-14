@@ -12,8 +12,8 @@ role: manual
 # [[Zettelmarkup|00001007000000]]
 # [[Other markup languages|00001008000000]]
 # [[Security|00001010000000]]
-# Web interface
-# API
+# [[API|00001012000000]]
+# [[Web user interface|00001014000000]]
 # Troubleshooting
 # Frequently asked questions
 # [[Current limitations|00001096000000]]

@@ -24,10 +24,8 @@ You enable read-only mode through the key ''readonly'' in the [[start-up configu
 
 === Authentication
 The Zettelstore can be configured that a user must authenticate itself to gain access to the content.
-To enable authentication, you must create a zettel that stores the authentication data.
-Then you must reference this zettel within the [[start-up configuration|00001004010000]] under the key ''owner''.
-Once the start-up configuration contains a valid zettel identification under that key, authentication is enabled.
 
+* [[How to enable authentication|00001010040100]]
 * [[How to create a new user zettel|00001010040200]]
 * [[How users are authenticated|00001010040400]] (some technical background)
 * [[Authenticated sessions|00001010040700]]

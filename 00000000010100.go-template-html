@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Zettelstore, build {{config.GetVersion.Build}}">
 {{- block "meta-header" .}}{{end}}
-<link rel="stylesheet" href="{{urlZettel 'c' 20001}}">
+<link rel="stylesheet" href="{{urlZettel 'z' 20001}}?_view=content&_format=raw">
 {{- block "header" .}}{{end}}
 <title>{{.Title}}</title>
 </head>
