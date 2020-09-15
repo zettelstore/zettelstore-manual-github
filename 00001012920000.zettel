@@ -1,0 +1,19 @@
+title: URLs used by the API
+tags: #api #manual #reference #zettelstore
+syntax: zmk
+role: manual
+
+All API-URLs conform to the pattern ''[PREFIX]/LETTER[/ZETTEL-ID]'', where
+; ''PREFIX''
+: is an optional URL prefix, configured via the ''url-prefix'' [[startup configuration|00001004010000]],
+; ''LETTER''
+: is a single letter that specifies the ressource type,
+; ''ZETTEL-ID''
+: is an optional 14 digits that uniquely identify a zettel.
+
+The following letters are currently in use:
+
+|= Letter | Without zettel identification | With zettel identification
+| ''z'' | GET: list all zettel meta data | GET: retrieve zettel
+|       | POST: add new zettel | PUT: change a zettel
+|       |  | DELETE: delete the zettel

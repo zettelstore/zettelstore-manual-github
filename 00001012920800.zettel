@@ -1,0 +1,12 @@
+title: Values to specify zettel parts
+tags: #api #manual #reference #zettelstore
+syntax: zmk
+role: manual
+
+When working with [[zettel|00001006000000]], you could work with the whole zettel, with its meta data, or with its content:
+; ''zettel''
+: Specifies that you work with a zettel as a whole.
+; ''meta''
+: Specifies that you only want to cope with the meta data of a zettel.
+; ''content''
+: Specifies that you are only interested in the zettel content.

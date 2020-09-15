@@ -8,11 +8,34 @@ Most integration with other systems and services is done through the API.
 The [[web user interface|00001014000000]] is just an alternative, secondary way of interacting with a Zettelstore.
 
 === Background
-The API is HTTP-based and uses JSON as encoding format for messages exchanged between a Zettelstore and its client software.
+The API is HTTP-based and uses JSON as its main encoding format for exchanging messages between a Zettelstore and its client software.
+
+There is an [[overview zettel|00001012920000]] that shows the structure of the URLs used by the API and gives an indication about its use.
+
+While JSON is the main encoding format, it is possible to retrieve zettel representations in other formats.
+If you want to create a new zettel or to change an existing one, you have to use JSON.
+There is an [[overview zettel for encoding formats|00001012920500]] that describes the valid formats.
+
+Various parts of a zettel can be used.
+There are the [[possible values to specify zettel parts|00001012920800]].
 
 === Authentication
 If [[authentication is enabled|00001010040100]], any API call must include some information about the authenticated user.
-
-* Authenticate
+* Authenticate a client
 * Renew authentication
 * ...
+
+=== Zettel lists
+* List meta data for all zettel
+* Shape the list of zettel meta data with filters and sorting options
+* Zettel list as a result of a search
+* List all [[tags|00001006020000]] used in a Zettelstore
+* List all [[roles|00001006020100]] used in a Zettelstore.
+* ...
+
+=== Working with zettel
+* Create a new zettel
+* Retrieve data for an exisiting zettel
+* Change data of a zettel
+* Rename a zettel
+* Delete a zettel
