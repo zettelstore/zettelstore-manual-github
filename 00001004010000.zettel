@@ -21,12 +21,6 @@ The following keys are supported:
 : Identification of a zettel that contains data about the owner of the Zettelstore.
   The owner has full authorization for thr zettel store.
   Only if owner is set, user [[authentication|00001010000000]] is possible.
-; ''store-//X//-dir'', where //X// is a number greater or equal to one
-: Specifies the directory, where zettel are stored.
-  During startup //X// is counted, starting with one, until no key is found.
-  This allows to configure more than one directory.
-
-  Default value for ''store-1-dir'' is ''"./zettel"''
 ; ''persistent-cookie''
 : A boolean value to make the authentication cookie persistent.
   This is helpful if you access the Zettelstore via a mobile device.
@@ -37,6 +31,10 @@ The following keys are supported:
   Its lifetime exceeds the lifetime of the authentication token (see option ''token-lifetime-html'') by 30 seconds.
 
   Default: ''false''
+; ''place-//X//-uri'', where //X// is a number greater or equal to one
+: Specifies a [[place|00001004011200]] where zettel are stored.
+  During startup //X// is counted, starting with one, until no key is found.
+  This allows to configure more than one place.
 ; ''readonly''
 : Puts the Zettelstore web service into a read-only mode.
   No changes are possible.
