@@ -22,7 +22,7 @@ The following place URIs are supported:
   ''DIR'' is the file path.
   Although it is possible to use relative file paths, such as ''./zettel'' (&rarr; URI is ''dir:\//.zettel''), it is preferable to use absolute file paths, e.g. ''/home/user/zettel''.
 
-  The directory must exist before starting the Zettelstore[^There id one exception: when Zettelstore is [[started without any parameter|00001004050000]], e.g. via double-clicking its icon, an directory called ''./zettel'' will be created.].
+  The directory must exist before starting the Zettelstore[^There is one exception: when Zettelstore is [[started without any parameter|00001004050000]], e.g. via double-clicking its icon, an directory called ''./zettel'' will be created.].
 ; ''mem:''
 : Stores all its zettel in volatile memory.
   If you stop the Zettelstore, all changes are lost.
