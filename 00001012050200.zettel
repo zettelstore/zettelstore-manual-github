@@ -1,0 +1,49 @@
+title: API: Authenticate a client
+tags: #api #manual #zettelstore
+syntax: zmk
+role: manual
+
+Authentication for future API calls is done by sending a [[user identification|00001010040200]] and a password to the Zettelstore to obtain an [[authentication token|00001010040700]].
+This token has to be used for other API calls.
+It is valid for a relatively short amount of time, as configured with the key ''token-timeout-api'' of the [[start-up configuration|00001004010000]] (typically 10 minutes).
+
+The simplest way is to send user identification (''IDENT'') and password (''PASSWORD'') via [[HTTP Basic Authentication|https://tools.ietf.org/html/rfc7617]] and send them to the endpoint ''/a'' with a POST request:
+```sh
+# curl -X POST -u IDENT:PASSWORD -H 'Accept: application/json' http://127.0.0.1:23123/a
+{"token":"eyJhbGciOiJIUzUxMiJ9.eyJfdGsiOjEsImV4cCI6MTYwMTczMTI3NSwiaWF0IjoxNjAxNzMwNjc1LCJzdWIiOiJhYmMiLCJ6aWQiOiIyMDIwMTAwMzE1MDEwMCJ9.ekhXkvn146P2bMKFQcU-bNlvgbeO6sS39hs6U5EKfjIqnSInkuHYjYAIfUqf_clYRfr6YBlX5izii8XfxV8jhg"}
+```
+Make sure to include the header ''Accept: application/json''.
+Otherwise, the request will be interpreted to include a HTML form.
+
+Alternatively, you can add a query parameter to force JSON interpretation:
+```sh
+# curl -X POST -u IDENT:PASSWORD 'http://127.0.0.1:23123/a'_format=json'
+{"token":"eyJhbGciOiJIUzUxMiJ9.eyJfdGsiOjEsImV4cCI6MTYwMTczMTI3NSwiaWF0IjoxNjAxNzMwNjc1LCJzdWIiOiJhYmMiLCJ6aWQiOiIyMDIwMTAwMzE1MDEwMCJ9.ekhXkvn146P2bMKFQcU-bNlvgbeO6sS39hs6U5EKfjIqnSInkuHYjYAIfUqf_clYRfr6YBlX5izii8XfxV8jhg"}
+```
+In this case you must enclose the URL in quotes to prevent ""''?''"" to be interpreted by the command line shell.
+
+Some tools, like [[curl|https://curl.haxx.se/]], also allow to specify user identification and password as part of the URL:
+```sh
+# curl -X POST 'http://IDENT:PASSWORD@127.0.0.1:23123/a'_format=json'
+{"token":"eyJhbGciOiJIUzUxMiJ9.eyJfdGsiOjEsImV4cCI6MTYwMTczMTI3NSwiaWF0IjoxNjAxNzMwNjc1LCJzdWIiOiJhYmMiLCJ6aWQiOiIyMDIwMTAwMzE1MDEwMCJ9.ekhXkvn146P2bMKFQcU-bNlvgbeO6sS39hs6U5EKfjIqnSInkuHYjYAIfUqf_clYRfr6YBlX5izii8XfxV8jhg"}
+```
+
+If you do not want to use Basic Authentication, you can also send user identification and password as HTML form data:
+```sh
+# curl -X POST -d 'username=IDENT&password=PASSWORD' 'http://127.0.0.1:23123/a'_format=json'
+{"token":"eyJhbGciOiJIUzUxMiJ9.eyJfdGsiOjEsImV4cCI6MTYwMTczMTI3NSwiaWF0IjoxNjAxNzMwNjc1LCJzdWIiOiJhYmMiLCJ6aWQiOiIyMDIwMTAwMzE1MDEwMCJ9.ekhXkvn146P2bMKFQcU-bNlvgbeO6sS39hs6U5EKfjIqnSInkuHYjYAIfUqf_clYRfr6YBlX5izii8XfxV8jhg"}
+```
+
+=== Status codes
+In all cases of successful authentication, a JSON object is returned, which contains the token under the key ''"token"''.
+A successful authentication is signaled with the HTTP status code 200, as usual.
+
+Other status codes possibly send by zettelstore:
+; ''400''
+: Unable to process the request.
+  In most cases the form data was invalid.
+; ''401''
+: Authentication failed.
+  Either the user identification is invalid or you provided the wrong password.
+; ''403''
+: Authentication is not active.

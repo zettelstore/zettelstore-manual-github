@@ -1,5 +1,5 @@
 title: User roles
-tags: #configuration #manual #zettelstore
+tags: #authorization #configuration #manual #security #zettelstore
 syntax: zmk
 role: manual
 

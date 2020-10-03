@@ -1,5 +1,5 @@
 title: Visibility rules for zettel
-tags: #configuration #manual #zettelstore
+tags: #authorization #configuration #manual #security #zettelstore
 syntax: zmk
 role: manual
 

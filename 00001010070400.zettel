@@ -1,5 +1,5 @@
 title: Authorization and read-only mode
-tags: #configuration #manual #zettelstore
+tags: #authorization #configuration #manual #security #zettelstore
 syntax: zmk
 role: manual
 

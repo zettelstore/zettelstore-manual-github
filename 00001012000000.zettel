@@ -10,7 +10,7 @@ The [[web user interface|00001014000000]] is just an alternative, secondary way 
 === Background
 The API is HTTP-based and uses JSON as its main encoding format for exchanging messages between a Zettelstore and its client software.
 
-There is an [[overview zettel|00001012920000]] that shows the structure of the URLs used by the API and gives an indication about its use.
+There is an [[overview zettel|00001012920000]] that shows the structure of the endpoints used by the API and gives an indication about its use.
 
 While JSON is the main encoding format, it is possible to retrieve zettel representations in other formats.
 If you want to create a new zettel or to change an existing one, you have to use JSON.
@@ -21,7 +21,7 @@ There are the [[possible values to specify zettel parts|00001012920800]].
 
 === Authentication
 If [[authentication is enabled|00001010040100]], any API call must include some information about the authenticated user.
-* Authenticate a client
+* [[Authenticate a client|00001012050200]]
 * Renew authentication
 * ...
 
