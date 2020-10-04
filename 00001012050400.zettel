@@ -1,0 +1,15 @@
+title: API: Renew an authentication token
+tags: #api #manual #zettelstore
+syntax: zmk
+role: manual
+
+Since the token obtained is only valid for a certain time period and the [[authentication process|00001012050200]] will need some time, there is a way to renew the token.
+
+Send a HTTP PUT request to the endpoint ''/a'' and include the current token in the ''Authorization'' header:
+
+```sh
+# curl -X POST -H 'Authorization: TOKEN' http://127.0.0.1:23123/a
+{"token":"eyJhbGciOiJIUzUxMiJ9.eyJfdGsiOjEsImV4cCI6MTYwMTczMTI3NSwiaWF0IjoxNjAxNzMwNjc1LCJzdWIiOiJhYmMiLCJ6aWQiOiIyMDIwMTAwMzE1MDEwMCJ9.ekhXkvn146P2bMKFQcU-bNlvgbeO6sS39hs6U5EKfjIqnSInkuHYjYAIfUqf_clYRfr6YBlX5izii8XfxV8jhg"}
+```
+
+You may receive a new token, or the current one if it was obtained not a long time ago.

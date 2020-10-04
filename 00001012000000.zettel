@@ -22,8 +22,7 @@ There are the [[possible values to specify zettel parts|00001012920800]].
 === Authentication
 If [[authentication is enabled|00001010040100]], any API call must include some information about the authenticated user.
 * [[Authenticate a client|00001012050200]]
-* Renew authentication
-* ...
+* [[Renew authentication|00001012050400]]
 
 === Zettel lists
 * List meta data for all zettel
