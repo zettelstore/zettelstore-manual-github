@@ -8,7 +8,7 @@ Since the token obtained is only valid for a certain time period and the [[authe
 Send a HTTP PUT request to the endpoint ''/a'' and include the current token in the ''Authorization'' header:
 
 ```sh
-# curl -X POST -H 'Authorization: TOKEN' http://127.0.0.1:23123/a
+# curl -X PUT -H 'Authorization: Bearer TOKEN' http://127.0.0.1:23123/a
 {"token":"eyJhbGciOiJIUzUxMiJ9.eyJfdGsiOjEsImV4cCI6MTYwMTczMTI3NSwiaWF0IjoxNjAxNzMwNjc1LCJzdWIiOiJhYmMiLCJ6aWQiOiIyMDIwMTAwMzE1MDEwMCJ9.ekhXkvn146P2bMKFQcU-bNlvgbeO6sS39hs6U5EKfjIqnSInkuHYjYAIfUqf_clYRfr6YBlX5izii8XfxV8jhg"}
 ```
 
