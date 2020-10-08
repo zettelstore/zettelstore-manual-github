@@ -1,0 +1,35 @@
+title: JSON Format
+tags: #api #manual #reference #zettelstore
+syntax: zmk
+role: manual
+
+The default zettel representation.
+Basically, user provided data is encoded as a string (zettel content and meta data values),
+The meta data and some other structuring data is encoded a JSON object.
+
+The JSON objects contains various name/value pairs, depending which content should be encoded:
+
+* ''"id"'': the zettel identification, as a string.
+* ''"url"'': the base URL to the zettel, as a string.
+* ''"meta"'': the meta data of the zettel, as an JSON object. See below for details.
+* ''"content"'': the actual content of the zettel, as a string. See below for details.
+
+For an example, take a look at the JSON encoding of this page, which is available via the ""Info"" sub-page of this zettel: [[/z/00001012920501?_part=zettel]].
+
+If transferred via HTTP, the content type will be ''application/json''.
+
+=== Meta data
+This ia a JSON object, that maps [[meta data keys|00001006010000]] to their values.
+Their values are encoded as strings, even if they contain a number (or something else).
+
+You can always expect the keys ''"title"'', ''"tags"'', ''"syntax"'', and ''"role"'', together with their values.
+The Zettelstore provides default values for these values, if they are not set for a zettel.
+
+The is a list of [[supported meta data keys|00001006020000]].
+
+=== Content
+Currently, the content is always encoded as a plain string, even if the zettel content is binary.
+
+This will change sometimes.
+Many byte sequences are not valid for UTF-8, which is required by JSON.
+Binary content will then be encoded as Base64, as defined by [[RFC 4648, section 4|https://tools.ietf.org/html/rfc4648#section-4]].

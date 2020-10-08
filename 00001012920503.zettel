@@ -1,0 +1,10 @@
+title: DJSON Format
+tags: #api #manual #reference #zettelstore
+syntax: zmk
+role: manual
+
+A zettel representation that allows to process the syntactic structure of a zettel.
+
+If transferred via HTTP, the content type will be ''application/json''.
+
+TODO: detailed description.

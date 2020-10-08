@@ -4,26 +4,15 @@ syntax: zmk
 role: manual
 
 A zettel representation can be encoded in various formats for further processing.
-; ''json''
-: Is the main format for encoding representations.
-; ''djson''
-: Allows to process the syntactic structure of a zettel.
-; ''html''
-: Encodes a zettel representation in HTML.
-  This encoding is different form the [[web user interface|00001014000000]] as it contains the zettel representation only.
-; ''native''
-: A format that show the syntactic structure of a zettel in a more user-friendly way.
-  Mostly used for debugging.
-; ''raw''
-: Encodes the zettel representation as it was seen by the internal parser before reading it.
-; ''text''
-: Encodes just all textual data of a zettel.
-  Could be used for creating a search index.
-; ''zmk''
-: Encoder that tries to recreate a [[Zettelmarkup|00001007000000]] representation of the zettel.
-  Useful if you want to convert [[other markup languages|00001008000000]] to Zettelmarkup (e.g. Markdown).
 
----
+* [[json|00001012920501]] (default)
+* [[djson|00001012920503]]
+* [[html|00001012920510]]
+* [[native|00001012920513]]
+* [[raw|00001012920516]]
+* [[text|00001012920519]]
+* [[zmk|00001012920522]]
+
 Planned formats:
 ; ''pjson''
 : Encoder that emits JSON data that can be fed into [[pandoc|https://pandoc.org]] for further processing.
