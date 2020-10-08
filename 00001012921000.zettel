@@ -1,5 +1,5 @@
 title: API: JSON structure of an access token
-tags: #api #manual #zettelstore
+tags: #api #manual #reference #zettelstore
 syntax: zmk
 role: manual
 
@@ -10,4 +10,4 @@ The response is structured as an JSON object, with the following named values:
 |=Name|Description
 |''access_token''|The access token itself, which is a [[JSON Web Token|https://tools.ietf.org/html/rfc7519]] (JWT, RFC 7915)
 |''token_type''|The type of the token, always set to ''Bearer'', as described in [[RFC 6750|https://tools.ietf.org/html/rfc6750]]
-|''expires_in''|A integer that give a hint about the lifetime / endurance of the token, measured in seconds
+|''expires_in''|An integer that gives a hint about the lifetime / endurance of the token, measured in seconds

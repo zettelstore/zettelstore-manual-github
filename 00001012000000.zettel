@@ -22,7 +22,8 @@ There are the [[possible values to specify zettel parts|00001012920800]].
 === Authentication
 If [[authentication is enabled|00001010040100]], most API calls must include an [[access token|00001010040700]] that proves the identity of the caller.
 * [[Authenticate a client|00001012050200]] to obtain an access token
-* [[Renew authentication|00001012050400]]
+* [[Renew an access token|00001012050400]] without costly re-authentication
+* [[Provide an access token|00001012050600]] when doing an API call
 
 === Zettel lists
 * List meta data for all zettel
