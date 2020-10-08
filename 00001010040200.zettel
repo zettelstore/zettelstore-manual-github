@@ -3,7 +3,7 @@ tags: #authentication #configuration #manual #security #zettelstore
 syntax: zmk
 role: manual
 
-All data to be used for authenticating a user is store in a special zettel called ""user zettel". 
+All data to be used for authenticating a user is store in a special zettel called ""user zettel"". 
 A user zettel must have set the following three meta data fields:
 
 ; ''ident'' (""user name"")

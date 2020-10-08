@@ -13,9 +13,9 @@ All API endpoints conform to the pattern ''[PREFIX]/LETTER[/ZETTEL-ID]'', where:
 
 The following letters are currently in use:
 
-|= Letter | Without zettel identification | With zettel identification
+|= Letter:| Without zettel identification | With zettel identification
 | ''a'' | POST: [[Client authentication|00001012050200]] |
-|       | PUT: refresh token |
+|       | PUT: [[renew access token|00001012050400]] |
 | ''z'' | GET: list all zettel meta data | GET: retrieve zettel
 |       | POST: add new zettel | PUT: change a zettel
 |       |  | DELETE: delete the zettel
