@@ -5,11 +5,11 @@ role: manual
 
 When someone tries to authenticate itself with an user identifier / ""user name"" and a password, the following process is executed:
 
-# If meta key ''owner'' of the configuration zettel does not have a valid zettel identification as value, authentication fails.
+# If meta key ''owner'' of the configuration zettel does not have a valid [[zettel identifier|00001006050000]] as value, authentication fails.
 # If the identifier is the owners identifier, use the user zettel of the owner.
 ## Otherweise:
 ## All zettel, where the meta key ''ident'' has the same value as the given user identifier. If the list is empty, authentication fails.
-## From above list, the zettel with the lowest zettel identification is selected.
+## From above list, the zettel with the numerically smallest identifier is selected.
    Or in other words: the oldest zettel is selected.
    This is to ensure that no one can create a newer zettel with a fake credential.
    (only the owner of a Zettelstore is allowed to rename / delete a user zettel.)

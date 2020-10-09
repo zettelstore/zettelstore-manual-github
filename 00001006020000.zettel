@@ -14,16 +14,16 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   The type is ''s''.
 ; ''cred''
 : Contains the hashed password, as it was emitted by [[``zettelstore password``|00001004051400]].
-  It is internally created by hashing the password, the zettel identification, and the value of ''ident''.
+  It is internally created by hashing the password, the [[zettel identifier|00001006050000]], and the value of the ''ident'' key.
   Type is ''e''.
 
   It is only used for zettel with a ''role'' value of ""user"".
 ; ''id''
-: Contains the zettel identification (14 digits), as given by the zettel store.
+: Contains the [[zettel identifier|00001006050000]], as given by the Zettelstore.
   It cannot be set manually.
   It has type ''i''.
 ; ''ident''
-: Provides some unique identification for a user zettel.
+: Provides some unique user identification for a user zettel.
   It is used as a user name for authentication.
   Its type is ''w''.
 
@@ -54,7 +54,7 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   Has type ''T''.
 ; ''title''
 : Specifies the title of the zettel.
-  The zettel identification will be used if not given.
+  The zettel identifier will be used if the title is not given.
   Its type is ''s''.
 ; ''url''
 : Defines an URL / URI for this zettel that possibly references external material.

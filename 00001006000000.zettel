@@ -14,10 +14,8 @@ Meta data has to conform to a [[special syntax|00001006010000]].
 It is effectively a collection of key/value pairs.
 Some keys have a [[special meaning|00001006020000]] and most of the predefined keys need values of a specific [[type|00001006030000]].
 
-Each zettel is given a unique identification.
-To some degree, the zettel identification is part of the meta data.
-Basically, it was given by the [[Zettelstore|00001005000000]] software.
-Every zettel identification consists of 14 digits.
+Each zettel is given a unique [[identifier|00001006050000]].
+To some degree, the zettel identifier is part of the meta data..
 
 The zettel content is your valuable content.
 Zettelstore contains some predefined parsers that interpret the zettel content to the syntax of the zettel.

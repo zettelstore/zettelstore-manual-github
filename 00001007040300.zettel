@@ -28,8 +28,8 @@ The second form provide some text plus the link specification, delimited by a ve
 
 If the first form is given, the text is derived from the link specification, e.g. by interpreting the link specification as text.
 
-The link specification for another zettel within the same Zettelstore is just the [[zettel identification|00001006000000]].
-To reference some content within a zettel, you can append a number sign character (""''#''"", ''U+0023'') and the name of the mark to the zettel identification.
+The link specification for another zettel within the same Zettelstore is just the [[zettel identifier|00001006050000]].
+To reference some content within a zettel, you can append a number sign character (""''#''"", ''U+0023'') and the name of the mark to the zettel identifier.
 
 To specify some (external) material outside the Zettelstore, just use an normal Uniform Resource Identifier (URI) as defined by [[RFC\ 3986|https://tools.ietf.org/html/rfc3986]].
 

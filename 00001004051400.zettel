@@ -1,5 +1,5 @@
 title: The ''password'' sub-command
-tags: #configuration #manual #zettelstore #command
+tags: #command #configuration #manual #zettelstore
 syntax: zmk
 role: manual
 
@@ -12,7 +12,7 @@ The general usage is:
 zettelstore password IDENT ZETTEL-ID
 ```
 
-``IDENT`` is the identifier (""user name"") for the user that should be authenticated, ``ZETTEL-ID`` is the identification of the zettel that later acts as a user zettel.
+``IDENT`` is the identification (""user name"") for the user that should be authenticated, ``ZETTEL-ID`` is the [[identifier of the zettel|00001006050000]] that later acts as a user zettel.
 
 See [[Creating an user zettel|00001010040200]] for background.
 
@@ -30,6 +30,6 @@ This will produce a hashed password for the new user ""bob"" to be stored in zet
 
 You should copy the relevant output to the zettel of the user to be secured, especially by setting the meta keys ''ident'' and ''cred'' to the copied values.
 
-Please note that the generated hashed password is tied to the given user identifier (''ident'') and zettel identification.
-Changing at least one of those will stop authenticating the user.
+Please note that the generated hashed password is tied to the given user identification (''ident'') and the identifier of its zettel.
+Changing at least one of those will stop authenticating the user with the given password.
 In this case you have to re-run this sub-command.

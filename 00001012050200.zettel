@@ -27,7 +27,7 @@ If you do not want to use Basic Authentication, you can also send user identific
 
 In all cases, you will receive an JSON object will all [[relevant data|00001012921000]] to be used for further API calls.
 
-=== Status codes
+=== HTTP Status codes
 In all cases of successful authentication, a JSON object is returned, which contains the token under the key ''"token"''.
 A successful authentication is signaled with the HTTP status code 200, as usual.
 

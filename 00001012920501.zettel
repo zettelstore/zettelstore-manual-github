@@ -9,7 +9,7 @@ The meta data and some other structuring data is encoded a JSON object.
 
 The JSON objects contains various name/value pairs, depending which content should be encoded:
 
-* ''"id"'': the zettel identification, as a string.
+* ''"id"'': the [[zettel identifier|00001006050000]], as a string.
 * ''"url"'': the base URL to the zettel, as a string.
 * ''"meta"'': the meta data of the zettel, as an JSON object. See below for details.
 * ''"content"'': the actual content of the zettel, as a string. See below for details.

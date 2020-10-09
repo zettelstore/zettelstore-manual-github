@@ -18,7 +18,7 @@ The following keys are supported:
 
   Default value: ''"127.0.0.1:23123"''
 ; ''owner''
-: Identification of a zettel that contains data about the owner of the Zettelstore.
+: [[Identifier|00001006050000]] of a zettel that contains data about the owner of the Zettelstore.
   The owner has full authorization for thr zettel store.
   Only if owner is set, user [[authentication|00001010000000]] is possible.
 ; ''persistent-cookie''
