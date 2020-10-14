@@ -7,12 +7,13 @@ Zettelstore is not just a web service that provides services of a zettelkasten.
 It allows to some tasks to be executed at the command line.
 Typically, the task (""sub-command"") will be given at the command line as the first parameter.
 
-If no paramer is given, the zettelstore is called as
+If no parameter is given, the Zettelstore is called as
 ```
 zettelstore
 ```
 This is equivalent to call it this way:
-```
+```sh
+mkdir ./zettel
 zettelstore run -d ./zettel -c ./.zscfg
 ```
 Typically this is done by starting Zettelstore via a graphical user interface by double-clicking to its file icon.
