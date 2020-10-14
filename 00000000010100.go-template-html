@@ -21,7 +21,7 @@
 <a href="{{urlList 't'}}?_format=html">List Tags</a>
 </nav>
 </div>
-{{- if CanCreate .User }}
+{{- if .CanCreate}}
 <a href="{{urlZettel 'n' 40001}}">New</a>
 {{- end}}
 {{- if config.WithAuth}}
@@ -34,7 +34,7 @@
 {{- else}}
 <a href="{{urlList 'a'}}">Login</a>
 {{- end}}
-{{- if CanReload .User}}
+{{- if .CanReload}}
 <a href="{{urlList 'c'}}">Reload</a>
 {{- end}}
 </nav>
