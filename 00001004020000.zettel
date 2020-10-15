@@ -33,6 +33,11 @@ The following meta keys change the appearance / behaviour of Zettelstore:
 ; ''default-title''
 : Title to be used, if a zettel specifies no ''title'' [[meta key|00001006020000]].
   Default: ''Untitled''.
+; ''footer-html''
+: Contains some HTML code that will be included into the footer of each Zettelstore web page.
+  It only affects the [[web user interface|00001014000000]].
+  Zettel content, delivered via the [[API|00001012000000]] as JSON, etc. is not affected.
+  Default: (the empty string).
 ; ''icon-material''
 : Some HTML code that is displayed after a link to (external) material.
   Default: ''<img class="zs-text-icon" src="$P/c/[[00000000030001]]">'', where ""$P/"" is some configurable [[URL prefix|00001004010000]].
