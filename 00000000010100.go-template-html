@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Zettelstore, build {{config.GetVersion.Build}}">
 {{- block "meta-header" .}}{{end}}
-<link rel="stylesheet" href="{{urlZettel 'z' 20001}}?_part=content&_format=raw">
+<link rel="stylesheet" href="{{urlZettel 'z' 20001}}?_format=raw&_part=content">
 {{- block "header" .}}{{end}}
 <title>{{.Title}}</title>
 </head>
@@ -17,8 +17,8 @@
 <button>Lists</button>
 <nav class="zs-dropdown-content">
 <a href="{{urlList 'h'}}">List Zettel</a>
-<a href="{{urlList 'r'}}?_format=html">List Roles</a>
-<a href="{{urlList 't'}}?_format=html">List Tags</a>
+<a href="{{urlZettel 'k' 2}}">List Roles</a>
+<a href="{{urlZettel 'k' 3}}">List Tags</a>
 </nav>
 </div>
 {{- if .CanCreate}}
@@ -35,7 +35,7 @@
 <a href="{{urlList 'a'}}">Login</a>
 {{- end}}
 {{- if .CanReload}}
-<a href="{{urlList 'c'}}">Reload</a>
+<a href="{{urlList 'c'}}?_format=html">Reload</a>
 {{- end}}
 </nav>
 </div>
@@ -48,7 +48,6 @@
 <main class="content">
 {{- block "content" .}}TODO{{end -}}
 <hr>
-<p><a href="/imprint/">Imprint</a>/<a href="/privacy/">Privacy</a></p>
-</main>
+<p><a href="/imprint/">Imprint</a>/<a href="/privacy/">Privacy</a></p></main>
 </body>
 </html>
