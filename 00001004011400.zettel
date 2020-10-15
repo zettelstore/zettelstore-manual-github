@@ -10,7 +10,8 @@ The following parameters are supported:
 
 |= Parameter:|Description|Default value:|
 |rescan|Time (in seconds) after which the directory should be scanned fully|600
-|worker|Number of worker that can access the directory in parallel|17|
+|worker|Number of worker that can access the directory in parallel|17
+|readonly|Allow only operations that do not change a zettel or create a new zettel|n/a
 
 === Rescan
 On most platforms, Zettelstore automatically detects changes to zettel files that originates from other software[^This includes most Linux distributions, macOS, and Windows].
@@ -43,6 +44,14 @@ Access to zettel file is ultimately managed by the underlying operating system.
 Depending on the hardware, only a limited number of parallel accesses are desireable.
 Since Zettelstore is a single-user software, the value 17 is quite reasonable, even for higher use.
 
-On smaller hardware[^In comparison to a normal desktop or laptop computer], such as the [[Raspberry Zero|https://www.raspberrypi.org/products/raspberry-pi-zero/]:, a smaller value might be appropriate.
+On smaller hardware[^In comparison to a normal desktop or laptop computer], such as the [[Raspberry Zero|https://www.raspberrypi.org/products/raspberry-pi-zero/]], a smaller value might be appropriate.
 Every worker needs some amount of main memory (RAM) and some amount of processing power.
 On bigger hardware, with some fast file services, a bigger value could result in higher performance, if needed.
+
+=== Readonly
+Sometimes you may want to provide zettel from a file directory place, but you want to disallow any changes.
+If you provide the query parameter ''readonly'' (with or without a corresponding value), the place will disallow any changes.
+```
+place-1-uri: dir:///home/zettel?readonly
+```
+If you put the whole Zettelstore in [[read-only|00001004010000]] [[mode|00001004051000]], all configured file directory places will be in read-only mode too, even if not explicitly configured.
