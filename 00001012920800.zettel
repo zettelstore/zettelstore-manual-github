@@ -10,3 +10,6 @@ When working with [[zettel|00001006000000]], you could work with the whole zette
 : Specifies that you only want to cope with the meta data of a zettel.
 ; ''content''
 : Specifies that you are only interested in the zettel content.
+; ''id''
+: Only valid for JSON-based encoding formats[^[[json|00001012920501]] and [[djson|00001012920503]].].
+  States that you only want the zettel identifier and the URL of the zettel.

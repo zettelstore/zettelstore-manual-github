@@ -26,7 +26,9 @@ If [[authentication is enabled|00001010040100]], most API calls must include an 
 * [[Provide an access token|00001012050600]] when doing an API call
 
 === Zettel lists
-* List meta data for all zettel
+* [[List meta data of all zettel|00001012051200]]
+* [[List all zettel, but in different encoding formats|00001012051400]]
+* [[List all zettel, but include different parts of a zettel|00001012051600]]
 * Shape the list of zettel meta data with filters and sorting options
 * Zettel list as a result of a search
 * List all [[tags|00001006020000]] used in a Zettelstore

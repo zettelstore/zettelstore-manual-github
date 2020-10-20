@@ -6,7 +6,7 @@ role: manual
 An access token is only valid for a certain duration.
 Since the [[authentication process|00001012050200]] will need some processing time, there is a way to renew the token without providing full authentication data.
 
-Send a HTTP PUT request to the endpoint ''/a'' and include the current acess token in the ''Authorization'' header:
+Send a HTTP PUT request to the endpoint ''/a'' and include the current access token in the ''Authorization'' header:
 
 ```sh
 # curl -X PUT -H 'Authorization: Bearer TOKEN' http://127.0.0.1:23123/a

@@ -14,7 +14,15 @@ The JSON objects contains various name/value pairs, depending which content shou
 * ''"meta"'': the meta data of the zettel, as an JSON object. See below for details.
 * ''"content"'': the actual content of the zettel, as a string. See below for details.
 
-For an example, take a look at the JSON encoding of this page, which is available via the ""Info"" sub-page of this zettel: [[/z/00001012920501?_part=zettel]].
+''"id"'' and ''"url"'' are always sent to the client.
+It depends on the value of the required [[zettel part|00001012920800]], whether ''"meta"'' or ''"content"'' or both are sent.
+
+For an example, take a look at the JSON encoding of this page, which is available via the ""Info"" sub-page of this zettel: 
+
+* [[/z/00001012920501?_part=id]],
+* [[/z/00001012920501?_part=zettel]],
+* [[/z/00001012920501?_part=meta]],
+* [[/z/00001012920501?_part=content]].
 
 If transferred via HTTP, the content type will be ''application/json''.
 
@@ -25,7 +33,7 @@ Their values are encoded as strings, even if they contain a number (or something
 You can always expect the keys ''"title"'', ''"tags"'', ''"syntax"'', and ''"role"'', together with their values.
 The Zettelstore provides default values for these values, if they are not set for a zettel.
 
-The is a list of [[supported meta data keys|00001006020000]].
+There is a list of [[supported meta data keys|00001006020000]].
 
 === Content
 Currently, the content is always encoded as a plain string, even if the zettel content is binary.
