@@ -3,6 +3,13 @@ tags: #manual #zettelstore
 syntax: zmk
 role: manual
 
+; v0.0.5 (2020-10-??)
+: [[Application Programming Interface|00001012000000]] (API) to allow external software to retrieve zettel data from the Zettelstore.
+
+  Specify places, where zettel are stored, via an URL.
+
+  Add support for a custom footer.
+  See [[configuration description|00001004020000]] (key ''footer-html''), and the [[configuration zettel|00000000000001]] of this Zettelstore as an example.
 ; v0.0.4 (2020-09-11)
 : Optional user authentication/authorization.
   See [[Security|00001010000000]] for details.
