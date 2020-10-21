@@ -3,7 +3,7 @@ tags: #api #manual #zettelstore
 syntax: zmk
 role: manual
 
-To list the meta data of all zettel just send a HTTP GET request to the endpoint ''/z''[^If authentication is enabled, you must include the a valid [[access token|00001012050200]] in the ''Authorization'' header].
+To list the meta data of all zettel just send a HTTP GET request to the endpoint ''/z''[^If [[authentication is enabled|00001010040100]], you must include the a valid [[access token|00001012050200]] in the ''Authorization'' header].
 If successful, the output is a JSON object:
 
 ```sh

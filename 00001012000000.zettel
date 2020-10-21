@@ -29,15 +29,14 @@ If [[authentication is enabled|00001010040100]], most API calls must include an 
 * [[List meta data of all zettel|00001012051200]]
 * [[List all zettel, but in different encoding formats|00001012051400]]
 * [[List all zettel, but include different parts of a zettel|00001012051600]]
-* Shape the list of zettel meta data with filters and sorting options
-* Zettel list as a result of a search
+* [[Shape the list of zettel meta data with filters and sorting options|00001012051800]]
 * List all [[tags|00001006020000]] used in a Zettelstore
 * List all [[roles|00001006020100]] used in a Zettelstore.
 * ...
 
 === Working with zettel
 * Create a new zettel
-* Retrieve data for an exisiting zettel
+* [[Retrieve data for an exisiting zettel|00001012053400]]
 * Change data of a zettel
 * Rename a zettel
 * Delete a zettel
