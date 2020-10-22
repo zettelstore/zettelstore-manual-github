@@ -18,5 +18,5 @@ The following values are supported:
 
   This is for zettel with sensitive content, e.g. the [[configuration zettel|00001004020000]] or the various zettel that contains the templates for rendering zettel in HTML.
 
-When you install a Zettelstore, the zettel that contains CSS for rendering the web interface has visibility ""public"".
-This is to ensure that the web interface looks nice even for nocht authenticated users.
+When you install a Zettelstore, only the zettel that contains CSS for displaying the web interface has visibility ""public"".
+This is to ensure that the web interface looks nice even for not authenticated users.

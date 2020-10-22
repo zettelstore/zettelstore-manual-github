@@ -8,6 +8,6 @@ The same is true, if the access token was [[renewed|00001012050400]].
 The response is structured as an JSON object, with the following named values:
 
 |=Name|Description
-|''access_token''|The access token itself, which is a [[JSON Web Token|https://tools.ietf.org/html/rfc7519]] (JWT, RFC 7915)
-|''token_type''|The type of the token, always set to ''Bearer'', as described in [[RFC 6750|https://tools.ietf.org/html/rfc6750]]
+|''access_token''|The access token itself, as string value, which is a [[JSON Web Token|https://tools.ietf.org/html/rfc7519]] (JWT, RFC 7915)
+|''token_type''|The type of the token, always set to ''"Bearer"'', as described in [[RFC 6750|https://tools.ietf.org/html/rfc6750]]
 |''expires_in''|An integer that gives a hint about the lifetime / endurance of the token, measured in seconds

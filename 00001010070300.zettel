@@ -9,5 +9,6 @@ The following values are supported:
 
 ; ""reader""
 : The user is allowed to read zettel.
+  This is the default value for any user except the owner of the Zettelstore.
 ; ""writer""
 : The user is allowed to create new zettel and to change existing zettel.

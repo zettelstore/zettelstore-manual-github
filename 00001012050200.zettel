@@ -31,7 +31,7 @@ In all cases, you will receive an JSON object will all [[relevant data|000010129
 In all cases of successful authentication, a JSON object is returned, which contains the token under the key ''"token"''.
 A successful authentication is signaled with the HTTP status code 200, as usual.
 
-Other status codes possibly send by zettelstore:
+Other status codes possibly send by the Zettelstore:
 ; ''400''
 : Unable to process the request.
   In most cases the form data was invalid.

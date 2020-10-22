@@ -9,7 +9,7 @@ Most keys conform to a [[type|00001006030000]].
 If a type is not explicitly mentioned, a possibly empty string is assumed (type ''e'').
 
 ; ''copyright''
-: Defines a copyright string that will be rendered.
+: Defines a copyright string that will be encoded.
   If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000]] will be used.
   The type is ''s''.
 ; ''cred''
@@ -60,7 +60,7 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 : Defines an URL / URI for this zettel that possibly references external material.
   One use case is to specify the document that the current zettel comments on.
   Another example: source of an image, as for the [[Text icon for external material|00000000030001]].
-  The URL will be rendered if you use the default template.
+  The URL will be rendered special on the web user interface if you use the default template.
   Has type ''u''.
 ; ''user-role''
 : Defines the basic privileges of an authenticated user, e.g. reading / changing zettel.

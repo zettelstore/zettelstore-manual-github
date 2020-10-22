@@ -9,7 +9,8 @@ Often used to have access to the bytes of an image.
 
 If transferred via HTTP, the content type will depend on various factors:
 
-* If the whole zettel should be transferred and it contains textual data, ''text/plain'' will be used, otherwise the content type of the whole zettel will be''application/octet-stream''.
+* If the whole zettel should be transferred and it contains textual data only, ''text/plain'' will be used.
+Otherwise the content type of the whole zettel will be ''application/octet-stream''.
 * If just the meta data are transferred, ''text/plain'' will be used.
 * If just the content has to be transferred, the content type depends on the actual dats.
   A PNG image will be transferred as ''image/png'', HTML content as ''text/html'', and so on.

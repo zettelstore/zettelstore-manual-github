@@ -16,12 +16,12 @@ While JSON is the main encoding format, it is possible to retrieve zettel repres
 If you want to create a new zettel or to change an existing one, you have to use JSON.
 There is an [[overview zettel for encoding formats|00001012920500]] that describes the valid formats.
 
-Various parts of a zettel can be used.
+Various parts of a zettel can be retrieved.
 There are the [[possible values to specify zettel parts|00001012920800]].
 
 === Authentication
 If [[authentication is enabled|00001010040100]], most API calls must include an [[access token|00001010040700]] that proves the identity of the caller.
-* [[Authenticate a client|00001012050200]] to obtain an access token
+* [[Authenticate an user|00001012050200]] to obtain an access token
 * [[Renew an access token|00001012050400]] without costly re-authentication
 * [[Provide an access token|00001012050600]] when doing an API call
 
@@ -32,7 +32,6 @@ If [[authentication is enabled|00001010040100]], most API calls must include an 
 * [[Shape the list of zettel meta data with filters and sorting options|00001012051800]]
 * List all [[tags|00001006020000]] used in a Zettelstore
 * List all [[roles|00001006020100]] used in a Zettelstore.
-* ...
 
 === Working with zettel
 * Create a new zettel

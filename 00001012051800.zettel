@@ -3,14 +3,14 @@ tags: #api #manual #zettelstore
 syntax: zmk
 role: manual
 
-In most cases, it is not usable to list //all// zettel.
+In most cases, it is not essential to list //all// zettel.
 Typically, you are interested only in a subset of the zettel maintained by your Zettelstore.
 This is done by adding some query parameters to the general ''GET /z'' request.
 
 === Filter
 Every query parameter that does //not// start with the low line character (""_"", ''U+005F'') is treated as the name of a [[meta data|00001006010000]] key.
 According to the [[type|00001006030000]] of a meta data key, zettel are matched and therefore filtered.
-All [[supported|00001006020000]]meta data keys have a well-defined type.
+All [[supported|00001006020000]] meta data keys have a well-defined type.
 User-defined keys have the type ''e'' (string, possibly empty).
 
 For example, if you want to retrieve all zettel that contain the string ""API"" in its title, your request will be:

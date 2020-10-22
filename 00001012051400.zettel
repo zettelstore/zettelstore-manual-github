@@ -4,14 +4,13 @@ syntax: zmk
 role: manual
 
 You can add a query parameter ''_format=[[FORMAT|00001012920500]]'' to select the encoding format when [[retrieving all zettel|00001012051200]].
-Probably some formats are not useful and do not make sense.
+Probably some formats are not very useful and may not make sense.
 Currently implemented are the formats [[''json''|00001012920501]] (default), [[''djson''|00001012920503]], and [[''html''|00001012920510]].
 
 The format ''json'' will be selected, if no ''_format'' is specified.
 ''djson'' will return a JSON object with some more detailed information.
 For example, the [[Zettelmarkup|00001007000000]] structure will be returned and tags are returned as a list of strings.
 ''html'' will return an HTML encoding of the zettel list, using a HTML unnumbered list.
-
 
 ```sh
 # curl 'http://127.0.0.1:23123/z?_format=djson'
@@ -69,7 +68,7 @@ Or reformatted:
 </body>
 </html>```
 
-If you request a JSON-based encoding format, you can additionally request the [[parts of a zettel|00001012051600]] that should be included.
+If you request a JSON-based encoding format, you can request additional [[parts of a zettel|00001012051600]].
 
 === HTTP Status codes
 ; ''200''
@@ -77,6 +76,6 @@ If you request a JSON-based encoding format, you can additionally request the [[
 ; ''400''
 : Request was not valid.
   There are several reasons for this.
-  Maybe you provided a wrong value for ''_format''
+  Maybe you provided a wrong value for ''_format''.
 ; ''501''
 : Encoding format is not yet implemented, but will be in the future.

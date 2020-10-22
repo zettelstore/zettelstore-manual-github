@@ -3,17 +3,17 @@ tags: #api #manual #zettelstore
 syntax: zmk
 role: manual
 
-The endpoint for working with a specific zettel is ''/z/{ID}'', where ''{ID}'' is a placeholder for the zettel identifier (14 digits).
-WIP
+The endpoint to work with a specific zettel is ''/z/{ID}'', where ''{ID}'' is a placeholder for the zettel identifier (14 digits).
 
-For example, retieving data about this zettel, just send a HTTP GET request to the endpoint ''/z/00001012053400''[^If [[authentication is enabled|00001010040100]], you must include the a valid [[access token|00001012050200]] in the ''Authorization'' header].
+For example, retrieving data about this zettel, just send a HTTP GET request to the endpoint ''/z/00001012053400''[^If [[authentication is enabled|00001010040100]], you must include the a valid [[access token|00001012050200]] in the ''Authorization'' header].
 If successful, the output is a JSON object:
 ```sh
 # curl http://127.0.0.1:23123/z/00001012053400
-{"id":"00001012053400","url":"/z/00001012053400","meta":{"title":"API: Retrieve data for an exisiting zettel","tags":"#api #manual #zettelstore","syntax":"zmk","role":"manual","copyright":"(c) 2020 by Detlef Stern <ds@zettelstore.de>","lang":"en","license":"CC BY-SA 4.0"},"content":"WIP\n\nTo list the meta data of all zettel just send a HTTP GET request to the endpoint ''/z''[^If [[authentication is enabled|00001010040100]], you must include the a valid [[access token|00001012050200]] in the ''Authorization'' header].\nIf successful, the output is a JSON object:\n\n```sh\n# curl http://127.0.0.1:23123/z\n ...
+{"id":"00001012053400","url":"/z/00001012053400","meta":{"title":"API: Retrieve data for an exisiting zettel","tags":"#api #manual #zettelstore","syntax":"zmk","role":"manual","copyright":"(c) 2020 by Detlef Stern <ds@zettelstore.de>","lang":"en","license":"CC BY-SA 4.0"},"content":"The endpoint to work with a specific zettel is ''/z/{ID}'', where ''{ID}'' is a placeholder for the zettel identifier (14 digits).\n\nFor example, ...
 ```
 Similar to listing all or some zettel, you can provide a query parameter ''_format=[[FORMAT|00001012920500]]'' to select a different encoding format.
-The default encoding format is [[""json""|00001012920501]] (default), [[""djson""|00001012920503]], [[""html""|00001012920510]], and some more.
+The default encoding format is ""[[json""|00001012920501]]"".
+Others are ""[[djson|00001012920503]]"", ""[[html|00001012920510]]"", and some more.
 ```sh
 # curl 'http://127.0.0.1:23123/z/00001012053400?_format=html'
 <!DOCTYPE html>
@@ -28,13 +28,7 @@ The default encoding format is [[""json""|00001012920501]] (default), [[""djson"
 <meta name="license" content="CC BY-SA 4.0">
 </head>
 <body>
-<p>The endpoint for working with a specific zettel is <span style="font-family:monospace">/z/{ID}</span>, where <span style="font-family:monospace">{ID}</span> is a placeholder for the zettel identifier (14 digits).
-WIP</p>
-<p>For example, retieving data about this zettel, just send a HTTP GET request to the endpoint <span style="font-family:monospace">/z/00001012053400</span><sup id="fnref:1"><a href="#fn:1" class="zs-footnote-ref" role="doc-noteref">1</a></sup>.
-If successful, the output is a JSON object:</p>
-<p>Similar to listing all or some zettel, you can provide a query parameter <span style="font-family:monospace">_format=<a href="/z/00001012920500?_part=zettel&_format=html">FORMAT</a></span> to select a different encoding format.
-The default encoding format is <a href="/z/00001012920501?_part=zettel&_format=html"><span>&ldquo;json&rdquo;</span></a> (default), <a href="/z/00001012920503?_part=zettel&_format=html"><span>&ldquo;djson&rdquo;</span></a>, <a href="/z/00001012920510?_part=zettel&_format=html"><span>&ldquo;html&rdquo;</span></a>, and some more.</p>
-<pre><code># curl 'http://127.0.0.1:23123/z/00001012053400?_format=html'
+<p>The endpoint to work with a specific zettel is <span style="font-family:monospace">/z/{ID}</span>, where <span style="font-family:monospace">{ID}</span> is a placeholder for the zettel identifier (14 digits).</p>
 ...
 ```
 
