@@ -3,7 +3,7 @@ tags: #manual #zettelstore
 syntax: zmk
 role: manual
 
-; v0.0.5 (2020-10-??)
+; v0.0.5 (2020-10-22)
 : [[Application Programming Interface|00001012000000]] (API) to allow external software to retrieve zettel data from the Zettelstore.
 
   Specify places, where zettel are stored, via an URL.
