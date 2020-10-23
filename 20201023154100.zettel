@@ -1,0 +1,7 @@
+title: Changelog for v0.0.6
+tags: #release
+syntax: zmk
+role: changelog
+
+=== Web user interface
+* [fd4317c]/minor Focus on the first text field on some forms (new zettel, edit zettel, rename zettel, login)
