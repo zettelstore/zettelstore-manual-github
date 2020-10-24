@@ -36,8 +36,11 @@ The Zettelstore provides default values for these values, if they are not set fo
 There is a list of [[supported meta data keys|00001006020000]].
 
 === Content
-Currently, the content is always encoded as a plain string, even if the zettel content is binary.
+When the content is text-only, it is encoded as a plain string.
 
-This will change in the future.
-Many byte sequences are not valid for UTF-8, which is required by JSON.
-Binary content will then be encoded as Base64, as defined by [[RFC 4648, section 4|https://tools.ietf.org/html/rfc4648#section-4]].
+If the content contains binary content, it is encoded as a JSON object:
+
+* ''"encoding"'' specifies the string encoding of the content. Currently, only ''"base64"'' is supported (as described in [[RFC4648, section 4|https://tools.ietf.org/html/rfc4648#section-4]].
+* ''"value"'' is a string that contains the encoded binary content.
+
+For example, if the content just consists of three zero bytes, it will be encoded as ``{"encoding":"base64","value":"AAAA"}``{=json}.
