@@ -4,4 +4,8 @@ syntax: zmk
 role: changelog
 
 === Web user interface
-* [fd4317c]/minor Focus on the first text field on some forms (new zettel, edit zettel, rename zettel, login)
+* [fd4317c] (minor) Focus on the first text field on some forms (new zettel, edit zettel, rename zettel, login)
+* [982fe43] (major) Adapt all HTML templates to a simpler structure.
+** This is a prerequisite for moving to a more portable templating engine, like [[\{\{ mustache \}\}|https://mustache.github.io/]].
+** May break your installation if you changed one of you HTML template. In this case you should save your current versions of your changed HTML template zettel to an external store and delete them in you Zettelstore. Then you should re-introduce your changes into the new base version.
+** Fixes a bug when selecting a minimal count for tag list. Therefore, this version and [fd4317c] were ""released"" as ''v0.0.5-3''.
