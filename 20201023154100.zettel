@@ -20,5 +20,7 @@ role: changelog
    Then you should re-introduce your changes into the new base version.
 ** Fixes a bug when selecting a minimal count for tag list.
    Therefore, this version and [fd4317c] were ""released"" as ''v0.0.5-3''.
+* [4fd5f20] (bug) Rendered wrong URLs for internal links on info page.
+  Released as ''v0.0.5-4''.
 * [385ca85] (bug) If a zettel contains binary content it cannot be cloned.
   For such a zettel only the meta data can be changed.
