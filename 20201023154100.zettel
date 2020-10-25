@@ -5,6 +5,8 @@ role: changelog
 
 === API
 * [6926771] (bug) Encoding binary content in format [[json|00001012920501]] now results in valid JSON content.
+* [25e5486] (bug) All query parameter of [[filtering a list|00001012051800]] must be true, regardless if a specific key occurs more than one or not.
+  Applies to WebUI also.
 === Web user interface
 * [fd4317c] (minor) Focus on the first text field on some forms (new zettel, edit zettel, rename zettel, login)
 * [982fe43] (major) Adapt all HTML templates to a simpler structure.

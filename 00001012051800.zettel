@@ -23,13 +23,12 @@ If you are just interested in the zettel identifier, you should add the ''_part'
 # curl 'http://127.0.0.1:23123/z?title=API&_part=id'
 {"list":[{"id":"00001012921000","url":"/z/00001012921000"},{"id":"00001012920500","url":"/z/00001012920500"},{"id":"00001012920000","url":"/z/00001012920000"},{"id":"00001012051800","url":"/z/00001012051800"},{"id":"00001012051600","url":"/z/00001012051600"},{"id":"00001012051400","url":"/z/00001012051400"},{"id":"00001012051200","url":"/z/00001012051200"},{"id":"00001012050600","url":"/z/00001012050600"},{"id":"00001012050400","url":"/z/00001012050400"},{"id":"00001012050200","url":"/z/00001012050200"},{"id":"00001012000000","url":"/z/00001012000000"}]}
 ```
-If you want only those zettel that may also contain the string ""JSON"", you must add an additional query parameter:
+If you want only those zettel that additionally must contain the string ""JSON"", you have to add an additional query parameter:
 ```sh
 # curl 'http://127.0.0.1:23123/z?title=API&_part=id&title=JSON'
-{"list":[{"id":"00001012921000","url":"/z/00001012921000"},{"id":"00001012920503","url":"/z/00001012920503"},{"id":"00001012920501","url":"/z/00001012920501"},{"id":"00001012920500","url":"/z/00001012920500"},{"id":"00001012920000","url":"/z/00001012920000"},{"id":"00001012051800","url":"/z/00001012051800"},{"id":"00001012051600","url":"/z/00001012051600"},{"id":"00001012051400","url":"/z/00001012051400"},{"id":"00001012051200","url":"/z/00001012051200"},{"id":"00001012050600","url":"/z/00001012050600"},{"id":"00001012050400","url":"/z/00001012050400"},{"id":"00001012050200","url":"/z/00001012050200"},{"id":"00001012000000","url":"/z/00001012000000"}]}
+{"list":[{"id":"00001012921000","url":"/z/00001012921000"}]}
 ```
-Please note that the results are combined if you add a query parameter the second time.
-If you add another query parameter, the intersection of both results is returned:
+Similarly, if you add another query parameter, the intersection of both results is returned:
 ```sh
 # curl 'http://127.0.0.1:23123/z?title=API&_part=id&id=00001012050'
 {"list":[{"id":"00001012050600","url":"/z/00001012050600"},{"id":"00001012050400","url":"/z/00001012050400"},{"id":"00001012050200","url":"/z/00001012050200"}]}
@@ -63,6 +62,6 @@ The query parameter ''_s'' allows to provide a string, which will be searched fo
 While searching, the [[type|00001006030000]] of each meta data key will be respected.
 
 You are allowed to specify this query parameter more than once.
-All results will be combined, i.e. a zettel will be included into the list if at least one of the provided values will match.
+All results will be intersected, i.e. a zettel will be included into the list if both of the provided values match.
 
-This query parameter loosely resembles the search box of the web user interface.
+This parameter loosely resembles the search box of the web user interface.
