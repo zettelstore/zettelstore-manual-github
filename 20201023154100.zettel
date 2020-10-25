@@ -3,6 +3,10 @@ tags: #release
 syntax: zmk
 role: changelog
 
+=== Zettelmarkup
+* [4b514bf] (bug) Allow to specify a ""fragment"" in a [[reference|00001007040300]] to a zettel.
+  Used to link to an internal position within a zettel.
+  This applies to CommonMark too.
 === API
 * [6926771] (bug) Encoding binary content in format [[json|00001012920501]] now results in valid JSON content.
 * [25e5486] (bug) All query parameter of [[filtering a list|00001012051800]] must be true, regardless if a specific key occurs more than one or not.
