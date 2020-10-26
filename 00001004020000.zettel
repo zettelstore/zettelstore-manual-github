@@ -40,7 +40,7 @@ The following meta keys change the appearance / behaviour of Zettelstore:
   Default: (the empty string).
 ; ''icon-material''
 : Some HTML code that is displayed after a link to (external) material.
-  Default: ''<img class="zs-text-icon" src="$P/c/[[00000000030001]]">'', where ""$P/"" is some configurable [[URL prefix|00001004010000]].
+  Default: ''&\#8280;'', to display a ""&#8280;"" sign.
 ; ''site-name''
 : Name of the Zettelstore instance.
   Will be used when displaying some lists.

@@ -28,3 +28,7 @@ role: changelog
   When a local reference is displayed as an URL on the WebUI, it will not opened in a new window/tab.
   They will receive a ''"local"'' marker, when encoded as [[djson|00001012920503]] or [[native|00001012920513]].
   Local references are listed on the //Info page// of each zettel.
+* [878dc42] (minor) Change the default value for an icon placed after an external URL to ''&\#8280;''.
+  This affects key ''icon-material'' of the [[run-time configuration zettel|00001004020000]].
+  The previous value linked to an own zettel containing a SVG-based icon.
+  That zettel is removed.
