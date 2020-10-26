@@ -24,3 +24,7 @@ role: changelog
   Released as ''v0.0.5-4''.
 * [385ca85] (bug) If a zettel contains binary content it cannot be cloned.
   For such a zettel only the meta data can be changed.
+* [165c871] (minor) Non-zettel [[references|00001007040300]] that neither have an URL scheme, user info, nor host name, are considered ""local references"" (in contrast to ""zettel references"" and ""external references"").
+  When a local reference is displayed as an URL on the WebUI, it will not opened in a new window/tab.
+  They will receive a ''"local"'' marker, when encoded as [[djson|00001012920503]] or [[native|00001012920513]].
+  Local references are listed on the //Info page// of each zettel.

@@ -16,7 +16,6 @@ There are several kinds of references that are allowed in Zettelmarkup:
 * Put a mark within your zettel that you can reference later with a link.
 
 === Links
-
 There are two kinds of links, regardless of links to (internal) other zettel or to (external) material.
 Both kinds starts with two consecutive left square bracket characters (""''[''"", ''U+005B'') and ends with two consecutive right square bracket characters (""'']''"", ''U+005D'').
 
@@ -30,8 +29,10 @@ If the first form is given, the text is derived from the link specification, e.g
 
 The link specification for another zettel within the same Zettelstore is just the [[zettel identifier|00001006050000]].
 To reference some content within a zettel, you can append a number sign character (""''#''"", ''U+0023'') and the name of the mark to the zettel identifier.
+The resulting reference is called ""zettel reference"".
 
-To specify some (external) material outside the Zettelstore, just use an normal Uniform Resource Identifier (URI) as defined by [[RFC\ 3986|https://tools.ietf.org/html/rfc3986]].
+To specify some material outside the Zettelstore, just use an normal Uniform Resource Identifier (URI) as defined by [[RFC\ 3986|https://tools.ietf.org/html/rfc3986]].
+If the URL starts with the slash character (""/"", ''U+002F''), i.e. without scheme, user info, and host name, the reference will be treated as a ""local reference"", otherwise as an ""external reference"".
 
 The text in the second form is just a sequence of inline elements.
 
