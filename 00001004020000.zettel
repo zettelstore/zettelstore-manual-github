@@ -24,7 +24,7 @@ The following meta keys change the appearance / behaviour of Zettelstore:
 : License value to be used when rendering content.
   Can be overwritten in a zettel with [[meta key|00001006020000]] ''license''.
   Default: (the empty string).
-; ''default-role''
+; [!default-role]''default-role''
 : Role to be used, if a zettel specifies no ''role'' [[meta key|00001006020000]].
   Default: ''zettel''.
 ; ''default-syntax''

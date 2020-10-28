@@ -37,7 +37,9 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 : Defines a license string that will be rendered.
   If not given, the value ''default-license'' from the  [[configuration zettel|00001004020000]] will be used.
   The type is ''e''.
-; ''role''
+; [!new-role]''new-role''
+: Used in a template zettel to specify the ''role'' of the new zettel.
+; [!role]''role''
 : Defines the role of the zettel.
   Can be used for selecting zettel.
   See [[supported zettel roles|00001006020100]].
