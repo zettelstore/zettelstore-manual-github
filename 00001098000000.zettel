@@ -9,7 +9,7 @@ role: manual
   Specify places, where zettel are stored, via an URL.
 
   Add support for a custom footer.
-  See [[configuration description|00001004020000]] (key ''footer-html''), and the [[configuration zettel|00000000000001]] of this Zettelstore as an example.
+  See [[configuration description|00001004020000]] (key ''footer-html''), and the [[configuration zettel|00000000000100]] of this Zettelstore as an example.
 ; v0.0.4 (2020-09-11) [[GitHub|https://github.com/zettelstore/zettelstore/releases/tag/v0.0.4]]
 : Optional user authentication/authorization.
   See [[Security|00001010000000]] for details.
@@ -22,7 +22,7 @@ role: manual
 
   Limitations on renaming zettel has been relaxed.
 ; v0.0.2 (2020-08-28) [[GitHub|https://github.com/zettelstore/zettelstore/releases/tag/v0.0.2]]
-: Configuration zettel now has ID [[00000000000001]] (previously: ''00000000000000'').
+: Configuration zettel now has ID ''00000000000001'' (previously: ''00000000000000'').
   A zettel with ID ''00000000000000'' is no longer shown in any zettel list.
   If you changed the configuration zettel, you should rename it manually in its file directory.
 

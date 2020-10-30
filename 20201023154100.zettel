@@ -3,6 +3,11 @@ tags: #release
 syntax: zmk
 role: changelog
 
+=== Server
+* [d87dc73] (major) Rename identifier of [[run-time configuration zettel|00001004020000]] to ''00000000000100'' (previously ''00000000000001'').
+  This is done to gain some free identifier with smaller number to be used internally.
+
+  If you customized this zettel, please make sure to rename it to the new identifier.
 === Zettelmarkup
 * [4b514bf] (bug) Allow to specify a ""fragment"" in a [[reference|00001007040300]] to a zettel.
   Used to link to an internal position within a zettel.

@@ -3,7 +3,7 @@ tags: #configuration #manual #zettelstore
 syntax: zmk
 role: manual
 
-You can configure a running Zettelstore by modifying the special zettel with the ID [[00000000000001]].
+You can configure a running Zettelstore by modifying the special zettel with the ID [[00000000000100]].
 This zettel is called ""configuration zettel"".
 The following meta keys change the appearance / behaviour of Zettelstore:
 

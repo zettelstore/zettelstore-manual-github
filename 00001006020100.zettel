@@ -20,7 +20,7 @@ Some roles are defined for technical reasons:
 
 ; ''configuration''
 : A zettel that contains some configuration data for the Zettelstore.
-  Most prominent is [[00000000000001]], as described in [[00001004020000]].
+  Most prominent is [[00000000000100]], as described in [[00001004020000]].
 ; ''manual''
 : All zettel that document the inner workings of the Zettelstore software.
   This role is used in this specific Zettelstore.
