@@ -40,3 +40,5 @@ role: changelog
 * [8af22e5] (major) Allow multiple zettel to act as templates for creating new zettel.
   All zettel with a role value [[''new-template''|00001006020100#new-template]] act as a template to create a new zettel.
   The WebUI menu item ""New"" changed to a drop-down list with all those zettel, ordered by their identifier.
+* [1c068e5] (minor) When a page should be opened in a new windows (e.g. for external references), the web browser is instructed to decouple the new page from the previous one for provacy and security reasons.
+  In detail, the web browser is instructed to omit referrer information and to omit a JS object linking to the page that contained the external link.
