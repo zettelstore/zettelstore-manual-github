@@ -3,25 +3,25 @@ tags: #manual #release #zettelstore
 syntax: zmk
 role: manual
 
-; v0.0.5 (2020-10-22) [[GitHub|https://github.com/zettelstore/zettelstore/releases/tag/v0.0.5]]
+; v0.0.5 (2020-10-22)
 : [[Application Programming Interface|00001012000000]] (API) to allow external software to retrieve zettel data from the Zettelstore.
 
   Specify places, where zettel are stored, via an URL.
 
   Add support for a custom footer.
   See [[configuration description|00001004020000]] (key ''footer-html''), and the [[configuration zettel|00000000000100]] of this Zettelstore as an example.
-; v0.0.4 (2020-09-11) [[GitHub|https://github.com/zettelstore/zettelstore/releases/tag/v0.0.4]]
+; v0.0.4 (2020-09-11)
 : Optional user authentication/authorization.
   See [[Security|00001010000000]] for details.
 
   New sub-commands [[``file``|00001004051200]] (use Zettelstore as a command line filter), [[``password``|00001004051400]] (for authentication), and [[``config``|00001004050600]].
-; v0.0.3 (2020-08-31) [[GitHub|https://github.com/zettelstore/zettelstore/releases/tag/v0.0.3]]
+; v0.0.3 (2020-08-31)
 : Starting Zettelstore has been changed by introducing sub-commands.
   See [[Command line parameters|00001004050000]] for details.
   This change is also reflected on the [[server installation procedures|00001003000000]]
 
   Limitations on renaming zettel has been relaxed.
-; v0.0.2 (2020-08-28) [[GitHub|https://github.com/zettelstore/zettelstore/releases/tag/v0.0.2]]
+; v0.0.2 (2020-08-28)
 : Configuration zettel now has ID ''00000000000001'' (previously: ''00000000000000'').
   A zettel with ID ''00000000000000'' is no longer shown in any zettel list.
   If you changed the configuration zettel, you should rename it manually in its file directory.
@@ -29,5 +29,5 @@ role: manual
   Creating a new zettel is now done by cloning an existing zettel.
   To mimic the previous behaviour, a zettel with ID [[00000000040001]] is introduced.
   You can change it if you need a different template zettel.
-; v0.0.1 (2020-08-21) [[GitHub|https://github.com/zettelstore/zettelstore/releases/tag/v0.0.1]]
+; v0.0.1 (2020-08-21)
 : Initial public release.
