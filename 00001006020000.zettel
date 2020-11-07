@@ -12,7 +12,7 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 : Defines a copyright string that will be encoded.
   If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000]] will be used.
   The type is ''s''.
-; [!cred]''cred''
+; [!credential]''credential''
 : Contains the hashed password, as it was emitted by [[``zettelstore password``|00001004051400]].
   It is internally created by hashing the password, the [[zettel identifier|00001006050000]], and the value of the ''ident'' key.
   Type is ''e''.
@@ -22,12 +22,6 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 : Contains the [[zettel identifier|00001006050000]], as given by the Zettelstore.
   It cannot be set manually.
   It has type ''i''.
-; [!ident]''ident''
-: Provides some unique user identification for a user zettel.
-  It is used as a user name for authentication.
-  Its type is ''w''.
-
-  It is only used for zettel with a ''role'' value of ""user"".
 ; [!lang]''lang''
 : Language for the zettel.
   Mostly used for HTML rendering of the zettel.
@@ -63,6 +57,12 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   One use case is to specify the document that the current zettel comments on.
   The URL will be rendered special on the web user interface if you use the default template.
   Has type ''u''.
+; [!user-id]''user-id''
+: Provides some unique user identification for a user zettel.
+  It is used as a user name for authentication.
+  Its type is ''w''.
+
+  It is only used for zettel with a ''role'' value of ""user"".
 ; [!user-role]''user-role''
 : Defines the basic privileges of an authenticated user, e.g. reading / changing zettel.
   Is only valid in a user zettel.

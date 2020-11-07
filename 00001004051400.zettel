@@ -12,7 +12,8 @@ The general usage is:
 zettelstore password IDENT ZETTEL-ID
 ```
 
-``IDENT`` is the identification (""user name"") for the user that should be authenticated, ``ZETTEL-ID`` is the [[identifier of the zettel|00001006050000]] that later acts as a user zettel.
+``IDENT`` is the identification for the user that should be authenticated.
+``ZETTEL-ID`` is the [[identifier of the zettel|00001006050000]] that later acts as a user zettel.
 
 See [[Creating an user zettel|00001010040200]] for background.
 
@@ -22,14 +23,14 @@ An example:
 # zettelstore password bob 20200911115600
 Password:
    Again:
-ident: bob
-cred: $2a$10$1q92v1Ya8Too5HD/4rKpPuCP8fZTYPochsC6DcY1T4JKwhSx8uLu6
+credential: $2a$10$1q92v1Ya8Too5HD/4rKpPuCP8fZTYPochsC6DcY1T4JKwhSx8uLu6
+user-id: bob
 ```
 
-This will produce a hashed password for the new user ""bob"" to be stored in zettel ""20200911115600"".
+This will produce a hashed password (""credential"") for the new user ""bob"" to be stored in zettel ""20200911115600"".
 
-You should copy the relevant output to the zettel of the user to be secured, especially by setting the meta keys ''ident'' and ''cred'' to the copied values.
+You should copy the relevant output to the zettel of the user to be secured, especially by setting the meta keys ''credential'' and ''user-id'' to the copied values.
 
-Please note that the generated hashed password is tied to the given user identification (''ident'') and the identifier of its zettel.
-Changing at least one of those will stop authenticating the user with the given password.
+Please note that the generated hashed password is tied to the given user identification (''user-id'') and to the identifier of its zettel.
+Changing one of those will stop authenticating the user with the given password.
 In this case you have to re-run this sub-command.
