@@ -8,6 +8,13 @@ role: changelog
   This is done to gain some free identifier with smaller number to be used internally.
 
   If you customized this zettel, please make sure to rename it to the new identifier.
+* [c11f94] (major) Rename the two essential meta data keys of a [[user zettel|00001010040200]] to [[''credential''|00001006020000#credential]] and [[''user-id''|00001006020000#user-id]].
+  The previous values were ''cred'' and ''ident''.
+
+  If you [[enabled user authentication|00001010040100]] and added some user zettel, make sure to change them accordingly.
+  Otherwise these users will not [[authenticated|00001010040400]] any more.
+* [665a6f] (minor) Rename the URL scheme of the [[place|00001004011200]] where predefined zettel are stored to ''const''.
+  The previous value was ''globals''.
 === Zettelmarkup
 * [4b514bf] (bug) Allow to specify a ""fragment"" in a [[reference|00001007040300]] to a zettel.
   Used to link to an internal position within a zettel.
