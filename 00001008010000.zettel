@@ -13,8 +13,8 @@ If you set ''yaml-header'' to true, then new content is always stored in a file 
 
 Otherwise ''zettel-file-syntax'' lists all syntax values, where its content should be stored in a file with the extension ''.zettel''.
 
-If neither ''yaml-header'' nor ''zettel-file-syntax'' is set, new content is stored in a file with the same extension of the syntax of a zettel.
-In this case it make a difference, whether you specify ''md'' or ''markdown''.
+If neither ''yaml-header'' nor ''zettel-file-syntax'' is set, new content is stored in a file where its file name extension is the same as the syntax value of that zettel.
+In this case it makes a difference, whether you specify ''md'' or ''markdown''.
 If you specify the syntax ''md'', your content will be stored in a file with the ''.md'' extension.
 Similar for the syntax ''markdown''.
 If you want to process the files that store the zettel content, e.g. with some other Markdown tools, this may be important.

@@ -8,32 +8,32 @@ Although you are free to define your own meta data, by using any key (according 
 Most keys conform to a [[type|00001006030000]].
 If a type is not explicitly mentioned, a possibly empty string is assumed (type ''e'').
 
-; ''copyright''
+; [!copyright]''copyright''
 : Defines a copyright string that will be encoded.
   If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000]] will be used.
   The type is ''s''.
-; ''cred''
+; [!cred]''cred''
 : Contains the hashed password, as it was emitted by [[``zettelstore password``|00001004051400]].
   It is internally created by hashing the password, the [[zettel identifier|00001006050000]], and the value of the ''ident'' key.
   Type is ''e''.
 
   It is only used for zettel with a ''role'' value of ""user"".
-; ''id''
+; [!id]''id''
 : Contains the [[zettel identifier|00001006050000]], as given by the Zettelstore.
   It cannot be set manually.
   It has type ''i''.
-; ''ident''
+; [!ident]''ident''
 : Provides some unique user identification for a user zettel.
   It is used as a user name for authentication.
   Its type is ''w''.
 
   It is only used for zettel with a ''role'' value of ""user"".
-; ''lang''
+; [!lang]''lang''
 : Language for the zettel.
   Mostly used for HTML rendering of the zettel.
   If not given, the value ''default-lang'' from the  [[configuration zettel|00001004020000]] will be used.
   Use values according to the language definition of [[RFC-5646|https://tools.ietf.org/html/rfc5646]]. Its type is ''w''.
-; ''license''
+; [!license]''license''
 : Defines a license string that will be rendered.
   If not given, the value ''default-license'' from the  [[configuration zettel|00001004020000]] will be used.
   The type is ''e''.
@@ -45,32 +45,31 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   See [[supported zettel roles|00001006020100]].
   If not given, the value ''default-role'' from the [[configuration zettel|00001004020000]] will be used.
   Has type ''w''.
-; ''syntax''
+; [!syntax]''syntax''
 : Specifies the syntax that should be used for interpreting the zettel.
   The zettel about [[other markup languages|00001008000000]] defines supported values.
   If not given, the value ''default-syntax'' from the [[configuration zettel|00001004020000]] will be used.
   Has type ''w'' (word).
-; ''tags''
+; [!tags]''tags''
 : Contains a space separated list of tags to describe the zettel further.
   Each Tag must start with the number sign character (""''#''"", ''U+0023'').
   Has type ''T''.
-; ''title''
+; [!title]''title''
 : Specifies the title of the zettel.
   The zettel identifier will be used if the title is not given.
   Its type is ''s''.
-; ''url''
+; [!url]''url''
 : Defines an URL / URI for this zettel that possibly references external material.
   One use case is to specify the document that the current zettel comments on.
-  Another example: source of an image, as for the [[Text icon for external material|00000000030001]].
   The URL will be rendered special on the web user interface if you use the default template.
   Has type ''u''.
-; ''user-role''
+; [!user-role]''user-role''
 : Defines the basic privileges of an authenticated user, e.g. reading / changing zettel.
   Is only valid in a user zettel.
   Its type is ''w''.
 
-  See [User roles|00001010070300]] for more details.
-; ''visibility''
+  See [[User roles|00001010070300]] for more details.
+; [!visibility]''visibility''
 : When you work with authentication, you can give every zettel a value to decide, who can see the zettel.
   Has type ''w''.
 

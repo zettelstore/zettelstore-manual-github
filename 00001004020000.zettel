@@ -7,12 +7,12 @@ You can configure a running Zettelstore by modifying the special zettel with the
 This zettel is called ""configuration zettel"".
 The following meta keys change the appearance / behaviour of Zettelstore:
 
-; ''default-copyright''
+; [!default-copyright]''default-copyright''
 : Copyright value to be used when rendering content.
   Can be overwritten in a zettel with [[meta key|00001006020000]] ''copyright''.
 
   Default: (the empty string).
-; ''default-lang''
+; [!default-lang]''default-lang''
 : Default language to be used when displaying content.
   Can be overwritten in a zettel with [[meta key|00001006020000]] ''lang''. Default: ''en''.
 
@@ -20,42 +20,42 @@ The following meta keys change the appearance / behaviour of Zettelstore:
   e.g. lists or search results.
 
   Use values according to the language definition of [[RFC-5646|https://tools.ietf.org/html/rfc5646]].
-; ''default-license''
+; [!default-license]''default-license''
 : License value to be used when rendering content.
   Can be overwritten in a zettel with [[meta key|00001006020000]] ''license''.
   Default: (the empty string).
 ; [!default-role]''default-role''
 : Role to be used, if a zettel specifies no ''role'' [[meta key|00001006020000]].
   Default: ''zettel''.
-; ''default-syntax''
+; [!default-syntax]''default-syntax''
 : Syntax to be used, if a zettel specifies no ''syntax'' [[meta key|00001006020000]].
   Default: ''zmk'' (""Zettelmarkup"").
-; ''default-title''
+; [!default-title]''default-title''
 : Title to be used, if a zettel specifies no ''title'' [[meta key|00001006020000]].
   Default: ''Untitled''.
-; ''footer-html''
+; [!footer-html]''footer-html''
 : Contains some HTML code that will be included into the footer of each Zettelstore web page.
   It only affects the [[web user interface|00001014000000]].
   Zettel content, delivered via the [[API|00001012000000]] as JSON, etc. is not affected.
   Default: (the empty string).
-; ''icon-material''
+; [!icon-material]''icon-material''
 : Some HTML code that is displayed after a link to (external) material.
   Default: ''&\#8280;'', to display a ""&#8280;"" sign.
-; ''site-name''
+; [!site-name]''site-name''
 : Name of the Zettelstore instance.
   Will be used when displaying some lists.
   Default: ''Zettelstore''.
-; ''start''
+; [!start]''start''
 : Specifies the ID of the zettel, that should be presented for the default view.
   If not given or if the ID does not identify a zettel, the list of all zettel is shown.
-; ''yaml-header''
+; [!yaml-header]''yaml-header''
 : If true, meta data and content will be separated by ''-\--\\n'' instead of an empty line (''\\n\\n'').
   Default: ''false''.
 
   You will probably use this key, if you are working with another software
   processing [[Markdown|https://daringfireball.net/projects/markdown/]] that
   uses a subset of [[YAML|https://yaml.org/]] to specify meta data.
-; ''zettel-file-syntax''
+; [!zettel-file-syntax]''zettel-file-syntax''
 : If you create a new zettel with a syntax different to ""meta"" and ""zmk"",
   Zettelstore will store the zettel as two files: one for the meta data
   (file extension ''.meta'') and one for the content (file extension based on

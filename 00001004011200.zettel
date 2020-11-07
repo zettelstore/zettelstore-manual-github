@@ -5,14 +5,14 @@ role: manual
 
 A Zettelstore must store its zettel somehow and somewhere.
 In most cases you want to store your zettel as files in a directory.
-Under certain circumstances you maywant to store your zettel in other places.
+Under certain circumstances you may want to store your zettel in other places.
 
 An example are the [[predefined zettel|00001005090000]] that come with a Zettelstore.
 They are stored within the software itself.
 In another situation you may want to store your zettel volatilely, e.g. if you want to provide a sandbox for experimenting.
 
 To cope with these (and more) situations, you configure Zettelstore to use one or more places.
-This is done via the ''place-X-uri'' keys of the [[start-up configuration|00001004010000]] (X is a number).
+This is done via the ''place-X-uri'' keys of the [[start-up configuration|00001004010000#place-X-uri]] (X is a number).
 Places are specified using special [[URIs|https://en.wikipedia.org/wiki/Uniform_Resource_Identifier]], somehow similar to web addresses.
 
 The following place URIs are supported:
@@ -41,4 +41,4 @@ Otherwise Zettelstore will not work in certain situations.
 
 If you use the ''mem:'' place, where zettel are stored in volatile memory, it makes only sense if you configure it as ''place-1-uri''.
 Such a place will be empty when Zettelstore starts and only the place 1 will receive updates.
-You smust make sure that your computer has enough RAM to store all zettel.
+You must make sure that your computer has enough RAM to store all zettel.

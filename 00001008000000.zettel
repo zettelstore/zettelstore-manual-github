@@ -5,7 +5,7 @@ role: manual
 
 [[Zettelmarkup|00001007000000]] is not the only markup language you can use to define your content.
 Zettelstore is quite agnostic with respect to markup languages.
-Of course, Zettelmarkup play an important role.
+Of course, Zettelmarkup plays an important role.
 However, with the exception of zettel titles, you can use any (markup) language that is supported:
 
 * Markdown

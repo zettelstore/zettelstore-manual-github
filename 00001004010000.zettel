@@ -7,21 +7,21 @@ The configuration file, as specified by the ''-c CONFIGFILE'' [[command line opt
 The syntax of the configuration file is the same as for any zettel meta data.
 The following keys are supported:
 
-; ''insecure-cookie''
+; [!insecure-cookie]''insecure-cookie''
 : Must be set to ''true'', if authentication is enabled and Zettelstore is not accessible not via HTTPS (but via HTTP).
   Otherwise web browser are free to ignore the authentication cookie.
 
   Default: ''false''
-; ''listen-addr''
+; [!listen-addr]''listen-addr''
 : Configures the network address, where is zettel web service is listening for requests.
   Syntax is: ''[NETWORKIP]:PORT'', where ''NETWORKIP'' is the IP-address of the networking interface (or something like ''0.0.0.0'' if you want to listen on all network interfaces, and ''PORT'' is the TCP port.
 
   Default value: ''"127.0.0.1:23123"''
-; ''owner''
+; [!owner]''owner''
 : [[Identifier|00001006050000]] of a zettel that contains data about the owner of the Zettelstore.
   The owner has full authorization for thr zettel store.
   Only if owner is set, user [[authentication|00001010000000]] is possible.
-; ''persistent-cookie''
+; [!persistent-cookie]''persistent-cookie''
 : A boolean value to make the access cookie persistent.
   This is helpful if you access the Zettelstore via a mobile device.
   On these devices, the operating system is free to stop the web browser and to remove temporary cookies.
@@ -31,15 +31,15 @@ The following keys are supported:
   Its lifetime exceeds the lifetime of the authentication token (see option ''token-lifetime-html'') by 30 seconds.
 
   Default: ''false''
-; ''place-//X//-uri'', where //X// is a number greater or equal to one
+; [!place-X-uri]''place-//X//-uri'', where //X// is a number greater or equal to one
 : Specifies a [[place|00001004011200]] where zettel are stored.
   During startup //X// is counted, starting with one, until no key is found.
   This allows to configure more than one place.
-; ''readonly''
+; [!readonly]''readonly''
 : Puts the Zettelstore web service into a read-only mode.
   No changes are possible.
   Default: false.
-; ''token-lifetime-api'', ''token-lifetime-html''
+; [!token-lifetime-api]''token-lifetime-api'', [!token-lifetime-html]''token-lifetime-html''
 : Define lifetime of access tokens in minutes.
   Values are only valid if authentication is enabled, i.e. key ''owner'' is set.
 
@@ -49,12 +49,12 @@ The following keys are supported:
   ''token-lifetime-html'' specifies the lifetime for the HTML views.
   Default: 1 hour.
   This lifetime is extended, when a new HTML view is rendered.
-; ''url-prefix''
+; [!url-prefix]''url-prefix''
 : Add the given string as a prefix to the local part of a Zettelstore local URL/URI when rendering zettel representations.
   Must start and end with a slash character (""''/''"", ''U+002F'').
   Default: ''"/"''.
 
-  This allows to use a forward proxy [[server|00001010090100]] in front of the Zettelstore.
+  This allows to use a forwarding proxy [[server|00001010090100]] in front of the Zettelstore.
 ; ''verbose''
 : Be more verbose inf logging data.
   Default: false
