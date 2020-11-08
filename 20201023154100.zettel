@@ -16,12 +16,14 @@ role: changelog
 * [665a6f] (minor) Rename the URL scheme of the [[place|00001004011200]] where predefined zettel are stored to ''const''.
   The previous value was ''globals''.
 === Zettelmarkup
-* [4b514bf] (bug) Allow to specify a ""fragment"" in a [[reference|00001007040300]] to a zettel.
+* [4b514bf] (bug) Allow to specify a //fragment//{-} in a [[reference|00001007040300]] to a zettel.
   Used to link to an internal position within a zettel.
   This applies to CommonMark too.
 === API
 * [6926771] (bug) Encoding binary content in format [[json|00001012920501]] now results in valid JSON content.
 * [25e5486] (bug) All query parameter of [[filtering a list|00001012051800]] must be true, regardless if a specific key occurs more than one or not.
+* [82f200a] (minor) Encode all inherited meta values in all formats except [[raw|00001012920516]].
+  A meta value is called //inherited//{-} if there is a key starting with ''default-'' in the [[configuration zettel|00001004020000]].
   Applies to WebUI also.
 === Web user interface
 * [fd4317c] (minor) Focus on the first text field on some forms (new zettel, edit zettel, rename zettel, login)
