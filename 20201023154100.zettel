@@ -25,6 +25,9 @@ role: changelog
 * [82f200a] (minor) Encode all inherited meta values in all formats except [[raw|00001012920516]].
   A meta value is called //inherited//{-} if there is a key starting with ''default-'' in the [[configuration zettel|00001004020000]].
   Applies to WebUI also.
+* [242af43] (minor) Automatic calculated identifier for headings (only for [[html|00001012920510]], [[djson|00001012920503]] [[native|00001012920513]] format and for the Web user interface).
+
+  You can use this to provide a zettel reference that links to the heading, without specifying an explicit [[mark|00001007040300#mark]][^The code for this very text is an example usage].
 === Web user interface
 * [fd4317c] (minor) Focus on the first text field on some forms (new zettel, edit zettel, rename zettel, login)
 * [982fe43] (major) Adapt all HTML templates to a simpler structure.
