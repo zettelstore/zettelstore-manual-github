@@ -12,7 +12,7 @@ If successful, the output is a JSON object:
 {"id":"00001012053400","url":"/z/00001012053400","meta":{"title":"API: Retrieve data for an exisiting zettel","tags":"#api #manual #zettelstore","syntax":"zmk","role":"manual","copyright":"(c) 2020 by Detlef Stern <ds@zettelstore.de>","lang":"en","license":"CC BY-SA 4.0"},"content":"The endpoint to work with a specific zettel is ''/z/{ID}'', where ''{ID}'' is a placeholder for the zettel identifier (14 digits).\n\nFor example, ...
 ```
 Similar to listing all or some zettel, you can provide a query parameter ''_format=[[FORMAT|00001012920500]]'' to select a different encoding format.
-The default encoding format is ""[[json""|00001012920501]]"".
+The default encoding format is ""[[json|00001012920501]]"".
 Others are ""[[djson|00001012920503]]"", ""[[html|00001012920510]]"", and some more.
 ```sh
 # curl 'http://127.0.0.1:23123/z/00001012053400?_format=html'
