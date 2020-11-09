@@ -41,6 +41,10 @@ The following meta keys change the appearance / behaviour of Zettelstore:
 ; [!icon-material]''icon-material''
 : Some HTML code that is displayed after a link to (external) material.
   Default: ''&\#8280;'', to display a ""&#8280;"" sign.
+; [!list-page-size]''list-page-size''
+: If set to a value greater than zero, specifies the number of items shown in WebUI lists.
+  Basically, this is the list of all zettel (possibly restricted) and the list of search results.
+  Default: ''0''.
 ; [!site-name]''site-name''
 : Name of the Zettelstore instance.
   Will be used when displaying some lists.
