@@ -50,9 +50,11 @@ role: changelog
 
   The previous value was linked to a builtin zettel containing a SVG-based icon.
   That zettel is now removed.
-* [8af22e5] (major) Allow multiple zettel to act as templates for creating new zettel.
+* [705a786] (major) Allow multiple zettel to act as templates for creating new zettel.
   All zettel with a role value [[''new-template''|00001006020100#new-template]] act as a template to create a new zettel.
   The WebUI menu item ""New"" changed to a drop-down list with all those zettel, ordered by their identifier.
+
+  The initial template zettel ""New Zettel"" has now a different zettel identifier (now: ''00000000091001'', was: ''00000000040001''). Please update it, if you changed that zettel.
 * [1c068e5] (minor) When a page should be opened in a new windows (e.g. for external references), the web browser is instructed to decouple the new page from the previous one for privacy and security reasons.
   In detail, the web browser is instructed to omit referrer information and to omit a JS object linking to the page that contained the external link.
 * [9f063be] (minor) If the value of the [[configuration zettel|00001004020000#list-page-size]] key ''list-page-size'' is greater than zero, the number of WebUI list elements will be restricted and it is possible to change to the next/previous page to list more elements.
