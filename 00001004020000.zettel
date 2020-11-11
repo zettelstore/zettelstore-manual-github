@@ -38,9 +38,9 @@ The following meta keys change the appearance / behaviour of Zettelstore:
   It only affects the [[web user interface|00001014000000]].
   Zettel content, delivered via the [[API|00001012000000]] as JSON, etc. is not affected.
   Default: (the empty string).
-; [!icon-material]''icon-material''
-: Some HTML code that is displayed after a link to (external) material.
-  Default: ''&\#8280;'', to display a ""&#8280;"" sign.
+; [!marker-external]''marker-external''
+: Some HTML code that is displayed after a reference to external material.
+  Default: ''&\#8599;&\#xfe0e;'', to display a ""&#8599;&#xfe0e;"" sign[^The string ''&\#xfe0e;'' is needed to enforce the sign on all platforms.].
 ; [!list-page-size]''list-page-size''
 : If set to a value greater than zero, specifies the number of items shown in WebUI lists.
   Basically, this is the list of all zettel (possibly restricted) and the list of search results.

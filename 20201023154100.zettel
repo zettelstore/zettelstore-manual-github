@@ -45,10 +45,11 @@ role: changelog
   When a local reference is displayed as an URL on the WebUI, it will not opened in a new window/tab.
   They will receive a ''"local"'' marker, when encoded as [[djson|00001012920503]] or [[native|00001012920513]].
   Local references are listed on the //Info page// of each zettel.
-* [878dc42] (minor) Change the default value for an icon placed after an external URL to ''&\#8280;''.
-  This affects key ''icon-material'' of the [[run-time configuration zettel|00001004020000]].
-  The previous value linked to an builtin zettel containing a SVG-based icon.
-  That zettel is removed.
+* [d48e5b2] (minor) Change the default value for some visual sugar placed after an external URL to ''&\#8599;&\#xfe0e;'' (""&#8599;&#xfe0e;"").
+  This affects the former key ''icon-material'' of the [[run-time configuration zettel|00001004020000]], which is renamed to [[''marker-external''|00001004020000#marker-external]].
+
+  The previous value was linked to a builtin zettel containing a SVG-based icon.
+  That zettel is now removed.
 * [8af22e5] (major) Allow multiple zettel to act as templates for creating new zettel.
   All zettel with a role value [[''new-template''|00001006020100#new-template]] act as a template to create a new zettel.
   The WebUI menu item ""New"" changed to a drop-down list with all those zettel, ordered by their identifier.
