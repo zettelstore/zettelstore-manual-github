@@ -54,6 +54,10 @@ role: changelog
   All zettel with a role value [[''new-template''|00001006020100#new-template]] act as a template to create a new zettel.
   The WebUI menu item ""New"" changed to a drop-down list with all those zettel, ordered by their identifier.
 
+  All meta data keys with the prefix ""new-"" will be translated to a new or updated keys/value without that prefix.
+  You can use this mechanism to specify a role for the new zettel, or a different title.
+  The title of the template zettel is used in the drop-down list. [0358ed5]
+
   The initial template zettel ""New Zettel"" has now a different zettel identifier (now: ''00000000091001'', was: ''00000000040001''). Please update it, if you changed that zettel.
 * [1c068e5] (minor) When a page should be opened in a new windows (e.g. for external references), the web browser is instructed to decouple the new page from the previous one for privacy and security reasons.
   In detail, the web browser is instructed to omit referrer information and to omit a JS object linking to the page that contained the external link.
