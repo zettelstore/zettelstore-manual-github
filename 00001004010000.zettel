@@ -35,6 +35,9 @@ The following keys are supported:
 : Specifies a [[place|00001004011200]] where zettel are stored.
   During startup //X// is counted, starting with one, until no key is found.
   This allows to configure more than one place.
+
+  If no ''place-1-uri'' key is given, the overall effect will be the same as if only ''place-1-uri'' was specified with the value ''dir://.zettel''.
+  In this case, even a key ''place-2-uri'' will be ignored.
 ; [!readonly]''readonly''
 : Puts the Zettelstore web service into a read-only mode.
   No changes are possible.

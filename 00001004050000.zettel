@@ -13,7 +13,7 @@ zettelstore
 ```
 This is equivalent to call it this way:
 ```sh
-mkdir ./zettel
+mkdir -p ./zettel
 zettelstore run -d ./zettel -c ./.zscfg
 ```
 Typically this is done by starting Zettelstore via a graphical user interface by double-clicking to its file icon.
