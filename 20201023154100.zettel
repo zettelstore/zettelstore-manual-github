@@ -62,3 +62,4 @@ role: changelog
 * [1c068e5] (minor) When a page should be opened in a new windows (e.g. for external references), the web browser is instructed to decouple the new page from the previous one for privacy and security reasons.
   In detail, the web browser is instructed to omit referrer information and to omit a JS object linking to the page that contained the external link.
 * [9f063be] (minor) If the value of the [[configuration zettel|00001004020000#list-page-size]] key ''list-page-size'' is greater than zero, the number of WebUI list elements will be restricted and it is possible to change to the next/previous page to list more elements.
+* [39eb2f9] (minor) Change CSS to enhance reading: make ``line-height``{=css} a little smaller (previous: 1.6, now 1.4) and move list items to the left.
