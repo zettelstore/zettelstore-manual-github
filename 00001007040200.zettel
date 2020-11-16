@@ -3,11 +3,10 @@ tags: #manual #zettelmarkup #zettelstore
 syntax: zmk
 role: manual
 
-There are three reasons to mark text that should be rendered as uninterpreted:
-
-# Mark text as literal, sometimes as part of a program.
-# Mark text as input you give into a computer via a keyboard.
-# Mark text as output from some computer, e.g. shown at the command line.
+There are some reasons to mark text that should be rendered as uninterpreted:
+* Mark text as literal, sometimes as part of a program.
+* Mark text as input you give into a computer via a keyboard.
+* Mark text as output from some computer, e.g. shown at the command line.
 
 === Literal text
 Literal text somehow relates to [[verbatim blocks|00001007030500]]: their content should not be interpreted further, but may be rendered special.

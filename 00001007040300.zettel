@@ -6,7 +6,6 @@ role: manual
 An important aspect of knowledge work is to interconnect your zettel as well as provide links to (external) material.
 
 There are several kinds of references that are allowed in Zettelmarkup:
-
 * Links to other zettel.
 * Links to (external material).
 * Embed images that are stored within your Zettelstore.
@@ -19,13 +18,10 @@ There are several kinds of references that are allowed in Zettelmarkup:
 There are two kinds of links, regardless of links to (internal) other zettel or to (external) material.
 Both kinds starts with two consecutive left square bracket characters (""''[''"", ''U+005B'') and ends with two consecutive right square bracket characters (""'']''"", ''U+005D'').
 
-The first form just provides a link specification between the square brackets.
-The second form provide some text plus the link specification, delimited by a vertical bar character (""''|''"", ''U+007C'').
+The first form provides some text plus the link specification, delimited by a vertical bar character (""''|''"", ''U+007C''): ``[[text|linkspecification]]``.
 
-# ``[[linkspecification]]``
-# ``[[text|linkspecification]]``
-
-If the first form is given, the text is derived from the link specification, e.g. by interpreting the link specification as text.
+The second form just provides a link specification between the square brackets.
+Its text is derived from the link specification, e.g. by interpreting the link specification as text: ``[[linkspecification]]``.
 
 The link specification for another zettel within the same Zettelstore is just the [[zettel identifier|00001006050000]].
 To reference some content within a zettel, you can append a number sign character (""''#''"", ''U+0023'') and the name of the mark to the zettel identifier.
@@ -37,8 +33,7 @@ If the URL starts with the slash character (""/"", ''U+002F''), i.e. without sch
 The text in the second form is just a sequence of inline elements.
 
 === Images
-
-To some degree, an image specification is conceptually near a link specification.
+To some degree, an image specification is conceptually not too far away from a link specification.
 Both contain a link specification and optionally some text.
 In contrast to a link, the link specification of an image must resolve to actual graphical image data.
 That data is read when rendered as HTML, and is embedded inside the zettel as an inline image.

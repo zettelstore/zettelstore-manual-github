@@ -3,20 +3,20 @@ tags: #manual #zettelstore
 syntax: zmk
 role: manual
 
-# [[Introduction|00001001000000]]
-# [[Design goals|00001002000000]]
-# [[Installation|00001003000000]]
-# [[Configuration|00001004000000]]
-# [[Structure of the Zettelstore|00001005000000]]
-# [[Layout of a zettel|00001006000000]]
-# [[Zettelmarkup|00001007000000]]
-# [[Other markup languages|00001008000000]]
-# [[Security|00001010000000]]
-# [[API|00001012000000]]
-# [[Web user interface|00001014000000]]
-# Troubleshooting
-# Frequently asked questions
-# [[Current limitations|00001096000000]]
-# [[Releases|00001098000000]]
+* [[Introduction|00001001000000]]
+* [[Design goals|00001002000000]]
+* [[Installation|00001003000000]]
+* [[Configuration|00001004000000]]
+* [[Structure of the Zettelstore|00001005000000]]
+* [[Layout of a zettel|00001006000000]]
+* [[Zettelmarkup|00001007000000]]
+* [[Other markup languages|00001008000000]]
+* [[Security|00001010000000]]
+* [[API|00001012000000]]
+* [[Web user interface|00001014000000]]
+* Troubleshooting
+* Frequently asked questions
+* [[Current limitations|00001096000000]]
+* [[Releases|00001098000000]]
 
 License of the user manual: [[{{CC BY-SA 4.0|00001000000002}}|https://creativecommons.org/licenses/by-sa/4.0/]].
