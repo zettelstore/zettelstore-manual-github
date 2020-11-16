@@ -15,7 +15,7 @@ In the second step, when authentication is enabled and the requesting user is no
 
 * Read a zettel:
 ** If the visibility is ""public"", the access is granted.
-** If the visibility is ""owner", the access is rejected.
+** If the visibility is ""owner"", the access is rejected.
 ** If the user is not authenticated, access is rejected.
 ** If the zettel requested is an user zettel, reject the access if the users identification is not the same as of the ''ident'' meta key in the zettel.
 
