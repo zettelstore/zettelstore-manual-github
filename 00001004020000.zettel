@@ -33,6 +33,8 @@ The following meta keys change the appearance / behaviour of Zettelstore:
 ; [!default-title]''default-title''
 : Title to be used, if a zettel specifies no ''title'' [[meta key|00001006020000]].
   Default: ''Untitled''.
+
+  You can use all [[inline-structured elements|00001007040000]] of Zettelmarkup.
 ; [!footer-html]''footer-html''
 : Contains some HTML code that will be included into the footer of each Zettelstore web page.
   It only affects the [[web user interface|00001014000000]].

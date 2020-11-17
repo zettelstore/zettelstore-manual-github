@@ -10,7 +10,7 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 
 ; [!copyright]''copyright''
 : Defines a copyright string that will be encoded.
-  If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000]] will be used.
+  If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000#default-copyright]] will be used.
   The type is ''s''.
 ; [!credential]''credential''
 : Contains the hashed password, as it was emitted by [[``zettelstore password``|00001004051400]].
@@ -25,11 +25,11 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 ; [!lang]''lang''
 : Language for the zettel.
   Mostly used for HTML rendering of the zettel.
-  If not given, the value ''default-lang'' from the  [[configuration zettel|00001004020000]] will be used.
+  If not given, the value ''default-lang'' from the  [[configuration zettel|00001004020000#default-lang]] will be used.
   Use values according to the language definition of [[RFC-5646|https://tools.ietf.org/html/rfc5646]]. Its type is ''w''.
 ; [!license]''license''
 : Defines a license string that will be rendered.
-  If not given, the value ''default-license'' from the  [[configuration zettel|00001004020000]] will be used.
+  If not given, the value ''default-license'' from the  [[configuration zettel|00001004020000#default-license]] will be used.
   The type is ''e''.
 ; [!new-role]''new-role''
 : Used in a template zettel to specify the ''role'' of the new zettel.
@@ -37,12 +37,12 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 : Defines the role of the zettel.
   Can be used for selecting zettel.
   See [[supported zettel roles|00001006020100]].
-  If not given, the value ''default-role'' from the [[configuration zettel|00001004020000]] will be used.
+  If not given, the value ''default-role'' from the [[configuration zettel|00001004020000#default-role]] will be used.
   Has type ''w''.
 ; [!syntax]''syntax''
 : Specifies the syntax that should be used for interpreting the zettel.
   The zettel about [[other markup languages|00001008000000]] defines supported values.
-  If not given, the value ''default-syntax'' from the [[configuration zettel|00001004020000]] will be used.
+  If not given, the value ''default-syntax'' from the [[configuration zettel|00001004020000#default-syntax]] will be used.
   Has type ''w'' (word).
 ; [!tags]''tags''
 : Contains a space separated list of tags to describe the zettel further.
@@ -50,8 +50,10 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   Has type ''T''.
 ; [!title]''title''
 : Specifies the title of the zettel.
-  The zettel identifier will be used if the title is not given.
+  If not given, the value ''default-title'' from the [[configuration zettel|00001004020000#default-title]] will be used.
   Its type is ''s''.
+
+  You can use all [[inline-structured elements|00001007040000]] of Zettelmarkup.
 ; [!url]''url''
 : Defines an URL / URI for this zettel that possibly references external material.
   One use case is to specify the document that the current zettel comments on.
