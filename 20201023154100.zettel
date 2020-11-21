@@ -28,6 +28,7 @@ role: changelog
 * [242af43] (minor) Automatic calculated identifier for headings (only for [[html|00001012920510]], [[djson|00001012920503]] [[native|00001012920513]] format and for the Web user interface).
 
   You can use this to provide a zettel reference that links to the heading, without specifying an explicit [[mark|00001007040300#mark]][^The code for this very text is an example usage].
+* [6b31323] (mayor) New call to [[retrieve all references|00001012053600]] of a given zettel.
 === Web user interface
 * [fd4317c] (minor) Focus on the first text field on some forms (new zettel, edit zettel, rename zettel, login)
 * [982fe43] (major) Adapt all HTML templates to a simpler structure.

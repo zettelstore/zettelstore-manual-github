@@ -36,6 +36,7 @@ If [[authentication is enabled|00001010040100]], most API calls must include an 
 === Working with zettel
 * Create a new zettel
 * [[Retrieve meta data and content of an existing zettel|00001012053400]]
+* [[Retrieve references of an existing zettel|00001012053600]]
 * Update meta data and content of a zettel
 * Rename a zettel
 * Delete a zettel
