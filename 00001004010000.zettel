@@ -20,7 +20,7 @@ The following keys are supported:
 ; [!owner]''owner''
 : [[Identifier|00001006050000]] of a zettel that contains data about the owner of the Zettelstore.
   The owner has full authorization for thr zettel store.
-  Only if owner is set, user [[authentication|00001010000000]] is possible.
+  Only if owner is set to some value, user [[authentication|00001010000000]] is enabled.
 ; [!persistent-cookie]''persistent-cookie''
 : A boolean value to make the access cookie persistent.
   This is helpful if you access the Zettelstore via a mobile device.
@@ -47,11 +47,11 @@ The following keys are supported:
   Values are only valid if authentication is enabled, i.e. key ''owner'' is set.
 
   ''token-lifetime-api'' is for accessing Zettelstore via its API.
-  Default: 10 minutes.
+  Default: 10.
 
   ''token-lifetime-html'' specifies the lifetime for the HTML views.
-  Default: 1 hour.
-  This lifetime is extended, when a new HTML view is rendered.
+  Default: 60.
+  It is automatically extended, when a new HTML view is rendered.
 ; [!url-prefix]''url-prefix''
 : Add the given string as a prefix to the local part of a Zettelstore local URL/URI when rendering zettel representations.
   Must start and end with a slash character (""''/''"", ''U+002F'').
