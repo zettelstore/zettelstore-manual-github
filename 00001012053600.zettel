@@ -9,45 +9,61 @@ By using the [[endpoint|00001012920000]] ''/l/{ID}'' you are able to retrieve th
 
 ````
 # curl http://127.0.0.1:23123/l/00001012053600
-{"id":"00001012053600","url":"/z/00001012053600","link":{"outgoing":[{"id":"00001012920000","url":"/z/00001012920000"}]}}
+{"id":"00001012053600","url":"/z/00001012053600","links":{"incoming":[],"outgoing":[{"id":"00001012920000","url":"/z/00001012920000"},{"id":"00001007040300","url":"/z/00001007040300#links"},{"id":"00001007040300","url":"/z/00001007040300#images"},{"id":"00001007040300","url":"/z/00001007040300#citation-key"}],"local":[],"external":[]},"images":{"outgoing":[],"local":[],"external":[]},"cites":[]}
 ````
 Formatted, this translates into:
 ````json
 {
   "id": "00001012053600",
   "url": "/z/00001012053600",
-  "link": {
+  "links": {
+    "incoming": [],
     "outgoing": [
       {
         "id": "00001012920000",
         "url": "/z/00001012920000"
+      },
+      {
+        "id": "00001007040300",
+        "url": "/z/00001007040300#links"
+      },
+      {
+        "id": "00001007040300",
+        "url": "/z/00001007040300#images"
+      },
+      {
+        "id": "00001007040300",
+        "url": "/z/00001007040300#citation-key"
       }
-    ]
-  }
+    ],
+    "local": [],
+    "external": []
+  },
+  "images": {
+    "outgoing": [],
+    "local": [],
+    "external": []
+  },
+  "cites": []
 }
 ````
 === Kind
-The following JSON keys are possible at top-level:
+The following to-level JSON keys are returned:
 ; ''id''
 : The zettel identifier for which the references were requested.
-  It is always returned.
 ; ''url''
 : The API endpoint to fetch more information about the zettel.
-  It is always returned.
 ; ''link''
 : A JSON object that contains information about incoming and outgoing [[links|00001007040300#links]].
-  It may be returned, if requested.
 ; ''image''
 : A JSON object that contains information about referenced [[images|00001007040300#images]].
-  It may be returned, if requested.
 ; ''cite''
 : A JSON list of [[citation keys|00001007040300#citation-key]] (as JSON strings).
-  It may be returned, if requested.
 
-The query parameter ''kind'' controls which of these values is returned:
+The query parameter ''kind'' controls which of these values is retrieved:
 
 |= ''kind'' <| Number >| Returned values
-| (nothing) | links
+| (nothing) | (14) |links, images, and citation keys
 | ''link'' | 2|links 
 | ''image'' | 4|images
 | ''cite'' | 8|citation keys
@@ -59,10 +75,10 @@ Every kind is given a number, which you also can use to specify the requested ki
 To get more than one kind, just add the numbers.
 If you want to retrieve only images and citations, which was not given a ''kind'' value, just specify ''kind=12''.
 === Matter
-If you request to retrieve referenced links and/or referenced images, you can further control, which matter of references should be returned as second-level keys.
+If you request to retrieve referenced links and/or referenced images, you can further control, which matter of references should be retrieved.
 This is controlled by the value of the query parameter ''matter'':
-|= ''matter'' <| Number >| Returned reference list
-| (nothing) | | outgoing references
+|= ''matter''| Number >| Returned reference list
+| (nothing) | (30) | incoming, outgoing, local, and external references
 | ''incoming'' | 2|incoming reference, not allowed for images (aka ""backlinks"", not yet implemented)
 | ''outgoing'' | 4|outgoing references
 | ''local'' | 8|local references, i.e. local, non-zettel material
@@ -75,10 +91,11 @@ Incoming and outgoing references are basically zettel.
 Therefore the list elements are JSON objects with keys ''id'' and ''url''.
 Local and external references are strings.
 
-Similar to the ''kind'' query< parameter, each matter is associated with a number.
+Similar to the ''kind'' query parameter, each matter is associated with a number.
 To retrieve a combination of matter values that does not have a name, just add the numbers.
 For example, if you want to retrieve only the outgoing and the external references, specify ''matter=20''.
 
+If a list is not going to retrieved, the associated value is ``null``{=json} instead of an empty list.
 === HTTP Status codes
 ; ''200''
 : Retrieval was successful, the body contains an appropriate JSON object.
