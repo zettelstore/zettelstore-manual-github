@@ -3,7 +3,14 @@ tags: #configuration #manual #zettelstore
 syntax: zmk
 role: manual
 
-The configuration file, as specified by the ''-c CONFIGFILE'' [[command line option|00001004051000]], allows to store start-up options in a file.
+The configuration file, as specified by the ''-c CONFIGFILE'' [[command line option|00001004051000]], allows you to specify some start-up options.
+These options cannot be stored in a [[configuration zettel|00001004020000]] because either they are needed before Zettelstore can start or because of security reasons.
+For example, Zettelstore need to know in advance, on which network address is must listen or where zettel are placed.
+An attacker that is able to change the owner can do anything.
+Therefore only the owner of the computer on which Zettelstore runs can change this information.
+
+The file for start-up configuration must be created via a text editor in advance.
+
 The syntax of the configuration file is the same as for any zettel meta data.
 The following keys are supported:
 
