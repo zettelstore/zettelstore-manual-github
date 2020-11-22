@@ -66,7 +66,7 @@ This is controlled by the value of the query parameter ''matter'':
 | ''incoming'' | 2|incoming reference, not allowed for images (aka ""backlinks"", not yet implemented)
 | ''outgoing'' | 4|outgoing references
 | ''local'' | 8|local references, i.e. local, non-zettel material
-| ''external'' |(16)| external references, i.e. on the web
+| ''external'' |16| external references, i.e. on the web
 | ''zettel'' | (6)|incoming and outgoing references
 | ''material'' |(24)| local and external references
 | ''all'' | (30)| incoming, outgoing, local, and external references
