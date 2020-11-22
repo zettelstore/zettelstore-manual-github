@@ -12,7 +12,7 @@ The JSON objects contains various name/value pairs, depending which content shou
 * ''"id"'': the [[zettel identifier|00001006050000]], as a string.
 * ''"url"'': the base URL to the zettel, as a string.
 * ''"meta"'': the meta data of the zettel, as an JSON object. See below for details.
-* ''"content"'': the actual content of the zettel, as a string. See below for details.
+* ''"encoding"'' and ''"content"'': the actual content of the zettel. See below for details.
 
 ''"id"'' and ''"url"'' are always sent to the client.
 It depends on the value of the required [[zettel part|00001012920800]], whether ''"meta"'' or ''"content"'' or both are sent.
@@ -36,11 +36,12 @@ The Zettelstore provides default values for these values, if they are not set fo
 There is a list of [[supported meta data keys|00001006020000]].
 
 === Content
-When the content is text-only, it is encoded as a plain string.
+When the content is text-only, it is encoded as a plain string with an ''"encoding"'' value of ''""'' (empty string).
 
-If the content contains binary content, it is encoded as a JSON object:
+If the content contains binary content:
 
-* ''"encoding"'' specifies the string encoding of the content. Currently, only ''"base64"'' is supported (as described in [[RFC4648, section 4|https://tools.ietf.org/html/rfc4648#section-4]].
+* ''"encoding"'' specifies the string encoding of the content.
+  Currently, only the value ''"base64"'' is supported (as described in [[RFC4648, section 4|https://tools.ietf.org/html/rfc4648#section-4]].
 * ''"value"'' is a string that contains the encoded binary content.
 
-For example, if the content just consists of three zero bytes, it will be encoded as ``{"encoding":"base64","value":"AAAA"}``{=json}.
+For example, if the content just consists of three zero bytes, it will be encoded as ``(...),"encoding":"base64","value":"AAAA"``{=json}.
