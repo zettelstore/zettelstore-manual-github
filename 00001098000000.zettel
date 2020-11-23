@@ -3,6 +3,13 @@ tags: #manual #release #zettelstore
 syntax: zmk
 role: manual
 
+; v0.0.6 (2020-11-23, [[Changelog|20201123194400]])
+: Many smaller fixes and improvements.
+  New API call to retrieve [[references inside a zettel|00001012053600]].
+  Others are mostly improvements of the WebUI.
+
+  Note: there are some breaking changes, especially if you customized the Zettelstore or use authentication.
+  Please consult the Changelog for details.
 ; v0.0.5 (2020-10-22)
 : [[Application Programming Interface|00001012000000]] (API) to allow external software to retrieve zettel data from the Zettelstore.
 
