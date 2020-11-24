@@ -3,6 +3,8 @@ tags: #manual #release #zettelstore
 syntax: zmk
 role: manual
 
+; v0.0.7 (2020-11-24, [[Changelog|20201124182500]])
+: Re-license everything to EUPL-1.2-or-later
 ; v0.0.6 (2020-11-23, [[Changelog|20201123194400]])
 : Many smaller fixes and improvements.
   New API call to retrieve [[references inside a zettel|00001012053600]].
