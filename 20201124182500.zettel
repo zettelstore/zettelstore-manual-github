@@ -1,0 +1,9 @@
+title: Changelog for v0.0.7
+tags: #release
+syntax: zmk
+role: changelog
+
+With this version, Zettelstore and this manual got a new license, the ""[[European Union Public Licence|https://joinup.ec.europa.eu/collection/eupl]]"" (EUPL), version 1.2 or later.
+Nothing else changed.
+
+If you want to stay with the old licenses (AGPLv3+, CC BY-SA 4.0), you are free to fork from the previous versions (v0.0.6).
