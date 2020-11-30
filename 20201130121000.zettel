@@ -1,0 +1,9 @@
+title: Changelog for v0.0.8
+tags: #release
+syntax: zmk
+role: changelog
+
+=== Server
+* [0097706] (bug) Zettel files with extension ''.jpg'' and without metadata will get a [[syntax|00001006020000#syntax]] value ""jpg"".
+  The internal data structure got the same value internally, instead of ""jpeg"".
+  This has been fixed for all possible alternative syntax values.
