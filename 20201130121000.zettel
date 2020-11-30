@@ -10,3 +10,7 @@ role: changelog
 * [1280a39] (bug) If a file, e.g. an image file like ''20201130190200.jpg'', is added to the [[directory place|00001004011400]], its metadata are just calculated from the information available.
   Updated metadata did not find its way into the place, because the ''.meta'' file was not written.
   This has been fixed.
+* [62debd8] (bug) If just the ''.meta'' file was deleted manually, the zettel was assumed to be missing.
+  A workaround is to restart the software.
+  This has been fixed.
+  If the ''.meta'' file is deleted, metadata is now calculated in the same way when the ''.meta'' file is non-existing at the start of the software.
