@@ -7,3 +7,6 @@ role: changelog
 * [0097706] (bug) Zettel files with extension ''.jpg'' and without metadata will get a [[syntax|00001006020000#syntax]] value ""jpg"".
   The internal data structure got the same value internally, instead of ""jpeg"".
   This has been fixed for all possible alternative syntax values.
+* [1280a39] (bug) If a file, e.g. an image file like ''20201130190200.jpg'', is added to the [[directory place|00001004011400]], its metadata are just calculated from the information available.
+  Updated metadata did not find its way into the place, because the ''.meta'' file was not written.
+  This has been fixed.
