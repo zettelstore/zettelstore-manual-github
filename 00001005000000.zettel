@@ -41,13 +41,13 @@ Other file extensions are used to determine the ""syntax"" of a zettel.
 This allows to use other content within the Zettelstore, e.g. images or HTML templates.
 
 For example, you want to store an important figure in the Zettelstore that is encoded as a ''.png'' file.
-Since each zettel contains some meta data, e.g. the title of the figure, the question arises where these data should be stores.
+Since each zettel contains some metadata, e.g. the title of the figure, the question arises where these data should be stores.
 The solution is a ''.meta'' file with the same zettel identifier.
 Zettelstore recognizes this situation and reads in both files for the one zettel containing the figure.
 It maintains this relationship as long as theses files exists.
 
-In case of some textual zettel content you do not want to store the meta data and the zettel content in two different files.
-Here the ''.zettel'' extension will signal that the meta data and the zettel content will be placed in the same file, separated by an empty line or a line with three dashes (""''-\-\-''"", also known as ""YAML separator"").
+In case of some textual zettel content you do not want to store the metadata and the zettel content in two different files.
+Here the ''.zettel'' extension will signal that the metadata and the zettel content will be placed in the same file, separated by an empty line or a line with three dashes (""''-\-\-''"", also known as ""YAML separator"").
 
 === Predefined zettel
 

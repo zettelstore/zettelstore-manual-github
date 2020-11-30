@@ -20,4 +20,4 @@ Similar for the syntax ''markdown''.
 If you want to process the files that store the zettel content, e.g. with some other Markdown tools, this may be important.
 Not every Markdown tool allows both file extensions.
 
-BTW, the meta data is stored in a file with the extension ''.meta'', if neither ''yaml-header'' nor ''zettel-file-syntax'' is set.
+BTW, metadata is stored in a file with the extension ''.meta'', if neither ''yaml-header'' nor ''zettel-file-syntax'' is set.

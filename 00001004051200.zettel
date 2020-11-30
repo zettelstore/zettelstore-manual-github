@@ -13,9 +13,9 @@ zettelstore file [-t FORMAT] [file-1 [file-2]]
 : Specifies the output format.
   Supported values are: ''html'' (default), ''json'', ''native'', ''text'', ''zmk''.
 ; ''file-1''
-: Specifies the file name, where at least the meta data are read.
+: Specifies the file name, where at least metadata is read.
   If ''file-2'' is not given, the zettel content is also read from here.
 ; ''file-2''
 : File name where the zettel content is stored.
 
-If neither ''file-1'' nor ''file-2'' are given, meta data and zettel content are read from standard input / stdin.
+If neither ''file-1'' nor ''file-2'' are given, metadata and zettel content are read from standard input / stdin.

@@ -14,7 +14,7 @@ However, with the exception of zettel titles, you can use any (markup) language 
 * HTML template data, as defined [[here|https://golang.org/pkg/html/template/]]
 * Plain text, not further interpreted
 
-The [[meta data key|00001006020000]] ""''syntax''"" specifies which language should be used.
+The [[metadata key|00001006020000#syntax]] ""''syntax''"" specifies which language should be used.
 If it is not given, the key ""''default-syntax''"" will be used (specified in the [[configuration zettel|00001004020000]].
 The following syntax values are supported:
 
@@ -30,8 +30,8 @@ The following syntax values are supported:
   Since the world of Markdown is so diverse, a [[CommonMark|https://commonmark.org]] parser is used.
   See [[Use Markdown as the main markup language of Zettelstore|00001008010000]].
 ; ''meta''
-: Only the meta data of a zettel is ""parsed"".
-  Useful for displaying the full meta data.
+: Only the metadata of a zettel is ""parsed"".
+  Useful for displaying the full metadata.
   The [[runtime configuration zettel|00000000000100]] uses this syntax.
   The zettel content is ignored.
 ; ''svg''

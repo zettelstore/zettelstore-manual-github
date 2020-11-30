@@ -1,9 +1,9 @@
-title: API: Retrieve meta data and content of an existing zettel
+title: API: Retrieve metadata and content of an existing zettel
 tags: #api #manual #zettelstore
 syntax: zmk
 role: manual
 
-The endpoint to work with meta data and content of a specific zettel is ''/z/{ID}'', where ''{ID}'' is a placeholder for the zettel identifier (14 digits).
+The endpoint to work with metadata and content of a specific zettel is ''/z/{ID}'', where ''{ID}'' is a placeholder for the zettel identifier (14 digits).
 
 For example, to retrieve some data about this zettel you are currently viewing, just send a HTTP GET request to the endpoint ''/z/00001012053400''[^If [[authentication is enabled|00001010040100]], you must include the a valid [[access token|00001012050200]] in the ''Authorization'' header].
 If successful, the output is a JSON object:
@@ -41,7 +41,7 @@ In this case, its default value is ''zettel''.
 <meta name="zs-syntax" content="zmk">
 <meta name="zs-role" content="manual">
 ```
-(Note that the meta data of the whole zettel contains some computed values, such as ''"copyright"'' and ''"license"'', while the meta data for ''_part=meta'' just contain the explicitly specified meta data.)
+(Note that metadata of the whole zettel contains some computed values, such as ''"copyright"'' and ''"license"'', while the metadata for ''_part=meta'' just contain the explicitly specified metadata.)
 
 === HTTP Status codes
 ; ''200''

@@ -1,9 +1,9 @@
-title: Supported Meta Data Keys
+title: Supported Metadata Keys
 tags: #manual #meta #reference #zettel #zettelstore
 syntax: zmk
 role: manual
 
-Although you are free to define your own meta data, by using any key (according to the [[syntax|00001006010000]]), some keys have a special meaning that is enforced by Zettelstore.
+Although you are free to define your own metadata, by using any key (according to the [[syntax|00001006010000]]), some keys have a special meaning that is enforced by Zettelstore.
 
 Most keys conform to a [[type|00001006030000]].
 If a type is not explicitly mentioned, a possibly empty string is assumed (type ''e'').

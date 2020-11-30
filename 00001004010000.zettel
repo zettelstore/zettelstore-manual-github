@@ -11,7 +11,7 @@ Therefore only the owner of the computer on which Zettelstore runs can change th
 
 The file for start-up configuration must be created via a text editor in advance.
 
-The syntax of the configuration file is the same as for any zettel meta data.
+The syntax of the configuration file is the same as for any zettel metadata.
 The following keys are supported:
 
 ; [!insecure-cookie]''insecure-cookie''

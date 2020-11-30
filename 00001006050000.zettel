@@ -4,7 +4,7 @@ syntax: zmk
 role: manual
 
 Each zettel is given a unique identifier.
-To some degree, the zettel identifier is part of the meta data.
+To some degree, the zettel identifier is part of the metadata.
 Basically, the identifier is given by the [[Zettelstore|00001005000000]] software.
 
 Every zettel identifier consists of 14 digits.

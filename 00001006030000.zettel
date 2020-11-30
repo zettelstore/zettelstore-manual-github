@@ -3,9 +3,9 @@ tags: #manual #meta #reference #zettel #zettelstore
 syntax: zmk
 role: manual
 
-Most [[supported meta data keys|00001006020000]] conform to a type.
+Most [[supported metadata keys|00001006020000]] conform to a type.
 
-Every meta data key should conform to a type.
+Every metadata key should conform to a type.
 Every key type is specified by a letter.
 User-defined types are normally strings (type ''e'').
 

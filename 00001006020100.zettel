@@ -8,7 +8,7 @@ The following values are used by Zettelstore:
 
 ; [!new-template]''new-template''
 : Zettel with this role are used as templates for creating new zettel.
-  Within such a zettel, the meta data key [[''new-role''|00001006020000#new-role]] is used to specify the role of the new zettel.
+  Within such a zettel, the metadata key [[''new-role''|00001006020000#new-role]] is used to specify the role of the new zettel.
 ; [!user]''user''
 : If you want to use [[authentication|00001010000000]], all zettel that identify users of the zettel store must have this role.
 

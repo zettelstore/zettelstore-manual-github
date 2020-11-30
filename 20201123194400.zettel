@@ -8,7 +8,7 @@ role: changelog
   This is done to gain some free identifier with smaller number to be used internally.
 
   If you customized this zettel, please make sure to rename it to the new identifier.
-* [c11f94] (major) Rename the two essential meta data keys of a [[user zettel|00001010040200]] to [[''credential''|00001006020000#credential]] and [[''user-id''|00001006020000#user-id]].
+* [c11f94] (major) Rename the two essential metadata keys of a [[user zettel|00001010040200]] to [[''credential''|00001006020000#credential]] and [[''user-id''|00001006020000#user-id]].
   The previous values were ''cred'' and ''ident''.
 
   If you [[enabled user authentication|00001010040100]] and added some user zettel, make sure to change them accordingly.
@@ -41,7 +41,7 @@ role: changelog
 * [4fd5f20] (bug) Rendered wrong URLs for internal links on info page.
   Released as ''v0.0.5-4''.
 * [385ca85] (bug) If a zettel contains binary content it cannot be cloned.
-  For such a zettel only the meta data can be changed.
+  For such a zettel only the metadata can be changed.
 * [165c871] (minor) Non-zettel [[references|00001007040300]] that neither have an URL scheme, user info, nor host name, are considered ""local references"" (in contrast to ""zettel references"" and ""external references"").
   When a local reference is displayed as an URL on the WebUI, it will not opened in a new window/tab.
   They will receive a ''"local"'' marker, when encoded as [[djson|00001012920503]] or [[native|00001012920513]].
@@ -55,7 +55,7 @@ role: changelog
   All zettel with a role value [[''new-template''|00001006020100#new-template]] act as a template to create a new zettel.
   The WebUI menu item ""New"" changed to a drop-down list with all those zettel, ordered by their identifier.
 
-  All meta data keys with the prefix ""new-"" will be translated to a new or updated keys/value without that prefix.
+  All metadata keys with the prefix ""new-"" will be translated to a new or updated keys/value without that prefix.
   You can use this mechanism to specify a role for the new zettel, or a different title.
   The title of the template zettel is used in the drop-down list. [0358ed5]
 

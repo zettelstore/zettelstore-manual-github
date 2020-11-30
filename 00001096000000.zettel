@@ -13,7 +13,7 @@ They are planned to be solved.
   As a workaround, you should place your file into the directory where your zettel are stored.
   Make sure that the file name starts with unique 14 digits that make up the [[zettel identifier|00001006050000]].
 * Automatic lists and transclusions are not supported in Zettelmarkup.
-* The search function uses only the meta data, not the whole content.
+* The search function uses only the metadata of a zettel, not its content.
 * The is no way to list all zettel that point to the current zettel (aka ""backlinks"").
 * ...
 

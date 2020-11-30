@@ -4,7 +4,7 @@ syntax: zmk
 role: manual
 
 For every zettel you can specify under which condition the zettel is visible to others.
-This is controlled with the meta data key ''visibility''.
+This is controlled with the metadata key ''visibility''.
 The following values are supported:
 
 ; ""public""

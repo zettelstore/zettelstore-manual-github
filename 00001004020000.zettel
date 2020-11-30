@@ -55,22 +55,22 @@ The following meta keys change the appearance / behaviour of Zettelstore:
 : Specifies the ID of the zettel, that should be presented for the default view.
   If not given or if the ID does not identify a zettel, the list of all zettel is shown.
 ; [!yaml-header]''yaml-header''
-: If true, meta data and content will be separated by ''-\--\\n'' instead of an empty line (''\\n\\n'').
+: If true, metadata and content will be separated by ''-\--\\n'' instead of an empty line (''\\n\\n'').
   Default: ''false''.
 
   You will probably use this key, if you are working with another software
   processing [[Markdown|https://daringfireball.net/projects/markdown/]] that
-  uses a subset of [[YAML|https://yaml.org/]] to specify meta data.
+  uses a subset of [[YAML|https://yaml.org/]] to specify metadata.
 ; [!zettel-file-syntax]''zettel-file-syntax''
 : If you create a new zettel with a syntax different to ""meta"" and ""zmk"",
-  Zettelstore will store the zettel as two files: one for the meta data
+  Zettelstore will store the zettel as two files: one for the metadata
   (file extension ''.meta'') and one for the content (file extension based on
   the syntax value).
   If you want to specify alternative syntax values, for which you want new zettel to be stored in one file (file extension ''.zettel''), you can use this key.
   All values are case-insensitive, duplicates are removed.
 
   For example, you could use this key if you're working with Markdown syntax
-  and you want to store meta data and content in one ''.zettel'' file.
+  and you want to store metadata and content in one ''.zettel'' file.
 
   If ''yaml-header'' evaluates to true, a zettel is always stored in one
   ''.zettel'' file.

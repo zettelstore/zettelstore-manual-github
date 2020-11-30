@@ -39,7 +39,7 @@ The backslash character (""''\\''"", ''U+005C'') gives the next character anothe
 
 ==== Tag
 Any text that starts with a number sign character (""''#''"", ''U+0023''), followed by a non-empty sequence of Unicode letters, Unicode digits, the hyphen-minus character (""''-''"", ''U+002D''), or the low line character (""''_''"", ''U+005F'') is interpreted as an //inline tag//.
-They will be considered equivalent to tags in meta data.
+They will be considered equivalent to tags in metadata.
 
 ==== Entities & more
 Sometimes it is not easy to enter special characters.

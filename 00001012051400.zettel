@@ -59,7 +59,7 @@ Or reformatted:
 <body>
 <ul>
 <li><a href="/z/00001012051400?_format=html">API: List all zettel, but in different encoding formats</a></li>
-<li><a href="/z/00001012051200?_format=html">API: List meta data of all zettel</a></li>
+<li><a href="/z/00001012051200?_format=html">API: List metadata of all zettel</a></li>
 <li><a href="/z/00001012050600?_format=html">API: Provide an access token</a></li>
 <li><a href="/z/00001012050400?_format=html">API: Renew an access token</a></li>
 <li><a href="/z/00001012050200?_format=html">API: Authenticate a client</a></li>

@@ -33,7 +33,7 @@ It might trigger a re-build of the backlink database (and other internal databas
 Therefore a large value if preferred.
 
 === Worker
-Internally, Zettelstore parallels concurrent requests for a zettel or its meta data.
+Internally, Zettelstore parallels concurrent requests for a zettel or its metadata.
 The number of parallel activities is configured by the ''worker'' parameter.
 Its default value 17 is a good compromise when you think about the high variability of possible Zettelstore environments.
 

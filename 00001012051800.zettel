@@ -1,4 +1,4 @@
-title: API: Shape the list of zettel meta data with filters and sorting options
+title: API: Shape the list of zettel metadata with filters and sorting options
 tags: #api #manual #zettelstore
 syntax: zmk
 role: manual
@@ -8,9 +8,9 @@ Typically, you are interested only in a subset of the zettel maintained by your 
 This is done by adding some query parameters to the general ''GET /z'' request.
 
 === Filter
-Every query parameter that does //not// start with the low line character (""_"", ''U+005F'') is treated as the name of a [[meta data|00001006010000]] key.
-According to the [[type|00001006030000]] of a meta data key, zettel are matched and therefore filtered.
-All [[supported|00001006020000]] meta data keys have a well-defined type.
+Every query parameter that does //not// start with the low line character (""_"", ''U+005F'') is treated as the name of a [[metadata|00001006010000]] key.
+According to the [[type|00001006030000]] of a metadata key, zettel are matched and therefore filtered.
+All [[supported|00001006020000]] metadata keys have a well-defined type.
 User-defined keys have the type ''e'' (string, possibly empty).
 
 For example, if you want to retrieve all zettel that contain the string ""API"" in its title, your request will be:
@@ -39,8 +39,8 @@ If not specified, the list of zettel is sorted descending by the value of the ze
 The highest zettel identifier, which is a number, comes first.
 You change that with the ''_sort'' query parameter.
 
-Its value is the name of a meta data key, optionally prefixed with a hyphen-minus character (""-"", ''U+002D'').
-According to the [[type|00001006030000]] of a meta data key, the list of zettel is sorted.
+Its value is the name of a metadata key, optionally prefixed with a hyphen-minus character (""-"", ''U+002D'').
+According to the [[type|00001006030000]] of a metadata key, the list of zettel is sorted.
 If hyphen-minus is given, the order is descending, else ascending.
 
 Currently, only the first occurrence of ''_sort'' is recognized.
@@ -58,8 +58,8 @@ The query parameter ''_offset'' allows to list not only the first elements, but 
 {"list":[{"id":"00001012050200","url":"/z/00001012050200"},{"id":"00001012050400","url":"/z/00001012050400"}]}
 ```
 === General filter
-The query parameter ''_s'' allows to provide a string, which will be searched for in all meta data.
-While searching, the [[type|00001006030000]] of each meta data key will be respected.
+The query parameter ''_s'' allows to provide a string, which will be searched for in all metadata.
+While searching, the [[type|00001006030000]] of each metadata key will be respected.
 
 You are allowed to specify this query parameter more than once.
 All results will be intersected, i.e. a zettel will be included into the list if both of the provided values match.
