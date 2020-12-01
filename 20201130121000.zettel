@@ -14,3 +14,4 @@ role: changelog
   A workaround is to restart the software.
   This has been fixed.
   If the ''.meta'' file is deleted, metadata is now calculated in the same way when the ''.meta'' file is non-existing at the start of the software.
+* [abfa4d5] (bug) A link to the current zettel, only using a fragment (e.g. ``[[Title|#title]]``) is now handled correctly as a zettel link (and not as a link to external material).
