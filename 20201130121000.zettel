@@ -19,6 +19,7 @@ syntax: zmk
   This is done though the metadata key [[''read-only''|00001006020000#read-only]].
 * [ef4095a] (bug) When renaming a zettel, check all places for the new zettel identifier, not just the first place.
   Otherwise it will be possible to shadow a read-only zettel from a next place, effectively modifying it.
+* [7476784] (minor) Add support for a configurable default value for metadata value [[''visibility''|00001006020000#visibility]].
 
 === WebUI
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.

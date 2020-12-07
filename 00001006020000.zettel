@@ -78,6 +78,7 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 ; [!visibility]''visibility''
 : When you work with authentication, you can give every zettel a value to decide, who can see the zettel.
   Has type ''w''.
+  Its default value can be set with [[''default-visibility''|00001004020000#default-visibility]] of the configuration zettel.
 
   See [[visibility rules for zettel|00001010070200]] for more details.
 
