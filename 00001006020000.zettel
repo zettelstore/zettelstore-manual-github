@@ -1,7 +1,7 @@
 title: Supported Metadata Keys
+role: manual
 tags: #manual #meta #reference #zettel #zettelstore
 syntax: zmk
-role: manual
 
 Although you are free to define your own metadata, by using any key (according to the [[syntax|00001006010000]]), some keys have a special meaning that is enforced by Zettelstore.
 
@@ -33,6 +33,10 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   The type is ''e''.
 ; [!new-role]''new-role''
 : Used in a template zettel to specify the ''role'' of the new zettel.
+; [!read-only]''read-only''
+: Marks a zettel a read-only.
+  The interpretation of [[supported values|00001006020400]] for this key depends, whether authentication is [[enabled|00001010040100]] or not.
+  Its type is ''w''.
 ; [!role]''role''
 : Defines the role of the zettel.
   Can be used for selecting zettel.
