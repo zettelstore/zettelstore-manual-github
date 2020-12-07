@@ -1,7 +1,7 @@
 title: JSON Format
+role: manual
 tags: #api #manual #reference #zettelstore
 syntax: zmk
-role: manual
 
 This is the default representation of a zettel or a list of zettel.
 Basically, user provided data is encoded as a string (zettel content and metadata values),
@@ -19,10 +19,10 @@ It depends on the value of the required [[zettel part|00001012920800]], whether 
 
 For an example, take a look at the JSON encoding of this page, which is available via the ""Info"" sub-page of this zettel: 
 
-* [[/z/00001012920501?_part=id]],
-* [[/z/00001012920501?_part=zettel]],
-* [[/z/00001012920501?_part=meta]],
-* [[/z/00001012920501?_part=content]].
+* [[/manual/z/00001012920501?_part=id]],
+* [[/manual/z/00001012920501?_part=zettel]],
+* [[/manual/z/00001012920501?_part=meta]],
+* [[/manual/z/00001012920501?_part=content]].
 
 If transferred via HTTP, the content type will be ''application/json''.
 

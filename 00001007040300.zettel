@@ -1,7 +1,7 @@
 title: Zettelmarkup: Reference-like text
+role: manual
 tags: #manual #zettelmarkup #zettelstore
 syntax: zmk
-role: manual
 
 An important aspect of knowledge work is to interconnect your zettel as well as provide links to (external) material.
 
@@ -57,9 +57,9 @@ If the text is given, it will be interpreted as an alternative textual represent
 They must follow the last right curly bracket character immediately.
 One prominent example is to specify an explicit title attribute that is shown on certain web browsers when the zettel is rendered in HTML:
 
-Example:
+%%Example:
 
-``{{External link|00000000030001}}{title=External width=30}`` is rendered as ::{{External link|00000000030001}}{title=External width=30}::{=example}.
+%%``{{External link|00000000030001}}{title=External width=30}`` is rendered as ::{{External link|00000000030001}}{title=External width=30}::{=example}.
 
 === Footnotes
 
