@@ -21,6 +21,10 @@ syntax: zmk
   Otherwise it will be possible to shadow a read-only zettel from a next place, effectively modifying it.
 * [7476784] (minor) Add support for a configurable default value for metadata value [[''visibility''|00001006020000#visibility]].
 * [0890963] (bug) If [[''list-page-size''|00001004020000#list-page-size]] is set to a relatively low value and the authenticated user is //not// the owner, some zettel were not shown in the list of zettel or were not returned by the API.
+* [d6797a5] (major) Add support for computed zettel.
+  These zettel have an identifier less than ''0000000000100''.
+  See [[list of predefined zettel|00001005090000]] for details.
+* [5b53e5c] (bug) Fixes a memory leak that results in too many open files after approx. 125 reload operations.
 
 === WebUI
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.
