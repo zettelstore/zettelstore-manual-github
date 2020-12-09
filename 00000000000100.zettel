@@ -1,6 +1,6 @@
-title: Zettelstore configuration
-syntax: meta
+title: Zettelstore Runtime Configuration
 role: configuration
+syntax: meta
 default-copyright: (c) 2020 by Detlef Stern <ds@zettelstore.de>
 default-license: EUPL-1.2-or-later
 footer-html: <hr><p><a href="/imprint/">Imprint</a>/<a href="/privacy/">Privacy</a></p>
