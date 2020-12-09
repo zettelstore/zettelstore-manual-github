@@ -3,6 +3,7 @@ role: configuration
 syntax: meta
 default-copyright: (c) 2020 by Detlef Stern <ds@zettelstore.de>
 default-license: EUPL-1.2-or-later
+default-visibility: public
 footer-html: <hr><p><a href="/imprint/">Imprint</a>/<a href="/privacy/">Privacy</a></p>
 site-name: Zettelstore Manual
 start: 00001000000000
