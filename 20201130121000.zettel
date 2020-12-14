@@ -27,6 +27,8 @@ syntax: zmk
 * [5b53e5c] (bug) Fixes a memory leak that results in too many open files after approx. 125 reload operations.
 * [4185f9e] (major) Predefined templates for new zettel got an explicit value for visibility: ''login''.
   Please update these zettel if you modified them.
+* [af5e3d0] (minor) Add support for new [[visibility ""expert""|00001010070200#expert]].
+  An owner becomes an expert, if the runtime configuration key [[''expert-mode''|00001004020000#expert-mode]] is set to true[^If authentication is not enabled, every user is de facto an owner.].
 === WebUI
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.
   There was some feedback that the additional tags were not helpful.

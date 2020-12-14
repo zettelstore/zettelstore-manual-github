@@ -7,16 +7,27 @@ For every zettel you can specify under which condition the zettel is visible to 
 This is controlled with the metadata key ''visibility''.
 The following values are supported:
 
-; ""public""
+; [!public]""public""
 : The zettel is visible to everybody, even if the user is not authenticated.
-; ""login""
+; [!login]""login""
 : Only an authenticated user can access the zettel.
 
   This is the default value for [[''default-visibility''|00001004020000#default-visibility]].
-; ""owner""
+; [!owner]""owner""
 : Only the owner of the Zettelstore can access the zettel.
 
   This is for zettel with sensitive content, e.g. the [[configuration zettel|00001004020000]] or the various zettel that contains the templates for rendering zettel in HTML.
+; [!expert]""expert""
+: Only the owner of the Zettelstore can access the zettel, if runtime configuration [[''expert-mode''|00001004020000#expert-mode]] is set to a boolean true value.
+
+  This is for zettel with sensitive content that might irritate the owner.
+  Computed zettel with internal runtime information are examples for such a zettel.
 
 When you install a Zettelstore, only the zettel that contains CSS for displaying the web interface has visibility ""public"".
 This is to ensure that the web interface looks nice even for not authenticated users.
+
+Please note: if authentication is not enabled, every user has the same rights as the owner of a Zettelstore.
+This is also true, if the Zettelstore runs additionally in [[read-only mode|00001004010000#readonly]].
+In this case, the [[runtime configuration zettel|00001004020000]] is shown (its visibility is ""owner"").
+The [[startup configuration|00001004010000]] is not shown, because the associated computed zettel with identifier ''00000000000099'' is stored with the visibility ""expert"".
+If you want to show such a zettel, you must set ''expert-mode'' to true.
