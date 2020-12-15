@@ -29,6 +29,10 @@ syntax: zmk
   Please update these zettel if you modified them.
 * [af5e3d0] (minor) Add support for new [[visibility ""expert""|00001010070200#expert]].
   An owner becomes an expert, if the runtime configuration key [[''expert-mode''|00001004020000#expert-mode]] is set to true[^If authentication is not enabled, every user is de facto an owner.].
+* [ba528b6] (major) Rename key ''readonly'' of [[startup configuration|00001004010000]] to [[''read-only-mode''|00001004010000#read-only-mode]].
+  This was done to avoid some confusion with the the zettel metadata key [[''read-only''|00001006020000#read-only]].
+  Please adapt your startup configuration.
+  Otherwise your Zettelstore will be writable.
 === WebUI
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.
   There was some feedback that the additional tags were not helpful.
