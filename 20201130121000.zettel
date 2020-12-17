@@ -37,3 +37,4 @@ syntax: zmk
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.
   There was some feedback that the additional tags were not helpful.
 * [0ae2a38] (minor) Move zettel field "role" above "tags" and move "syntax" more to "content".
+* [ff5cdbd] (minor) Rename zettel operation ""clone"" to ""copy"".
