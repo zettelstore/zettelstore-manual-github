@@ -16,7 +16,7 @@ syntax: zmk
   If the ''.meta'' file is deleted, metadata is now calculated in the same way when the ''.meta'' file is non-existing at the start of the software.
 * [abfa4d5] (bug) A link to the current zettel, only using a fragment (e.g. ``[[Title|#title]]``) is now handled correctly as a zettel link (and not as a link to external material).
 * [c6de886] (minor) Allow zettel to be marked as ""read only"".
-  This is done though the metadata key [[''read-only''|00001006020000#read-only]].
+  This is done through the metadata key [[''read-only''|00001006020000#read-only]].
 * [ef4095a] (bug) When renaming a zettel, check all places for the new zettel identifier, not just the first place.
   Otherwise it will be possible to shadow a read-only zettel from a next place, effectively modifying it.
 * [7476784] (minor) Add support for a configurable default value for metadata value [[''visibility''|00001006020000#visibility]].
@@ -33,6 +33,9 @@ syntax: zmk
   This was done to avoid some confusion with the the zettel metadata key [[''read-only''|00001006020000#read-only]].
   Please adapt your startup configuration.
   Otherwise your Zettelstore will be writable.
+* [8f4934f] (minor) References starting with ""./"" and ""../"" are treated as a [[local reference|00001007040300#links]].
+  Previously, only the prefix ""/"" was treated as a local reference.
+
 === WebUI
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.
   There was some feedback that the additional tags were not helpful.

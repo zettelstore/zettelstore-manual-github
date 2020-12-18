@@ -28,7 +28,7 @@ To reference some content within a zettel, you can append a number sign characte
 The resulting reference is called ""zettel reference"".
 
 To specify some material outside the Zettelstore, just use an normal Uniform Resource Identifier (URI) as defined by [[RFC\ 3986|https://tools.ietf.org/html/rfc3986]].
-If the URL starts with the slash character (""/"", ''U+002F''), i.e. without scheme, user info, and host name, the reference will be treated as a ""local reference"", otherwise as an ""external reference"".
+If the URL starts with the slash character (""/"", ''U+002F''), i.e. without scheme, user info, and host name, or if it starts with ""./"" or with ""../"", the reference will be treated as a ""local reference"", otherwise as an ""external reference"".
 
 The text in the second form is just a sequence of inline elements.
 
