@@ -43,3 +43,6 @@ syntax: zmk
 * [ff5cdbd] (minor) Rename zettel operation ""clone"" to ""copy"".
 * [6a45a8c] (major) All [[predefined HTML templates|00001005090000]] have now a [[visibility value ""expert""|00001010070200#expert]].
   If you want to see them as an non-expert owner, you must temporary enable [[''expert-mode''|00001004020000#expert-mode]] and change the visibility metadata value.
+* [ed757e5] (minor) Initial support for [[""Folgezettel""|https://zettelkasten.de/posts/tags/folgezettel/]].
+  If you click on ""Folge"" (detail view or info view), a new zettel is created with a reference ([[''precursor''|00001006020000#precursor]]) to the original zettel.
+  Title, role, tags, and syntax are copied from the original zettel.

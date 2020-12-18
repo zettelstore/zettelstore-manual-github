@@ -33,6 +33,10 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   The type is ''e''.
 ; [!new-role]''new-role''
 : Used in a template zettel to specify the ''role'' of the new zettel.
+; [!precursor]''precursor''
+: References zettel for which this zettel is a ""Folgezettel"" / follow-up zettel.
+  Basically the inverse of key [[''folge''|#folge]].
+  Its type is ''i''.
 ; [!read-only]''read-only''
 : Marks a zettel a read-only.
   The interpretation of [[supported values|00001006020400]] for this key depends, whether authentication is [[enabled|00001010040100]] or not.
@@ -85,9 +89,5 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
 ---
 Not yet supported, but planned:
 
-; ''folge''
+; [!folge]''folge''
 : The ID of a zettel that acts as a [[Folgezettel|https://zettelkasten.de/posts/tags/folgezettel/]].
-; ''next''
-: ID of a zettel that should be used next, e.g. for rendering slides or for redirecting to another zettel (if current zettel has no content).
-; ''see''
-: List of zettel IDs for zettel to be followed after reading this one (//follow-up//{-}).
