@@ -4,7 +4,7 @@ tags: #authorization #configuration #manual #security #zettelstore
 syntax: zmk
 
 For every zettel you can specify under which condition the zettel is visible to others.
-This is controlled with the metadata key ''visibility''.
+This is controlled with the metadata key [[''visibility''|00001006020000#visibility]].
 The following values are supported:
 
 ; [!public]""public""

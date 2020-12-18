@@ -38,3 +38,5 @@ syntax: zmk
   There was some feedback that the additional tags were not helpful.
 * [0ae2a38] (minor) Move zettel field "role" above "tags" and move "syntax" more to "content".
 * [ff5cdbd] (minor) Rename zettel operation ""clone"" to ""copy"".
+* [6a45a8c] (major) All [[predefined HTML templates|00001005090000]] have now a [[visibility value ""expert""|00001010070200#expert]].
+  If you want to see them as an non-expert owner, you must temporary enable [[''expert-mode''|00001004020000#expert-mode]] and change the visibility metadata value.

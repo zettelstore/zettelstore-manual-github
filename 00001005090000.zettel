@@ -27,4 +27,6 @@ The following table lists all predefined zettel with their purpose.
 | [[00000000091001]] | New Zettel | Template for a new zettel with role ""[[zettel|00001006020100]]""
 | [[00000000096001]] | New User | Template for a new zettel with role ""[[user|00001006020100#user]]""
 
+If a zettel is not linked, it is not accessible for the current user.
+
 **Important:** The identifier may change until a stable version of the software is released.
