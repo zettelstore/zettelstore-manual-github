@@ -2,7 +2,7 @@ title: Changelog for v0.0.8
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20201221105636
+modified: 20201221113315
 
 === Server
 * [0097706] (bug) Zettel files with extension ''.jpg'' and without metadata will get a [[syntax|00001006020000#syntax]] value ""jpg"".
@@ -49,3 +49,5 @@ modified: 20201221105636
 * [ed757e5] (minor) Initial support for [[""Folgezettel""|https://zettelkasten.de/posts/tags/folgezettel/]].
   If you click on ""Folge"" (detail view or info view), a new zettel is created with a reference ([[''precursor''|00001006020000#precursor]]) to the original zettel.
   Title, role, tags, and syntax are copied from the original zettel.
+* [034fcde] (major) Most predefined zettel have a title prefix of ""Zettelstore"".
+  See [[list of predefined zettel|00001005090000]] for details.

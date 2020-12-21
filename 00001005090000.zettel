@@ -2,6 +2,7 @@ title: List of predefined zettel
 role: manual
 tags: #manual #reference #zettelstore
 syntax: zmk
+modified: 20201221113051
 
 The following table lists all predefined zettel with their purpose.
 
@@ -14,17 +15,17 @@ The following table lists all predefined zettel with their purpose.
 | [[00000000000098]] | Zettelstore Startup Configuration | Contains the effective values of the [[startup configuration|00001004010000]]
 | [[00000000000099]] | Zettelstore Startup Values | Contains all values computed from the [[startup configuration|00001004010000]]
 | [[00000000000100]] | Zettelstore Runtime Configuration | Allows to [[configure Zettelstore at runtime|00001004020000]]
-| [[00000000010100]] | Base HTML Template | Contains the general layout of the HTML view
-| [[00000000010200]] | Login Form HTML Template | (not in use yet)
-| [[00000000010300]] | List Meta HTML Template | Used when displaying a list of zettel
-| [[00000000010401]] | Detail HTML Template | Layout for the HTML detail view of one zettel
-| [[00000000010402]] | Info HTML Templöate | Layout for the information view of a specific zettel
-| [[00000000010403]] | Form HTML Template | Form that is used to create a new or to change an existing zettel that contains text
-| [[00000000010404]] | Rename Form HTML Template | View that is displayed to change the [[zettel identifier|00001006050000]]
-| [[00000000010405]] | Delete HTML Template | View to confirm the deletion of a zettel
-| [[00000000010500]] | List Roles HTML Template | Layout for listing all roles
-| [[00000000010600]] | List Tags HTML Template | Layout of tags lists
-| [[00000000020001]] | Base CSS | CSS file that is included by the [[Base HTML Template|00000000010100]]
+| [[00000000010100]] | Zettelstore Base HTML Template | Contains the general layout of the HTML view
+| [[00000000010200]] | Zettelstore Login Form HTML Template | Layout of the login form, when authentication is [[enabled|00001010040100]]
+| [[00000000010300]] | Zettelstore List Meta HTML Template | Used when displaying a list of zettel
+| [[00000000010401]] | Zettelstore Detail HTML Template | Layout for the HTML detail view of one zettel
+| [[00000000010402]] | Zettelstore Info HTML Templöate | Layout for the information view of a specific zettel
+| [[00000000010403]] | Zettelstore Form HTML Template | Form that is used to create a new or to change an existing zettel that contains text
+| [[00000000010404]] | Zettelstore Rename Form HTML Template | View that is displayed to change the [[zettel identifier|00001006050000]]
+| [[00000000010405]] | Zettelstore Delete HTML Template | View to confirm the deletion of a zettel
+| [[00000000010500]] | Zettelstore List Roles HTML Template | Layout for listing all roles
+| [[00000000010600]] | Zettelstore List Tags HTML Template | Layout of tags lists
+| [[00000000020001]] | Zettelstore Base CSS | CSS file that is included by the [[Base HTML Template|00000000010100]]
 | [[00000000091001]] | New Zettel | Template for a new zettel with role ""[[zettel|00001006020100]]""
 | [[00000000096001]] | New User | Template for a new zettel with role ""[[user|00001006020100#user]]""
 
