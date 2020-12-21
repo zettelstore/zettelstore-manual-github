@@ -2,7 +2,7 @@ title: Changelog for v0.0.8
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20201221113315
+modified: 20201221181529
 
 === Server
 * [0097706] (bug) Zettel files with extension ''.jpg'' and without metadata will get a [[syntax|00001006020000#syntax]] value ""jpg"".
@@ -38,6 +38,8 @@ modified: 20201221113315
   Previously, only the prefix ""/"" was treated as a local reference.
 * [5114383] (major) Metadata key [[''modified''|00001006020000#modified]] will be set automatically to the current local time if a zettel is updated through Zettelstore.
   If you used that key previously for your own, you should rename it before you upgrade.
+* [ac01db9] (minor) The new visibility value [[""simple-expert""|00001010070200#simple-expert]] ensures that many computed zettel are shown for new users.
+  This is to enable them to send useful bug reports.
 
 === WebUI
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.
@@ -51,3 +53,7 @@ modified: 20201221113315
   Title, role, tags, and syntax are copied from the original zettel.
 * [034fcde] (major) Most predefined zettel have a title prefix of ""Zettelstore"".
   See [[list of predefined zettel|00001005090000]] for details.
+* [01cf546] (minor) If started in simple mode, e.g. via double click or without any [[command|00001004050000]], some information for the new user is presented.
+  In the terminal, there is a hint about opening the web browser and use a specific URL.
+  A ""welcome zettel"" is created, to give some more information.
+  (This change also applies to the server itself, but it is more suited to the WebUI user.)
