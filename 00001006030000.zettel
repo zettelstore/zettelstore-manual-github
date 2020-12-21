@@ -1,7 +1,7 @@
 title: Supported Key Types
+role: manual
 tags: #manual #meta #reference #zettel #zettelstore
 syntax: zmk
-role: manual
 
 Most [[supported metadata keys|00001006020000]] conform to a type.
 
@@ -17,6 +17,7 @@ sorting.
 |= Type:| Meaning | Match | Sorting
 | ''b'' | Boolean value, False if value starts with ""''0''"", ""''F''"", ""''N''"", ""''f''"", or ""''n''"" | Boolean match | False < True
 | ''c'' | Value is a credential, e.g. an encrypted password (planned) | Never matches | Uses zettel identifier for sorting
+| ''d'' | Datetime value YYYYMMDDHHmmSS | prefix match | by number
 | ''e'' | Any string, possibly empty | case-insensitive contains | case-sensitive
 | ''i'' | Value is a [[zettel identifier|00001006050000]] | prefix match | by number
 | ''n'' | Integer value | exact match | by number
