@@ -2,6 +2,7 @@ title: Changelog for v0.0.8
 role: changelog
 tags: #release
 syntax: zmk
+modified: 20201221105636
 
 === Server
 * [0097706] (bug) Zettel files with extension ''.jpg'' and without metadata will get a [[syntax|00001006020000#syntax]] value ""jpg"".
@@ -35,6 +36,8 @@ syntax: zmk
   Otherwise your Zettelstore will be writable.
 * [8f4934f] (minor) References starting with ""./"" and ""../"" are treated as a [[local reference|00001007040300#links]].
   Previously, only the prefix ""/"" was treated as a local reference.
+* [5114383] (major) Metadata key [[''modified''|00001006020000#modified]] will be set automatically to the current local time if a zettel is updated through Zettelstore.
+  If you used that key previously for your own, you should rename it before you upgrade.
 
 === WebUI
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.

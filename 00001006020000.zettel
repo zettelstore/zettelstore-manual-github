@@ -2,6 +2,7 @@ title: Supported Metadata Keys
 role: manual
 tags: #manual #meta #reference #zettel #zettelstore
 syntax: zmk
+modified: 20201221105324
 
 Although you are free to define your own metadata, by using any key (according to the [[syntax|00001006010000]]), some keys have a special meaning that is enforced by Zettelstore.
 
@@ -29,8 +30,12 @@ If a type is not explicitly mentioned, a possibly empty string is assumed (type 
   Use values according to the language definition of [[RFC-5646|https://tools.ietf.org/html/rfc5646]]. Its type is ''w''.
 ; [!license]''license''
 : Defines a license string that will be rendered.
-  If not given, the value ''default-license'' from the  [[configuration zettel|00001004020000#default-license]] will be used.
+  If not given, the value ''default-license'' from the [[configuration zettel|00001004020000#default-license]] will be used.
   The type is ''e''.
+; [!modified]''modified''
+: Date and time when a zettel was modified through Zettelstore.
+  If you edit a zettel with an editor software outside Zettelstore, you should set it manually to an appropriate value.
+  Its type is ''d''.
 ; [!new-role]''new-role''
 : Used in a template zettel to specify the ''role'' of the new zettel.
 ; [!precursor]''precursor''
