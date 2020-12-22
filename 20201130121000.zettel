@@ -1,8 +1,9 @@
+id: 20201130121000
 title: Changelog for v0.0.8
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20201221181529
+modified: 20201222192106
 
 === Server
 * [0097706] (bug) Zettel files with extension ''.jpg'' and without metadata will get a [[syntax|00001006020000#syntax]] value ""jpg"".
@@ -40,6 +41,9 @@ modified: 20201221181529
   If you used that key previously for your own, you should rename it before you upgrade.
 * [ac01db9] (minor) The new visibility value [[""simple-expert""|00001010070200#simple-expert]] ensures that many computed zettel are shown for new users.
   This is to enable them to send useful bug reports.
+* [28253d2] (minor) When a zettel is stored as a file, it identifier is additionally stored within the metadata.
+  This helps for better robustness in case the file names were corrupted.
+  In addition, there could be a tool that compares the identifier with the file name.
 
 === WebUI
 * [3a3bdc7] (minor) Remove list of tags in ""List Zettel"" and search results.
