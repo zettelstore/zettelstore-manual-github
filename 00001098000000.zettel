@@ -3,12 +3,14 @@ title: Release History
 role: manual
 tags: #manual #release #zettelstore
 syntax: zmk
-modified: 20201223163303
+modified: 20201223165800
 
 ; v0.0.8 (2020-12-23, [[changelog|20201223175400]])
 : Initial support for ""folgezettel"" and many other smaller improvements and bug fixes.
   Makes some usability enhancements, e.g. [[expert mode|00001004020000]], and a welcome zettel.
   Added some zettel that are read-only and computed by Zettelstore, e.g. for showing the version number, configuration values, or runtime data.
+
+  Note: there are some breaking changes, especially if you customized the Zettelstore or use authentication.
 ; v0.0.7 (2020-11-24, [[Changelog|20201124182500]])
 : Re-license everything to EUPL-1.2-or-later
 ; v0.0.6 (2020-11-23, [[Changelog|20201123194400]])
