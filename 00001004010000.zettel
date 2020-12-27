@@ -1,7 +1,9 @@
+id: 00001004010000
 title: Zettelstore start-up configuration
 role: manual
 tags: #configuration #manual #zettelstore
 syntax: zmk
+modified: 20201226183537
 
 The configuration file, as specified by the ''-c CONFIGFILE'' [[command line option|00001004051000]], allows you to specify some start-up options.
 These options cannot be stored in a [[configuration zettel|00001004020000]] because either they are needed before Zettelstore can start or because of security reasons.
@@ -26,7 +28,7 @@ The following keys are supported:
   Default value: ''"127.0.0.1:23123"''
 ; [!owner]''owner''
 : [[Identifier|00001006050000]] of a zettel that contains data about the owner of the Zettelstore.
-  The owner has full authorization for thr zettel store.
+  The owner has full authorization for the Zettelstore.
   Only if owner is set to some value, user [[authentication|00001010000000]] is enabled.
 ; [!persistent-cookie]''persistent-cookie''
 : A boolean value to make the access cookie persistent.
