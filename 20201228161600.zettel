@@ -1,0 +1,13 @@
+id: 20201228161600
+title: Changelog for v0.0.9
+role: changelog
+tags: #release
+syntax: zmk
+modified: 20201222192106
+
+=== Server
+* [b7853b2] (minor) If Zettelstore is being stopped, an appropriate message is written in the console log.
+
+=== WebUI
+* [2b05d4a] (minor) Always show the zettel identifier on the zettel detail view.
+  Previously, it was not shown if the zettel was not editable.
