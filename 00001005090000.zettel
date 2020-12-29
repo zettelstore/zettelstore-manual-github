@@ -1,8 +1,9 @@
+id: 00001005090000
 title: List of predefined zettel
 role: manual
 tags: #manual #reference #zettelstore
 syntax: zmk
-modified: 20201221113051
+modified: 20201229224757
 
 The following table lists all predefined zettel with their purpose.
 
@@ -11,9 +12,10 @@ The following table lists all predefined zettel with their purpose.
 | [[00000000000002]] | Zettelstore Host | Contains the name of the computer running the Zettelstore
 | [[00000000000003]] | Zettelstore Operating System | Contains the operating system and CPU architecture of the computer running the Zettelstore
 | [[00000000000004]] | Zettelstore Go Version | Contains the version of [[Go|https://golang.org/]] that was used to produce the Zettelstore
-| [[00000000000005]] | Zettelstore Runtime Values | Contains values that reflect the inner working; see [[here|https://golang.org/pkg/runtime/]] for a technical description of these values
-| [[00000000000098]] | Zettelstore Startup Configuration | Contains the effective values of the [[startup configuration|00001004010000]]
-| [[00000000000099]] | Zettelstore Startup Values | Contains all values computed from the [[startup configuration|00001004010000]]
+| [[00000000000006]] | Zettelstore Environment Values | Contains environmental data of Zettelstore executable
+| [[00000000000008]] | Zettelstore Runtime Values | Contains values that reflect the inner working; see [[here|https://golang.org/pkg/runtime/]] for a technical description of these values
+| [[00000000000096]] | Zettelstore Startup Configuration | Contains the effective values of the [[startup configuration|00001004010000]]
+| [[00000000000098]] | Zettelstore Startup Values | Contains all values computed from the [[startup configuration|00001004010000]]
 | [[00000000000100]] | Zettelstore Runtime Configuration | Allows to [[configure Zettelstore at runtime|00001004020000]]
 | [[00000000010100]] | Zettelstore Base HTML Template | Contains the general layout of the HTML view
 | [[00000000010200]] | Zettelstore Login Form HTML Template | Layout of the login form, when authentication is [[enabled|00001010040100]]
