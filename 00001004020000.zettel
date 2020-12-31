@@ -1,11 +1,13 @@
+id: 00001004020000
 title: Configure the running Zettelstore
 role: manual
 tags: #configuration #manual #zettelstore
 syntax: zmk
+modified: 20201231131204
 
 You can configure a running Zettelstore by modifying the special zettel with the ID [[00000000000100]].
 This zettel is called ""configuration zettel"".
-The following meta keys change the appearance / behaviour of Zettelstore:
+The following metadata keys change the appearance / behavior of Zettelstore:
 
 ; [!default-copyright]''default-copyright''
 : Copyright value to be used when rendering content.
@@ -41,7 +43,6 @@ The following meta keys change the appearance / behaviour of Zettelstore:
 ; [!expert-mode]''expert-mode''
 : If set to a boolean true value, all zettel with [[visibility ""expert""|00001010070200]] will be shown (to the owner, if authentication is enabled; to all, otherwise).
   This affects most computed zettel.
-  Its type is ''b''.
   Default: False.
 ; [!footer-html]''footer-html''
 : Contains some HTML code that will be included into the footer of each Zettelstore web page.

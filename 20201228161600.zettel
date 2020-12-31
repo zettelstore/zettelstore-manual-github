@@ -3,12 +3,14 @@ title: Changelog for v0.0.9
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20201229224350
+modified: 20201231125947
 
 === Server
 * [b7853b2] (minor) If Zettelstore is being stopped, an appropriate message is written in the console log.
 * [1b01c7c] (minor) New computed zettel with enviromental data.
   Some other computed zettel got a new identifier (to make room for other variant).
+  See [[list of predefined zettel|00001005090000]] for details.
+* [5b74a44] (minor) New computed zettel with list of supported metadata keys.
   See [[list of predefined zettel|00001005090000]] for details.
 
 === WebUI
