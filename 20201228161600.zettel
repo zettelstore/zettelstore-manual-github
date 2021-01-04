@@ -3,7 +3,7 @@ title: Changelog for v0.0.9
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20201231140435
+modified: 20210104191040
 
 === Server
 * [b7853b2] (minor) If Zettelstore is being stopped, an appropriate message is written in the console log.
@@ -17,3 +17,6 @@ modified: 20201231140435
 * [2b05d4a] (minor) Always show the zettel identifier on the zettel detail view.
   Previously, the identifier was not shown if the zettel was not editable.
 * [8e4f14e] (minor) Do not show computed metadata in edit forms anymore.
+* [200694c] (major) HTML template zettel for WebUI (see [[list of predefined zettel|00001005090000]]) use [[Mustache|https://mustache.github.io/]] syntax instead of previously [[Go templates|https://golang.org/pkg/html/template/]].
+  This allows these zettel to be used, even when there is another Zettelstore implementation, in another programming language.
+  Mustache is available for approx. 48 programming languages, Go templates are only available for the Go programming language.
