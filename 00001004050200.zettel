@@ -1,7 +1,10 @@
+id: 00001004050200
 title: The ''help'' sub-command
-tags: #configuration #manual #zettelstore #command
-syntax: zmk
 role: manual
+tags: #command #configuration #manual #zettelstore
+syntax: zmk
+modified: 20210104115646
+precursor: 00001004050000
 
 Lists all implemented sub-commands.
 
@@ -14,5 +17,6 @@ Available commands:
 - "help"
 - "password"
 - "run"
+- "run-simple"
 - "version"
 ```

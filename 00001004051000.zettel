@@ -1,7 +1,10 @@
+id: 00001004051000
 title: The ''run'' sub-command
-tags: #configuration #manual #zettelstore #command
-syntax: zmk
 role: manual
+tags: #command #configuration #manual #zettelstore
+syntax: zmk
+modified: 20210104115719
+precursor: 00001004050000
 
 === ``zettelstore run``
 This starts the web service.
@@ -19,6 +22,12 @@ zettelstore run [-c CONFIGFILE] [-d DIR] [-p PORT] [-r] [-v]
 : Specifies ''DIR'' as the directory that contains all zettel.
 
   Default is ''./zettel'' (''.\\zettel'' on Windows), where ''.'' denotes the ""current directory"".
+; [!debug]''-debug''
+: Allows better debugging of the internal web server by disabling any timeout values.
+  You should specify this only as a developer.
+  Especially do not enable it for a production server.
+
+  [[https://blog.cloudflare.com/exposing-go-on-the-internet/#timeouts]] contains a good explanation for the usefulness of sensitive timeout values.
 ; ''-p PORT''
 : Specifies the integer value ''PORT'' as the TCP port, where the Zettelstore service listens for requests.
 
@@ -35,4 +44,4 @@ zettelstore run [-c CONFIGFILE] [-d DIR] [-p PORT] [-r] [-v]
 : Be more verbose in writing logs.
   Writes the startup configuration to stderr.
 
-Command line options take precedence over configuration file options. 
+Command line options take precedence over configuration file options.
