@@ -3,7 +3,7 @@ title: Changelog for v0.0.9
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20210104191040
+modified: 20210105105219
 
 === Server
 * [b7853b2] (minor) If Zettelstore is being stopped, an appropriate message is written in the console log.
@@ -12,6 +12,9 @@ modified: 20210104191040
   See [[list of predefined zettel|00001005090000]] for details.
 * [5b74a44] (minor) New computed zettel with list of supported metadata keys.
   See [[list of predefined zettel|00001005090000]] for details.
+* [109557e] (minor) Remove zettel ''00000000000004'', which contained the Go version that produced the Zettelstore executable.
+  It was too specific to the current implementation.
+  This information is now included in zettel ''[[00000000000006]]'' (Zettelstore Environment Values).
 
 === WebUI
 * [2b05d4a] (minor) Always show the zettel identifier on the zettel detail view.
