@@ -3,7 +3,7 @@ title: Changelog for v0.0.8
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20201222192106
+modified: 20210108141918
 
 === Server
 * [0097706] (bug) Zettel files with extension ''.jpg'' and without metadata will get a [[syntax|00001006020000#syntax]] value ""jpg"".
@@ -27,7 +27,7 @@ modified: 20201222192106
   These zettel have an identifier less than ''0000000000100''.
   See [[list of predefined zettel|00001005090000]] for details.
 * [5b53e5c] (bug) Fixes a memory leak that results in too many open files after approx. 125 reload operations.
-* [4185f9e] (major) Predefined templates for new zettel got an explicit value for visibility: ''login''.
+* [!4185f9e][4185f9e] (major) Predefined templates for new zettel got an explicit value for visibility: ''login''.
   Please update these zettel if you modified them.
 * [af5e3d0] (minor) Add support for new [[visibility ""expert""|00001010070200#expert]].
   An owner becomes an expert, if the runtime configuration key [[''expert-mode''|00001004020000#expert-mode]] is set to true[^If authentication is not enabled, every user is de facto an owner.].

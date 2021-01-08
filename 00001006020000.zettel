@@ -3,7 +3,7 @@ title: Supported Metadata Keys
 role: manual
 tags: #manual #meta #reference #zettel #zettelstore
 syntax: zmk
-modified: 20201231130722
+modified: 20210108141344
 
 Although you are free to define your own metadata, by using any key (according to the [[syntax|00001006010000]]), some keys have a special meaning that is enforced by Zettelstore.
 See the [[computed list of supported metadata keys|00000000000090]] for details.
@@ -32,11 +32,24 @@ Most keys conform to a [[type|00001006030000]].
 ; [!modified]''modified''
 : Date and time when a zettel was modified through Zettelstore.
   If you edit a zettel with an editor software outside Zettelstore, you should set it manually to an appropriate value.
+
+  This is a computed value.
+  There is no need to set it via Zettelstore.
 ; [!new-role]''new-role''
 : Used in a template zettel to specify the ''role'' of the new zettel.
 ; [!precursor]''precursor''
 : References zettel for which this zettel is a ""Folgezettel"" / follow-up zettel.
   Basically the inverse of key [[''folge''|#folge]].
+; [!published]''published''
+: This property contains the timestamp of the mast modification / creation of the zettel.
+  If [[''modified''|#modified]]is set, it contains the same value.
+  Otherwise, if the zettel identifier contains a valid timestamp, the identifier is used.
+  In all other cases, this property is not set.
+
+  It can be used for [[sorting|00001012051800#sort]] zettel based on their publication date.
+
+  It is a computed value.
+  There is no need to set it via Zettelstore.
 ; [!read-only]''read-only''
 : Marks a zettel as read-only.
   The interpretation of [[supported values|00001006020400]] for this key depends, whether authentication is [[enabled|00001010040100]] or not.
