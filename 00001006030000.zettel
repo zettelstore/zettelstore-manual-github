@@ -3,7 +3,7 @@ title: Supported Key Types
 role: manual
 tags: #manual #meta #reference #zettel #zettelstore
 syntax: zmk
-modified: 20201231131447
+modified: 20210108184053
 
 Most [[supported metadata keys|00001006020000]] conform to a type.
 
@@ -28,3 +28,4 @@ sorting.
 | Word | Alfanumeric word, case-insensitive | case-insensitive equality | case-sensitive
 | WordSet | Space-separated list of alfanumeric words, case-insensitive | case-insensitive match for one word | case-sensitive by sorted words
 | URL | URL / URI | case-insensitive contains | case-sensitive
+| Zettelmarkup | Any string, must not be empty, formatted in [[Zettelmarkup|00001007000000]] | case-insensitive contains | case-sensitive

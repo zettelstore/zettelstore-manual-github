@@ -3,7 +3,7 @@ title: Changelog for v0.0.9
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20210108162151
+modified: 20210108185307
 
 === Server
 * [b7853b2] (minor) If Zettelstore is being stopped, an appropriate message is written in the console log.
@@ -21,6 +21,9 @@ modified: 20210108162151
   Predefined templates for new zettel do not contain any value for attribute [[''visibility''|00001006020000#visibility]] any more.
 * [5f08000] (minor) New computed zettel with statistics about all configured zettel places.
   See [[list of predefined zettel|00001005090000]] for details.
+* [fea5bd3] (minor) Add a new metadata key type called ""Zettelmarkup"".
+  It is a non-empty string, that will be formatted with [[Zettelmarkup|00001007000000]].
+  [[''title''|00001006020000#title]] and [[''default-title''|00001004020000#default-title]] have this type.
 
 === WebUI
 * [2b05d4a] (minor) Always show the zettel identifier on the zettel detail view.
@@ -29,3 +32,4 @@ modified: 20210108162151
 * [200694c] (major) HTML template zettel for WebUI (see [[list of predefined zettel|00001005090000]]) use [[Mustache|https://mustache.github.io/]] syntax instead of previously [[Go templates|https://golang.org/pkg/html/template/]].
   This allows these zettel to be used, even when there is another Zettelstore implementation, in another programming language.
   Mustache is available for approx. 48 programming languages, Go templates are only available for the Go programming language.
+* [fea5bd3] (minor) Rendering of metadata keys ''title'' and ''default-title'' in info page changed to a full HTML output for these Zettelmarkup encoded values.
