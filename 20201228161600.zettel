@@ -3,7 +3,7 @@ title: Changelog for v0.0.9
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20210108185307
+modified: 20210111182955
 
 === Server
 * [b7853b2] (minor) If Zettelstore is being stopped, an appropriate message is written in the console log.
@@ -16,14 +16,20 @@ modified: 20210108185307
   It was too specific to the current implementation.
   This information is now included in zettel ''[[00000000000006]]'' (Zettelstore Environment Values).
 * [314cc40] (major) Support for property metadata.
-  [[''published''|00001006020000#published]] is the first example of such a property.
+  Metadata key [[""''published''""|00001006020000#published]] is the first example of such a property.
 * [9e18718] (minor) Change [[4185f9e|20201223175400#4185f9e]] in v0.0.8 was an error.
-  Predefined templates for new zettel do not contain any value for attribute [[''visibility''|00001006020000#visibility]] any more.
+  Predefined templates for new zettel do not contain any value for attribute [[""''visibility''""|00001006020000#visibility]] any more.
 * [5f08000] (minor) New computed zettel with statistics about all configured zettel places.
   See [[list of predefined zettel|00001005090000]] for details.
 * [fea5bd3] (minor) Add a new metadata key type called ""Zettelmarkup"".
   It is a non-empty string, that will be formatted with [[Zettelmarkup|00001007000000]].
-  [[''title''|00001006020000#title]] and [[''default-title''|00001004020000#default-title]] have this type.
+  [[""''title''""|00001006020000#title]] and [[""''default-title''""|00001004020000#default-title]] have this type.
+* [31ed374] (major) Rename syntax ""meta"" to [[""none""|00001008000000#none]].
+  Please update the [[Zettelstore Runtime Configuration|00000000000100]] and all other zettel that previously used the value ""meta"".
+  Other zettel are typically [[user zettel|00001010040200]], used for authentication.
+  However, there is no real harm, if you do not update these zettel.
+  In this case, only the metadata is not presented when rendered.
+  Zettelstore will still work.
 
 === WebUI
 * [2b05d4a] (minor) Always show the zettel identifier on the zettel detail view.
