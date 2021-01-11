@@ -1,7 +1,9 @@
+id: 00001012050200
 title: API: Authenticate a client
+role: manual
 tags: #api #manual #zettelstore
 syntax: zmk
-role: manual
+modified: 20210111190943
 
 Authentication for future API calls is done by sending a [[user identification|00001010040200]] and a password to the Zettelstore to obtain an [[access token|00001010040700]].
 This token has to be used for other API calls.
@@ -26,6 +28,10 @@ If you do not want to use Basic Authentication, you can also send user identific
 ```
 
 In all cases, you will receive an JSON object will all [[relevant data|00001012921000]] to be used for further API calls.
+
+**Important:** obtaining a token is a time-intensive process.
+Zettelstore will delay every request to obtain a token for a certain amount of time.
+Please take into account that this request will take approximately 500 milliseconds, under certain circumstances more.
 
 === HTTP Status codes
 In all cases of successful authentication, a JSON object is returned, which contains the token under the key ''"token"''.

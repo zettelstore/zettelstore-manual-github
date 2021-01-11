@@ -3,7 +3,7 @@ title: Changelog for v0.0.9
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20210111182955
+modified: 20210111191007
 
 === Server
 * [b7853b2] (minor) If Zettelstore is being stopped, an appropriate message is written in the console log.
@@ -30,6 +30,8 @@ modified: 20210111182955
   However, there is no real harm, if you do not update these zettel.
   In this case, only the metadata is not presented when rendered.
   Zettelstore will still work.
+* [020f52b] (minor) Login will take at least 500 milliseconds to mitigate login attacks.
+  This affects both the [[API|00001012050200]] and the WebUI.
 
 === WebUI
 * [2b05d4a] (minor) Always show the zettel identifier on the zettel detail view.
