@@ -3,7 +3,7 @@ title: Changelog for v0.0.9
 role: changelog
 tags: #release
 syntax: zmk
-modified: 20210111191007
+modified: 20210112114655
 
 === Server
 * [b7853b2] (minor) If Zettelstore is being stopped, an appropriate message is written in the console log.
@@ -32,6 +32,8 @@ modified: 20210111191007
   Zettelstore will still work.
 * [020f52b] (minor) Login will take at least 500 milliseconds to mitigate login attacks.
   This affects both the [[API|00001012050200]] and the WebUI.
+* [23069ae] (minor) Add a [[sort option|00001012052000]] ""_random"" to produce a zettel list in random order.
+  ""''_order''"" / ""''order''"" are now an aliases for the query parameters ""''_sort''"" / ""''sort''"".
 
 === WebUI
 * [2b05d4a] (minor) Always show the zettel identifier on the zettel detail view.

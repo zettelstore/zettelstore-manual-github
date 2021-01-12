@@ -1,7 +1,9 @@
-title: API: Shape the list of zettel metadata with filters and sorting options
+id: 00001012051800
+title: API: Shape the list of zettel metadata with filter options
+role: manual
 tags: #api #manual #zettelstore
 syntax: zmk
-role: manual
+modified: 20210112114019
 
 In most cases, it is not essential to list //all// zettel.
 Typically, you are interested only in a subset of the zettel maintained by your Zettelstore.
@@ -18,7 +20,7 @@ For example, if you want to retrieve all zettel that contain the string ""API"" 
 # curl 'http://127.0.0.1:23123/z?title=API'
 {"list":[{"id":"00001012921000","url":"/z/00001012921000","meta":{"title":"API: JSON structure of an access token","tags":"#api #manual #reference #zettelstore","syntax":"zmk","role":"manual"}},{"id":"00001012920500","url":"/z/00001012920500","meta":{"title":"Formats available by the API","tags":"#api #manual #reference #zettelstore","syntax":"zmk","role":"manual"}},{"id":"00001012920000","url":"/z/00001012920000","meta":{"title":"Endpoints used by the API","tags":"#api #manual #reference #zettelstore","syntax":"zmk","role":"manual"}}, ...
 ```
-If you are just interested in the zettel identifier, you should add the ''_part'' query parameter:
+If you are just interested in the zettel identifier, you should add the ""''_part''"" query parameter:
 ```sh
 # curl 'http://127.0.0.1:23123/z?title=API&_part=id'
 {"list":[{"id":"00001012921000","url":"/z/00001012921000"},{"id":"00001012920500","url":"/z/00001012920500"},{"id":"00001012920000","url":"/z/00001012920000"},{"id":"00001012051800","url":"/z/00001012051800"},{"id":"00001012051600","url":"/z/00001012051600"},{"id":"00001012051400","url":"/z/00001012051400"},{"id":"00001012051200","url":"/z/00001012051200"},{"id":"00001012050600","url":"/z/00001012050600"},{"id":"00001012050400","url":"/z/00001012050400"},{"id":"00001012050200","url":"/z/00001012050200"},{"id":"00001012000000","url":"/z/00001012000000"}]}
@@ -34,31 +36,20 @@ Similarly, if you add another query parameter, the intersection of both results 
 {"list":[{"id":"00001012050600","url":"/z/00001012050600"},{"id":"00001012050400","url":"/z/00001012050400"},{"id":"00001012050200","url":"/z/00001012050200"}]}
 ```
 
-=== Sort
-If not specified, the list of zettel is sorted descending by the value of the zettel identifier.
-The highest zettel identifier, which is a number, comes first.
-You change that with the ''_sort'' query parameter.
-
-Its value is the name of a metadata key, optionally prefixed with a hyphen-minus character (""-"", ''U+002D'').
-According to the [[type|00001006030000]] of a metadata key, the list of zettel is sorted.
-If hyphen-minus is given, the order is descending, else ascending.
-
-Currently, only the first occurrence of ''_sort'' is recognized.
-In the future it will be possible to specify a combined sort key.
-
 === Limit and offset
-By using the query parameter ''_limit'', which must have an integer value, you specifying an upper limit of list elements:
+By using the query parameter ""''_limit''"", which must have an integer value, you specifying an upper limit of list elements:
 ```sh
 # curl 'http://192.168.17.7:23121/z?title=API&_part=id&_sort=id&_limit=2'
 {"list":[{"id":"00001012000000","url":"/z/00001012000000"},{"id":"00001012050200","url":"/z/00001012050200"}]}
 ```
-The query parameter ''_offset'' allows to list not only the first elements, but start at a specific element:
+The query parameter ""''_offset''"" allows to list not only the first elements, but start at a specific element:
 ```sh
 # curl 'http://192.168.17.7:23121/z?title=API&_part=id&_sort=id&_limit=2&_offset=1'
 {"list":[{"id":"00001012050200","url":"/z/00001012050200"},{"id":"00001012050400","url":"/z/00001012050400"}]}
 ```
+
 === General filter
-The query parameter ''_s'' allows to provide a string, which will be searched for in all metadata.
+The query parameter ""''_s''"" allows to provide a string, which will be searched for in all metadata.
 While searching, the [[type|00001006030000]] of each metadata key will be respected.
 
 You are allowed to specify this query parameter more than once.
