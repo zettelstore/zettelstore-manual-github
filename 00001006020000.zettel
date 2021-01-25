@@ -3,13 +3,19 @@ title: Supported Metadata Keys
 role: manual
 tags: #manual #meta #reference #zettel #zettelstore
 syntax: zmk
-modified: 20210108141344
+modified: 20210123223645
 
 Although you are free to define your own metadata, by using any key (according to the [[syntax|00001006010000]]), some keys have a special meaning that is enforced by Zettelstore.
 See the [[computed list of supported metadata keys|00000000000090]] for details.
 
 Most keys conform to a [[type|00001006030000]].
 
+; [!back]''back''
+: Is a property that contains the identifier of all zettel that reference the zettel of this metadata, that are not referenced by this zettel.
+  Basically, it is the value of [[''backward''|#bachward]], but without any zettel identifier that is contained in [[''forward''|#forward]].
+; [!backward]''backward''
+: Is a property that contains the identifier of all zettel that reference the zettel of this metadata.
+  References within inversable values are not included here, e.g. [[''precursor''|#precursor]].
 ; [!copyright]''copyright''
 : Defines a copyright string that will be encoded.
   If not given, the value ''default-copyright'' from the  [[configuration zettel|00001004020000#default-copyright]] will be used.
@@ -18,6 +24,12 @@ Most keys conform to a [[type|00001006030000]].
   It is internally created by hashing the password, the [[zettel identifier|00001006050000]], and the value of the ''ident'' key.
 
   It is only used for zettel with a ''role'' value of ""user"".
+; [!dead]''dead''
+: Property that contains all references that does //not// identify a zettel.
+; [!folge]''folge''
+: Is a property that contains identifier of all zettel that reference this zettel through the [[''precursor''|#precursor]] value.
+; [!forward]''forward''
+: Property that contains all references that identify another zettel within the content of the zettel.
 ; [!id]''id''
 : Contains the [[zettel identifier|00001006050000]], as given by the Zettelstore.
   It cannot be set manually, because it is a computed value.
