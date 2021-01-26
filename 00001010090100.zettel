@@ -1,9 +1,11 @@
+id: 00001010090100
 title: External server to encrypt message transport
+role: manual
 tags: #configuration #encryption #manual #security #zettelstore
 syntax: zmk
-role: manual
+modified: 20210125195546
 
-Since the Zettelstore does not encrypt the messages it exchanges with its clients, you may need some additional software to enable encryption.
+Since Zettelstore does not encrypt the messages it exchanges with its clients, you may need some additional software to enable encryption.
 
 === Public-key encryption
 To enable encryption, you probably use some kind of encryption keys.
